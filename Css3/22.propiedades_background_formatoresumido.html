@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Propiedades relacionadas al fondo (background)</title>
+	<link rel="stylesheet" href="css/22.estilos.css" type="text/css">
+</head>
+<body>
+	<h1>Propiedades relacionadas al fondo<br>(background)(FORMATO RESUMIDO)</h1>
+	<p>La propiedad background resume las propiedades vistas anteriormente:</p>
+	<ul>
+		<li>background-color</li>
+		<li>background-image</li>
+		<li>background-repeat</li>
+		<li>background-attachment</li>
+		<li>background-position</li>
+	</ul>
+	<p>Se puede inicializar una o varias de las propiedades referentes al fondo (es indistinto el orden en que indicamos los valores)</p>
+	<pre>
+	p {
+  		background: #cccccc url(fondo.jpg) repeat;
+	}
+
+	ul {
+  		background url(fondo.png) no-repeat fixed #0000ff;
+	}
+
+	div {
+  		background: top repeat-y scroll url(fondo.png);
+	}
+	</pre>
+
+	<div class="fondo">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde error, accusantium, minima quidem molestias accusamus tempore qui quod corrupti! Enim et quae eos, qui est sed. Dolor, sequi vel. Dicta.</p>
+	</div>
+</body>
+</html>

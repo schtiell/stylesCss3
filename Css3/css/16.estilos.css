@@ -1,0 +1,15 @@
+.titulo{
+	border: 1px solid silver;
+	background: green;
+	text-align: center;
+	padding: 15px;
+	color: white;
+	margin: 20px;
+}
+
+.parrafo{
+	margin: 80px 80px;
+	border: 1px solid blue;
+	background: silver;
+	padding: 10px;
+}

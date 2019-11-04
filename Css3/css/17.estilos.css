@@ -1,0 +1,52 @@
+div{
+	border:1px solid black;
+	background: yellow;
+	width: 40%;
+	margin: 30px auto;
+}
+
+.vacio{
+	list-style-type: none;
+}
+
+.disco{
+	list-style-type: disc;
+}
+
+.circulo{
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
+.cuadrado{
+	list-style-type: square;
+	list-style-position: outside;
+}
+
+.decimal{
+	list-style-type:decimal;
+}
+
+.decimal_2{
+	list-style-type: decimal-leading-zero;
+}
+
+.minus_roman{
+	list-style-type: lower-roman;
+}
+
+.mayus_roman{
+	list-style-type: upper-roman;
+}
+
+.minus_alfa{
+	list-style-type: lower-alpha;
+}
+
+.mayus_alfa{
+	list-style-type: upper-alpha;
+}
+
+.imagen{
+	list-style-image: url(https://img.icons8.com/ios-filled/24/000000/mac-os.png);
+}

@@ -1,0 +1,18 @@
+.titulo{
+	font-family: verdana;
+	border: 2px dashed green;
+	background: orange;
+	text-align: center;
+}
+
+span{
+	font-weight: bold;
+	font-family: 13px;
+	font-family: tahoma;
+	border: 1px dotted red;
+}
+
+ol li{
+	background: silver;
+	margin: 5px;
+};

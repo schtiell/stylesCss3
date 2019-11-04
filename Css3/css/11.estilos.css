@@ -1,0 +1,9 @@
+.resaltado{
+	color: red;
+	text-decoration: underline;
+	font-family: tahoma;
+	font-size: 40px;
+	background: yellow;
+	border: 2px solid red;
+	padding: 5px;
+}

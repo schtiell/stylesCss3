@@ -1,0 +1,13 @@
+h1{
+	font: bold 2em times new roman;
+	text-align: center;
+}
+
+.fondo{
+  	background: #cccccc url(fondo.jpg) repeat;
+  	border: 3px dashed red;
+  	padding: 10px;
+  	width: 500px;
+  	height: 500px;
+  	margin: 20px auto;
+}

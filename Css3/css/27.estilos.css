@@ -1,0 +1,29 @@
+.menu{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+.menu a{
+	background: silver;
+	border-right: 1px solid black;
+	text-align: center;
+	font: 20px tahoma;
+	color: blue;
+	display: block;
+	margin: 0px auto;
+}
+
+.menu li{
+	width: 20%;
+	float: left;
+}
+
+.menu a:link, a:visited{
+	text-decoration: none;
+}
+
+.menu a:hover{
+	color: silver;
+	background: blue;
+}

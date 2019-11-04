@@ -1,0 +1,17 @@
+#titulo{
+	border: 2px solid black;
+	background: silver;
+	text-align: center;
+	margin: 0px 20px;
+}
+
+#parrafo{
+	text-align: justify;
+	font-style: italic;
+}
+
+#parrafo2{
+	font-size: 15px;
+	font-weight: lighter;
+	text-transform: capitalize;
+}

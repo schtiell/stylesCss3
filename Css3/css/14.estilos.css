@@ -1,0 +1,41 @@
+.ejemplo{
+	margin: 5px;
+	width: 15%;
+	background: yellow;
+	border-right-width: 2px;
+	border-right-style: dashed;
+	border-right-color: red;
+
+	border-bottom-width: 3px;
+	border-bottom-style: dotted;
+	border-bottom-color: blue;
+}
+
+.ejemplo2{
+	margin: 10px;
+	width: 20%;
+	background: green;
+	border-left-width: 2px;
+	border-left-style: dashed;
+	border-left-color: red;
+
+	border-top-width: 3px;
+	border-top-style: dotted;
+	border-top-color: yellow;
+	text-align: center;
+	color: silver;
+	font-size: 30px;
+}
+
+.ejemplo3{
+	margin: 15px;
+	width: 25%;
+	background: silver;
+	border-right-width: 2px;
+	border-right-style: dashed;
+	border-right-color: red;
+
+	border-bottom-width: 3px;
+	border-bottom-style: dotted;
+	border-bottom-color: orange;
+}

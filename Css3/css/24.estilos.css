@@ -1,0 +1,26 @@
+.container{
+	border: 2px solid black;
+	width: 400px;
+	height: 200px;
+	margin: 30px auto;
+}
+
+a:link{
+	background: #00ff00;
+ 	color: #ff0000;
+}
+
+a:visited{
+	background: #000000;
+  	color: #ffffff;
+}
+
+a:hover{
+	background: #ff00ff;
+  	color: white;
+}
+
+a:active{
+	background: red;
+  	color: yellow;
+}

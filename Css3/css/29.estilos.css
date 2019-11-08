@@ -1,0 +1,29 @@
+.ejemplo html{
+	font-size: 10px;
+
+}
+
+.ejemplo h1{
+	font-size: 2.5rem;
+}
+
+.ejemplo h2{
+	font-size: 2.0rem;
+}
+
+.ejemplo h3{
+	font-size: 1.5rem;
+}
+
+.ejemplo h4{
+	font-size: 1.0rem;
+}
+
+.ejemplo h5{
+	font-size: .8rem;
+}
+
+.ejemplo h6{
+	font-size: .5rem;
+}
+

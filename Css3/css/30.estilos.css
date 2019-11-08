@@ -1,0 +1,18 @@
+.container{
+	border: 1px solid #000;
+	padding: 10px;
+}
+
+.color1{
+	background: #faa;
+	padding: 2px 4px;
+}
+
+.color2{
+	color: white;
+	background: rgb(44,14,63);
+}
+
+.color3{
+	background: rgba(76,155,244,.6);
+}

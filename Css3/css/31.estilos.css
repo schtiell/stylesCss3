@@ -1,0 +1,74 @@
+.container{
+
+}
+
+.lista li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+		
+.cursor1{
+	cursor: crosshair;
+	
+}
+
+.cursor2{
+	cursor: default;
+}
+
+.cursor3{
+	cursor: pointer;
+}
+
+
+.cursor4{
+	cursor: move;
+}
+
+.cursor5{
+	cursor: e-resize;
+}
+
+.cursor6{
+	cursor: ne-resize;
+}
+
+.cursor7{
+	cursor: nw-resize;
+}
+
+.cursor8{
+	cursor: n-resize;
+}
+
+.cursor9{
+	cursor: se-resize;-resize;
+}
+
+.cursor10{
+	cursor: sw-resize;
+}
+
+.cursor11{
+	cursor: s-resize;
+}
+
+.cursor12{
+	cursor: w-resize;
+}
+
+.cursor13{
+	cursor: text;
+}
+
+.cursor14{
+	cursor: wait;
+}
+
+.cursor15{
+	cursor: help;
+}
+
+.cursor16{
+	cursor: auto;
+}

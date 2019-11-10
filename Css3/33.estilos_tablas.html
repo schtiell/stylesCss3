@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Definiendo reglas de estilo a una tabla</title>
+	<link rel="stylesheet" href="css/33.estilos.css" type="text/css">
+</head>
+<body>
+	<h1>Definiendo reglas de estilo a una tabla</h1>
+	
+	<p>Otro elemento muy común en un sitio web son las tablas. A este elemento HTML podemos aplicarle varias de las propiedades vistas tanto a la tabla en sí, como sus filas y celdas. El elemento table podemos definir la propiedad border-collapse que puede tomar dos valores:</p>
+	
+	<pre>
+	collapse
+	separate
+	</pre>
+	
+	<p>Si le asignamos el valor collapse une las líneas de los border de las celdas (con esto queda en muchas situaciones mejor estéticamente)</p>
+
+	<div class="container">
+		<table>
+			<caption><!-- Establece un título de la tabla, independientemente de su posición -->
+				Cantidad de lluvia en Milimetros
+			</caption>
+			<thead> <!--Etiqueta contenedora de la cabecera de la tabla. Parte superior de la tabla. -->
+				<tr><!-- Table Row. Etiqueta contenedora de cada fila de la tabla -->
+					<th><!-- Table Header. Cada una de las celdas de cabecera de la tabla -->
+						Provincia
+					</th>
+					<th>
+						Enero
+					</th>
+					<th>
+						Febrero
+					</th>
+					<th>
+						Marzo
+					</th>
+				</tr>
+			</thead>
+			<tbody><!-- Etiqueta contenedora del cuerpo de la tabla. Parte central de la tabla. -->
+				<tr>
+					<th>
+						Xalapa
+					</th>
+					<td>300</td><td>350</td><td>260</td><!-- Table Data. Cada una de las celdas de la tabla -->
+				</tr>
+				<tr>
+					<th>
+						Pánuco
+					</th>
+					<td>300</td><td>250</td><td>220</td>
+				</tr>
+				<tr>
+					<th>
+						Coatzacoalcos
+					</th>
+					<td>270</td><td>230</td><td>190</td>
+				</tr>
+			</tbody>
+			<tfoot><!-- -Etiqueta contenedora del pie de la tabla. Parte inferior de la tabla.->
+				<tr>
+					<td colspan="4">	
+						<a href="https://lenguajehtml.com/p/html/semantica/etiquetas-html-de-tablas">Mas información sobre tablas en HTML 5</a>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+</body>
+</html>

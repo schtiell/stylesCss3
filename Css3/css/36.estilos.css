@@ -1,0 +1,46 @@
+h1{
+	font: bold 30px Tahoma;
+	text-align: center;
+	margin: 40px 30px 50px 30px;
+}
+
+p{
+	font: 15px verdana;
+	margin: 20px 30px;
+}
+
+span p{
+	font-weight: bold;
+}
+
+div{
+	margin: 20px;
+	width: 50%;
+}
+
+.container1{
+	border: 2px solid #F4511E;
+	background: #FFF59D;
+	position: absolute;
+	top: 300px;
+	left:120px;
+	z-index: 2;
+}
+
+.container2{
+	border: 2px solid #7B1FA2;
+	background: #CCFF33;
+	position: absolute;
+	top: 350px;
+	left:150px;
+	z-index: 3;
+}
+
+.container3{
+	border: 2px solid #0033FF;
+	background: #FF99CC ;
+	position: absolute;
+	top: 390px;
+	left: 50px;
+	z-index: 1;
+}

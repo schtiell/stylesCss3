@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+.barrasuperior{
+	background: #000;
+	color: silver;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	left: 0px;
+	text-align: center;
+}
+
+.barralateral{
+	background: #E5E7E9;
+	position: fixed;
+	top: 50px;
+	left: 0;
+	width: 200px;
+	height: 100%;
+	text-align: center;
+}
+
+.contenido{
+	padding-top: 100px;
+	padding-left: 200px;
+}
+
+h1{
+	font: bold 30px verdana;
+	text-align: center;
+}
+
+p{
+	font: 15px verdana;
+	margin: 20px 30px;
+}
+
+span p{
+	font-weight: bold;
+}
+

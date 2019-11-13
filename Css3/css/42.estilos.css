@@ -1,0 +1,72 @@
+h1{
+
+	font: bold 30px verdana;
+	text-align: center;
+	margin: 15px;
+}
+
+p{
+	font: 15px verdana;
+}
+
+h2{
+	font: bold 25px verdana;
+	text-align: center;
+}
+
+.container, .container2{
+	border: 2px solid #000;
+	width: 95%;
+	height: 550px;
+	margin: 20px auto;
+	padding: 10px;
+}
+
+.box1, .box11{
+	float: left;
+	width: 250px;
+	background: #FADBD8;
+	border: 2px solid #E73F1C;
+	padding: 20px 25px;
+	margin: 10px;
+}
+
+.box2, .box12{
+	float: left;
+	width: 250px;
+	background: #FADBD8;
+	border: 2px solid #E73F1C;
+	padding: 20px 25px;
+	margin: 10px;
+
+}
+
+.box3, .box13{
+	float: left;
+	width: 250px;
+	background: #FADBD8;
+	border: 2px solid #E73F1C;
+	padding: 20px 25px;
+	margin: 10px;
+}
+
+.box4{
+	float: left;
+	width: 250px;
+	background: #FADBD8;
+	border: 2px solid #E73F1C;
+	padding: 20px 25px;
+	margin: 10px;
+}
+
+.box14{
+	float: left;
+	clear: left;
+	width: 250px;
+	background: #FADBD8;
+	border: 2px solid #E73F1C;
+	padding: 20px 25px;
+	margin: 10px;
+}
+
+

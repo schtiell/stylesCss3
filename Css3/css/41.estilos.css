@@ -1,0 +1,17 @@
+h1{
+	font: bold 30px verdana;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+
+}
+
+p{
+	font: 15px verdana;
+}
+
+.letraCapital{
+	float: left;
+	font-size: 2em;
+	margin: 2px 7px;
+}

@@ -1,0 +1,26 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font: bold 30px verdana;
+	text-align: center;
+	margin: 10px 20px;
+}
+
+p{
+	margin: 10px;
+}
+
+.container{
+	float: left;
+	width: 200px;
+	height: 100%;
+	background: #FADBD8;
+}
+
+.container2, .principal{
+	margin: 10px 20px 10px 220px;
+	background: #FADBD8;
+}

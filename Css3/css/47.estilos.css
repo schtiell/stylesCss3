@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 90%;
+	margin: 0 auto;
+}
+
+h1{
+	font: bold 30px verdana;
+	text-align: center;
+	margin: 20px auto;
+}
+
+p{
+	margin: 10px;
+	text-align: justify;
+}
+
+.header, .footer{
+	background-color: #eee;
+	border: 1px solid #000;
+	margin: 10px 0;
+
+}
+
+li{
+	display: inline;
+	margin: 2px 5px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.footer{
+	padding: 5px;
+	clear: both;
+}
+
+.footer p{
+	text-align: center;
+}
+
+
+.columna1, .columna2, .columna3{
+	background-color: #eee;
+	border: 1px solid #000;
+	margin: 1%;
+	padding: 10px;
+	width: 27%;
+	float: left;
+}
+

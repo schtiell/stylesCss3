@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+p{
+	margin: 20px 10px;
+}
+
+h1{
+	font: bold 30px tahoma;
+	text-align: center;
+	margin: 20px auto;
+}
+
+span{
+	font-weight: bold;
+}
+
+pre{
+	font: italic 18px tahoma;
+	font-weight: bold;
+
+}
+
+div{
+	border: 1px solid #000;
+	margin: 30px 10px;
+	padding: 20px;
+}
+
+h2, h3{
+	font: bold 20px verdana;
+	text-align: center;
+}
+
+/*Selector adyacente o hermano*/
+h2+p{
+	font: italic 20px curier;
+	color: red;
+}
+
+/*Selector general*/
+h3~p{
+	font: bold 25px tahoma;
+	color: green;
+}

@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3{
+	font: bold 20px tahoma;
+	text-align: center;
+	margin: 20px
+}
+
+
+p{
+	margin: 10px 20px;
+}
+
+span{
+	font-weight: bold;
+}
+
+div{
+	border: 1px solid #000;
+	margin: 20px;
+}
+
+h2+p{
+	text-indent: 50px;
+}
+
+h3~p{
+	text-decoration: line-through;
+}

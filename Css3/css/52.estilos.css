@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font: bold 30px tahoma;
+	text-align: center;
+	margin: 20px;
+}
+
+p{
+	margin: 10px 30px;
+}
+
+pre{
+	font: italic 15px verdana;
+	font-weight: bold;
+}
+
+ol{
+	margin: 10px 50px;
+}
+
+div{
+	border: 1px solid #000;
+	margin: 20px auto;
+	padding: 20px;
+	width: 50%
+}
+
+/*Selector para el atributo target del elemento html a*/
+a[target]{
+	color: red;
+	text-decoration: none;
+}
+
+/*Selector para el atributo target definido como #*/
+a[target='#']{
+	text-decoration: line-through;
+}
+
+a[href^="https"]{
+	color: #f00;
+}
+
+a[href$=".net"]{
+	color: #0f0;
+}
+
+a[href*="xbox"]{
+	color: #00f;
+}

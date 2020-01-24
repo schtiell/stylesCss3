@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font: bold 25px tahoma;
+	text-align: center;
+	margin: 20px;
+}
+
+h2{
+	font: bold 20px text-align: left;
+	text-align: center;
+	margin: 10px 20px;
+}
+
+p{
+	margin: 20px;
+}
+
+span{
+	font-weight: bold;
+}
+
+.container{
+	border: 1px solid #000;
+	width: 50%;
+	margin: 40px auto;
+	padding: 20px;
+}
+
+input[type="text"], input[type="email"], textarea, label{
+	width: 40%;
+	float: left;
+	margin: 20px;
+}
+
+input[type="text"]{
+	background: yellow;
+}
+
+input[type="submit"]{
+	width: 30%;
+	height: 30px;
+	margin: 20px auto;
+	display: block;
+}

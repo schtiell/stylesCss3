@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selector de hijos CSS</title>
+	<link  rel="stylesheet" href="css/48.estilos.css" type="text/css">
+</head>
+<body>
+	<h1>Selector de hijos en CSS</h1>
+
+	<p>Los selectores nos permiten aplicar estilos a un elemento o conjunto de elementos de una página web. Repasemos un poco los selectores vistos hasta este momento:</p>
+
+	<p>Selector de un típo de elemento:</p>
+
+	<pre>
+	h1 {
+  		font-family:Arial;
+	}
+	</pre>
+
+	<p>Se aplica el tipo de fuente Arial a todos los elementos h1 de la página sin excepción.</p>
+	
+	<pre>
+	h1.principal {
+  		font-family:Arial;
+	}
+	</pre>
+
+	<p>Se aplica el tipo de fuente Arial a todos los elementos h1 que tienen definida la clase "principal"</p>
+	
+	<pre>
+	h1#titulo1 {
+  		font-family:Arial;
+	}
+	</pre>
+
+	<p>Se aplica el tipo de fuente Arial al elementos h1 que tiene definidida la propiedad id con el valor "titulo1".</p>
+
+	<ul>
+		<li><span>Selectores descendientes: </span>Cuando se definen dos elementos HTML seguidos por uno o más espacios en blanco, las propiedades afectan a los elementos con el segundo elemento contenidos dentro del primer elemento, aunque haya etiquetas intermedias:</li>
+	</ul>	
+
+	<pre>
+	ul em{
+  		color:#f00;
+	}
+	</pre>
+
+	<p>Todos los elementos "em" se mostraran de color rojo siempre y cuando estén contenidos por un elemento "ul".
+	pagina.html</p>
+
+
+	<div class="container">
+		
+		<h2>Esto es una <em>prueba</em> de elementos descendientes</h2>
+		
+		<ul>
+			<li>Opcion 1: es la más <em>facil</em></li>
+			<li>Opcion 2: es la dificultad <em>media</em></li>
+			<li>Opcion 3: es la más <em>dificil</em> </li>
+		</ul>
+	</div>
+
+	<p>En este ejemplo las palabra fácil, media y compleja aparecen de color rojo. Esto debido que están encerradas entre las marcas "em" y están contenidas en un "ul". </p>
+	
+	<p>Por otro lado la palabra "prueba" no aparece de color rojo ya aunque está encerrada con el elemento "em" dicho elemento no está contenido en una lista no ordenada "ul".</p>
+	
+	<ul>
+		<li>Selector de hijos: La sintaxis es similar a los selectores descendientes con la diferencia que remplazamos el espacio en blanco por el caracter ></li>
+	</ul>
+
+	<pre>
+	h1>em {
+  		color:#0f0;
+	}
+	</pre>
+
+	<p>Aquí solo se aplica el color #0f0 si em es un elemento hijo directo de h1.</p>
+
+
+	<p><span>Problema:</span></p>
+	
+	<p>Plantear una página que contenga en un div dos párrafos y una lista desordenada. Dentro de la lista definir tres items con un párrafo cada uno. Luego definir un selector para que pinte de color azul solo los párrafos que dependen directamente del div.</p>
+
+	<div class="container2">
+
+		<h2>Esto es una prueba de selectores hijos</h2>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos aliquid asperiores et consectetur a ducimus ipsa, facere quam excepturi non id libero alias voluptatibus nesciunt, deleniti beatae nihil quae perferendis.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos aliquid asperiores et consectetur a ducimus ipsa, facere quam excepturi non id libero alias voluptatibus nesciunt, deleniti beatae nihil quae perferendis.</p>
+
+		<ul>
+			<li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos aliquid asperiores et consectetur a ducimus ipsa, facere quam excepturi non id libero alias voluptatibus nesciunt, deleniti beatae nihil quae perferendis.</p></li>
+			<li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos aliquid asperiores et consectetur a ducimus ipsa, facere quam excepturi non id libero alias voluptatibus nesciunt, deleniti beatae nihil quae perferendis.</p></li>
+			<li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos aliquid asperiores et consectetur a ducimus ipsa, facere quam excepturi non id libero alias voluptatibus nesciunt, deleniti beatae nihil quae perferendis.</p></li>
+		</ul>
+	</div>
+
+</body>
+</html>	

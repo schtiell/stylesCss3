@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selector de atrubuto CSS</title>
+	<link rel="stylesheet" href="css/52.estilos.css" type="text/css">
+</head>
+<body>
+	<h1>Selector de Atributo CSS</h1>
+
+	<p>Ahora veremos otra forma de seleccionar elementos HTML mediante el acceso de sus atributos.</p>
+
+	<p>Recordemos que un elemento HTML está normalmente constituido por una marca de comienzo, un valor, la marca de cierre y sus atributos:</p>
+
+	<pre>
+	&lt;a href="http://www.google.com.ar" target="_blank"&gt;Titulo Principal&lt;/a&gt;
+	</pre>
+
+	<p>En este ejemplo el elemento "a" tiene definido dos atributos: href y target.</p>
+
+	<p>Hay una serie de posibilidades de utilizar el selector de atributo que pasaremos a ver:</p>
+
+	<ol>
+		<li>Con el selector de atributo podemos verificar si un elemento HTML tiene definida un atributo determinado para así poder aplicar un estilo. Por ejemplo apliquemos estilos distintos a los elementos "a" que tienen definido el atributo target:</li>
+	</ol>
+
+	<div class="container">
+		<h2>Selector para un atributo html</h2>
+		<ol>
+			<li><a href="http://www.google.com">Google</a></li>
+			<li><a href="http://www.facebook.com">Facebook</a></li>
+			<li><a href="http://www.youtube.com" target="blank">Youtube</a></li>
+		</ol>
+	</div>
+	
+	<p>Esta regla se aplica a todos los elementos de tipo "a" que tienen definida la propiedad llamada "target". Es decir el tercer enlace de la página aparece de color rojo ya que tiene definida dicha propiedad. Los dos primeros enlaces no se le aplica esta regla de CSS porque no tienen definida la propiedad target.</p>
+		
+	<ol>	
+		<li value="2">Una segunda posibilidad es no solo verificar si un elemento HTML define una determinada propiedad sino controlar si su contenido almacena un determinado valor.</li>		
+	</ol>
+
+	<p>Confeccionemos una página que muestre todos los enlaces "a" de la página que tengan inicializado el atributo href con el valor # con una línea tachada (que represente que no tenemos acceso a dicho hipervínculo):</p>
+	
+	<div class="container2">
+		<h2>Selector para un atributo html</h2>
+		<ol>
+			<li><a href="http://www.google.com" target="#">Google</a></li>
+			<li><a href="http://www.facebook.com" target="blank">Facebook</a></li>
+			<li><a href="http://www.youtube.com" target="#">Youtube</a></li>
+		</ol>
+	</div>
+	
+	<p>Como podemos ver entre los corchetes no solo hacemos referencia al nombre de la propiedad sino que disponemos el caracter = y la cadena con la que estamos comparando el contenido del atributo.</p>
+
+	<p>En nuestro ejemplo tenemos dos enlaces que tienen almacenados en la propiedad href la cadena "#" por lo que dichos enlaces al cumplir la regla del selector se aplica a text-decoration el valor line-trough.</p>
+
+	<ol>
+		<li value="3">Podemos también controlar si el valor de la propiedad comienza, finaliza o tiene en su interior una determinada cadena de caracteres. Veamos la sintaxis con un ejemplo:</li>
+	</ol>
+
+	<div class="container3">
+		<h2>Selector para un atributo html</h2>
+		<ol>
+			<li><a href="https://beta.music.apple.com/">AppleMusic</a></li>
+			<li><a href="http://www.karmany.net">Karmany</a></li>
+			<li><a href="http://www.xbox.com">xbox</a></li>
+		</ol>
+	</div>	
+	
+	<p>Hay que tener en cuenta que utilizamos la sintaxis ^= para controlar si el atributo comienza con la cadena que le indicamos entre comillas (es decir el primer enlace cumple la regla ya que la propiedad href comienza con esos cuatro caracteres):</p>
+
+	<pre>
+	a[href^="https"] {
+  		color:#f00;
+	}
+	</pre>
+
+	<p>La sintaxis $= sirve para controlar si el valor del atributo finaliza con la cadena de caracteres indicada (el segundo enlace cumple esta regla de estilo):</p>
+
+	<pre>
+	a[href$=".ar"] {
+ 		color:#0f0;
+	}
+	</pre>
+
+	<p>Por último con la sintaxis *= controlamos si el atributo contiene en alguna parte la cadena indicada (en nuestro ejemplo el tercer enlace contiene en su interior la cadena "yahoo"):</p>
+
+	<pre>
+	a[href*="xbox"] {
+  		color:#00f;
+	}
+	</pre>
+</body>
+</html>

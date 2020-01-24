@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selector adyacente y hermano general CSS</title>
+	<link rel="stylesheet" href="css/50.estilos.css" type="text/css">
+</head>
+<body>
+
+	<h1>Selector Adyacente y Hermano General CSS</h1>
+
+	<p>El <span>"selector de hermano adyacente"</span> permite seleccionar un elemento HTML que viene inmediatamente después de otro elemento HTML. Los dos elementos deben tener el mismo elemento padre. Por ejemplo:</p>
+
+	<pre>
+	&lt;body&gt;
+		&lt;h1&gt;Titulo &lt;h1&gt;
+		&lt;p&gt;Esto es el primer párrafo.&lt;/p&gt;
+		&lt;p&gt;Esto es el segundo párrafo.&lt;/p&gt;
+		&lt;p&gt;Esto es el tercer párrafo.&lt;/p&gt;
+	&lt;/body&gt;
+	</pre>
+	
+	<p>Mediante la regla de estilo:</p>
+
+	<pre>
+	h1+p{
+  		color:#f00;
+	}
+	</pre>
+	
+	<p>Seleccionamos el primer párrafo que le sigue al elemento h1. Luego el primer párrafo se pinta de rojo.</p>
+
+	<p>Si aplicamos este otro estilo al mismo bloque HTML:</p>
+
+	<pre>
+	p+p{
+		color:#f00;
+	}
+	</pre>
+	
+	<p>Se pintan de rojo el segundo y tercer párrafo ya que a cada uno de estos párrafos le antecede otro párrafo (no se pinta el primer párrafo porque no le antecede un párrafo sino un "h1"</p>
+
+	<p>Ahora el <span>"selector de hermano general"</span> permite seleccionar todos los hermanos a diferencia del selector de hermano adyacente que selecciona el primero.</p>
+
+	<p>Si tenemos el siguiente fragmento:</p>
+
+
+	<pre>
+	&lt;body&gt;
+		&lt;h1&gt;Titulo &lt;h1&gt;
+		&lt;p&gt;Esto es el primer párrafo.&lt;/p&gt;
+		&lt;p&gt;Esto es el segundo párrafo.&lt;/p&gt;
+		&lt;p&gt;Esto es el tercer párrafo.&lt;/p&gt;
+	&lt;/body&gt;
+	</pre>
+
+	<p>Y le aplicamos la regla:</p>
+
+	<pre>
+	h1~p{
+  		color:#f00;
+	}
+	</pre>
+	
+	<p>Como resultado se aplica el color rojo a todos los párrafos adyacentes que tienen como hermano el elemento "h1" </p>
+	
+	<div class="container">
+
+		<h2>Selector adyacente</h2>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum, praesentium dolorum optio ipsam laborum nemo hic, eius molestiae atque nulla, mollitia, culpa commodi velit aperiam. A, repudiandae, pariatur. Facilis.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum, praesentium dolorum optio ipsam laborum nemo hic, eius molestiae atque nulla, mollitia, culpa commodi velit aperiam. A, repudiandae, pariatur. Facilis.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum, praesentium dolorum optio ipsam laborum nemo hic, eius molestiae atque nulla, mollitia, culpa commodi velit aperiam. A, repudiandae, pariatur. Facilis.</p>
+	</div>
+
+	<div class="container2">
+		
+		<h3>Selector general</h3>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum, praesentium dolorum optio ipsam laborum nemo hic, eius molestiae atque nulla, mollitia, culpa commodi velit aperiam. A, repudiandae, pariatur. Facilis.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum, praesentium dolorum optio ipsam laborum nemo hic, eius molestiae atque nulla, mollitia, culpa commodi velit aperiam. A, repudiandae, pariatur. Facilis.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum, praesentium dolorum optio ipsam laborum nemo hic, eius molestiae atque nulla, mollitia, culpa commodi velit aperiam. A, repudiandae, pariatur. Facilis.</p>
+	</div>	
+
+
+</body>
+</html>

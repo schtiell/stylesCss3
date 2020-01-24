@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> Diseño de ancho liquido</title>
+	<link rel="stylesheet" href="css/47.estilos.css" type="text/css">
+</head>
+<body>
+	
+	<h1>Diseño de ancho liquido</h1>
+	
+	<p>Cuando empleamos diseño de ancho líquido los elementos se contraen o expanden según el ancho de la ventana del navegador.</p>
+
+	<p>El diseño líquido requiere emplear porcentajes para especificar el ancho de cada div de forma que el diseño se estira o contrae para adaptarse al tamaño de la ventana del navegador.</p>
+
+	<p><span>Ejercicio:</span></p>
+
+	<p>Implementar una página con un diseño de ancho líquido. Disponer una cabecera con un menú, el cuerpo principal con tres columnas y finalmente un pie de página.</p>
+
+	<div class="header">
+		<ul>
+			<li><a href="http://www.google.com">Google</a></li>
+			<li><a href="http://www.facebook.com">Facebook</a></li>
+			<li><a href="http://www.youtube.com">Youtube</a></li>
+		</ul>
+	</div>
+	<div class="columna1">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa placeat atque, commodi enim. Quod obcaecati, sequi non nisi beatae repudiandae. Libero velit, corrupti asperiores repellendus animi, quod facere recusandae repellat.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa placeat atque, commodi enim. Quod obcaecati, sequi non nisi beatae repudiandae. Libero velit, corrupti asperiores repellendus animi, quod facere recusandae repellat.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa placeat atque, commodi enim. Quod obcaecati, sequi non nisi beatae repudiandae. Libero velit, corrupti asperiores repellendus animi, quod facere recusandae repellat.</p>
+	</div>
+	<div class="columna2">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa placeat atque, commodi enim. Quod obcaecati, sequi non nisi beatae repudiandae. Libero velit, corrupti asperiores repellendus animi, quod facere recusandae repellat.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa placeat atque, commodi enim. Quod obcaecati, sequi non nisi beatae repudiandae. Libero velit, corrupti asperiores repellendus animi, quod facere recusandae repellat.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa placeat atque, commodi enim. Quod obcaecati, sequi non nisi beatae repudiandae. Libero velit, corrupti asperiores repellendus animi, quod facere recusandae repellat.</p>
+	</div>
+	<div class="columna3">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa placeat atque, commodi enim. Quod obcaecati, sequi non nisi beatae repudiandae. Libero velit, corrupti asperiores repellendus animi, quod facere recusandae repellat.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa placeat atque, commodi enim. Quod obcaecati, sequi non nisi beatae repudiandae. Libero velit, corrupti asperiores repellendus animi, quod facere recusandae repellat.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa placeat atque, commodi enim. Quod obcaecati, sequi non nisi beatae repudiandae. Libero velit, corrupti asperiores repellendus animi, quod facere recusandae repellat.</p>
+	</div>
+	<div class="footer">
+		<p>Todos los derechos reservados</p>
+	</div>
+
+	<p>En el elemento body normalmente definimos un ancho de alrededor de 90% para dejar un pequeño espacio a izquierda y derecha de la ventana del navegador. Con (margin: 0 auto;) estamos centrando el contenido:</p>
+	
+	<pre>
+	body {
+  		width: 90%;
+		margin: 0 auto;
+	}
+	</pre>
+	
+	<p>En las columnas ahora tenemos que indicar un ancho en porcentajes para cada una de ellas:</p>
+	
+	<pre>
+	.columna1, .columna2, .columna3 {
+  		background-color: #eee;
+  		width: 31%;
+  		float: left;
+  		margin: 1%;
+	}
+	</pre>
+	
+	<p>Como ventajas este diseño podemos nombrar: La página se amplia para ocupar toda ventana del navegador por lo que hay más espacio en una pantalla grande, si el visitante del sitio tiene una pantalla pequeña la página puede contrato para ajustarlo sin el usuario tenga que hacer scroll izquierda y derecha.</p>
+
+	<p>Como desventajas de este diseño podemos nombrar: La página puede verse muy distinta en pantalla muy grandes o muy pequeñas, en pantalla muy grandes las líneas de texto pueden ser muy largas por lo que se hace muy dificultoso la lectura, de forma similar si el ancho es muy estrecho también su lectura, algunos elementos pueden salir de su espacio asignado.</p>
+
+	<p>Hay que tener cuidado con este formato de página ya que no es "responsive" o adaptativo. No importa el ancho en píxeles del dispositivo siempre estarán visibles las tres columnas.</p>
+	
+</body>
+</html>

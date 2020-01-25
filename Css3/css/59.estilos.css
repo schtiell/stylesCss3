@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font: bold 25px verdana;
+	margin: 25px;
+	text-align: center;
+}
+
+p{
+	margin: 20px;
+}
+
+span, pre{
+	font: italic 13px tahoma;
+	font-weight: bold;
+}
+
+.container{
+	border: 1px solid #000;
+	width: 30%;
+	margin: 20px auto;
+}
+
+h2{
+	font: bold 18px verdana;
+	margin: 25px;
+}
+
+ul li{
+	font: 15px verdana;
+	margin: 20px 40px; 
+}
+
+#fechainicio li:only-child{
+	color: blue;
+}
+
+#equipo1 p:only-of-type{
+	color: #f00;
+}
+
+#fechafin li:nth-child(2){
+	color: orange;
+}
+
+#equipo2 p:nth-of-type(2){
+	color: green;
+}

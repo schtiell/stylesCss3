@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pseudo-clases: only-child y only-of-type</title>
+	<link rel="stylesheet" href="css/59.estilos.css" type="text/css">
+</head>
+<body>
+	
+	<h1>Pseudo-clases: only-child y only-of-type de CSS</h1>
+
+	<p>La pseudo-clase <span>only-child</span> se aplica cuando en dicho nivel hay un solo elemento. Por ejemplo:</p>
+
+	<pre>
+	&lt;ul id="fechainicio"&gt;
+    		&lt;li&gt;10/10/2015&lt;/li&gt;
+  	&lt;/ul&gt;
+	</pre>
+
+	<p>Luego si especificamos la siguiente regla:</p>
+
+	<pre>
+	#fechainicio li:only-child {
+  		color:blue;
+	}
+	</pre>
+
+	<p>El li se pinta de rojo ya que hay un solo elemento en ese nivel.</p>
+
+	<p>Si tenemos por ejemplo:</p>
+
+	<pre>
+	&lt;div id="equipo1"&gt;
+    		&lt;h1>Participantes&lt;/h1&gt;
+    		&lt;p>Pablo Martinez.&lt;/p&gt;  
+	&lt;/div&gt;
+	</pre>
+
+	<p>Y aplicamos el estilo:</p>
+
+	<pre>
+	#equipo1 p:only-child {
+  		color:red;
+	}
+	</pre>
+
+	<p>No se selecciona el párrafo ya que no es el único elemento en dicho nivel (hay un h1 y un párrafo)</p>
+
+	<p>Ahora la pseudo-clase <span>only-of-type</span> se aplica cuando en dicho nivel hay un solo elemento de ese tipo (no importa cuantos otros elementos hay de otro tipo en el mismo nivel)</p>
+
+	<p>Si tenemos ahora:</p>
+
+	<pre>
+	&lt;div id="equipo1"&gt;
+    		&lt;h1>Participantes&lt;/h1&gt;
+    		&lt;p>Pablo Martinez.&lt;/p&gt;  
+	&lt;/div&gt;
+	</pre>
+
+	<p>con la regla:</p>
+
+	<pre>
+	#equipo1 p:only-of-type{
+  		color:red;
+	}
+	</pre>
+
+	<p>Si se pinta de rojo el párrafo ya que en ese nivel hay solo un elemento de tipo párrafo.</p>
+
+	<p><span>Ejemplo: </span></p>
+
+	<p>Veamos una página y una hoja de estilo que prueban estas dos pseudo-clases:</p>
+
+	<div class="container">
+	
+		<h2>Fecha de inicio.</h2>
+  		
+  		<ul id="fechainicio">
+    		<li>10/10/2015</li>
+  		</ul>
+  
+  		<h2>Fechas finales.</h2>
+  		
+  		<ul id="fechafin">
+    		<li>10/12/2015</li>
+    		<li>24/12/2015</li>
+  		</ul>
+  		
+  		<div id="equipo1">
+    		<h2>Participantes</h2>
+    		<p>Pablo Martinez.</p>  
+  		</div>
+  		
+  		<div id="equipo2">
+    		<h2>Participantes</h2>
+    		<p>Ana Luz.</p>  
+    		<p>Pedro Rodriguez.</p>  
+  		</div>
+	</div>
+	
+</body>
+</html>

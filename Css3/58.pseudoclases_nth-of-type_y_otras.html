@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pseudo-clases: nth-of-type, nth-last-of-type, first-of-type y last-of-type</title>
+	<link rel="stylesheet" href="css/58.estilos.css" type="text/css">
+</head>
+<body>
+	
+	<h1>Pseudo-clases: <br>nth-of-type, nth-last-of-type, first-of-type <br>y last-of-type de CSS</h1>
+
+	<p>La pseudo-clase nth-of-type selecciona el elemento HTML que es el enésimo elemento hermano del mismo nivel de su TIPO.</p>
+
+	<p>En cambio nth-child selecciona el elemento HTML que es el enésimo elemento hermano (teniendo en cuenta la posición de elementos de distinto tipo)</p>
+
+	<p>Veamos un ejemplo para entender la mecánica de funcionamiento de la pseudo-clase nth-of-type, si tenemos la siguiente página:</p>
+
+	<div class="container">
+		<h2>Titulo</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rerum molestias amet culpa. Placeat, laborum facere! Accusamus sequi sunt fuga voluptate earum amet illum quis cupiditate quae necessitatibus laudantium, itaque.</p>
+
+		<p>Eum vitae provident omnis explicabo adipisci. Accusamus maiores voluptatum possimus natus illo magni consequatur facere necessitatibus tenetur iste enim neque quae excepturi, nisi dignissimos ea labore tempora iure cupiditate facilis.</p>
+
+		<p>Amet minima itaque consequatur explicabo exercitationem ipsam soluta numquam corporis inventore nihil omnis expedita qui aut dolorem in, harum, doloribus atque eum! Possimus nisi, eaque quaerat veniam exercitationem similique iusto.</p>
+	</div>
+
+	<p>Si queremos pintar de rojo el primer párrafo utilizando la pseudo-clase nth-child debemos especificar el siguiente selector:</p>
+
+	<pre>
+	.contenido p:nth-child(2) {
+  		color:red;
+	}
+	</pre>
+
+	<p>Es importante entender que en ese nivel hay cuatro elemento (un h1 y tres párrafos) y mediante nth-child debemos indicar el segundo elemento si queremos acceder al primer párrafo.</p>
+
+	<p>Entonces para este tipo de problemas donde los elementos HTML de un nivel sean de distintos tipos y queremos acceder solo a los de un determinado tipo debemos emplear este nuevo conjunto de pseudo-clases que solo tienen en cuenta los elementos del mismo tipo.</p>
+
+	<p>Para pintar de color rojo el primer párrafo contenido en el div debemos utilizar la sintaxis más adecuada:</p>
+
+	<pre>
+	.contenido2 p:nth-of-type(1) {
+  		color:#f00;
+	}
+	</pre>
+
+	<div class="container2">
+		<h2>Titulo 2</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rerum molestias amet culpa. Placeat, laborum facere! Accusamus sequi sunt fuga voluptate earum amet illum quis cupiditate quae necessitatibus laudantium, itaque.</p>
+
+		<p>Eum vitae provident omnis explicabo adipisci. Accusamus maiores voluptatum possimus natus illo magni consequatur facere necessitatibus tenetur iste enim neque quae excepturi, nisi dignissimos ea labore tempora iure cupiditate facilis.</p>
+
+		<p>Amet minima itaque consequatur explicabo exercitationem ipsam soluta numquam corporis inventore nihil omnis expedita qui aut dolorem in, harum, doloribus atque eum! Possimus nisi, eaque quaerat veniam exercitationem similique iusto.</p>
+	</div>
+
+	<p><span>Ejercicio: </span></p>
+
+	<p>Confeccionar una página que contenga unos párrafos y en su interior varios elementos em y strong. Aplicar un estilo diferente al primer strong.</p>
+	
+	<div class="ejercicio">
+		<h2>Pseudo-clases</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rerum molestias amet culpa. Placeat, laborum facere! <em>Accusamus sequi sunt</em> fuga voluptate earum amet illum quis <em>cupiditate quae necessitatibus</em> laudantium, itaque. Eum vitae <strong>provident omnis explicabo adipisci.</strong> Accusamus maiores <em>voluptatum possimus natus illo magni</em> consequatur facere necessitatibus <strong>tenetur iste enim neque quae excepturi, nisi dignissimos ea</strong> labore tempora iure <em>cupiditate facilis.</em> Amet minima itaque <em>consequatur explicabo exercitationem</em> ipsam soluta numquam corporis inventore nihil omnis expedita qui aut dolorem in,<strong> harum, doloribus atque eum!</strong> Possimus nisi, eaque quaerat veniam <em> exercitationem similique</em>iusto.</p>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font: bold 30px verdana;
+	text-align: center;
+	margin: 30px;
+}
+
+p{
+	text-align: justify;
+	margin: 25px;
+}
+
+.container{
+	border: 1px solid #000;
+	width: 80%;
+	margin: 25px auto;
+}
+
+.container strong::before{
+	content: "¡";
+}
+
+strong::after{
+	content: "!";
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Media Queries</title>
+	<link rel="stylesheet" href="css/67.estilos.css" type="text/css">
+</head>
+<body>
+	
+	<h1>CSS media queries</h1>
+
+	<p>Los media queries son una funcionalidad que aparece con CSS2 y se la mejora con CSS3.</p>
+
+	<p>Los media queries nos permiten definir una serie de reglas CSS dependiendo del medio donde se ejecuta (pantalla, impresora, tv etc) y las características propias del medio como puede ser el ancho en píxeles del dispositivo.</p>
+
+	<p>Actualmente donde más se los emplean es para implementar sitios adaptables al dispositivo donde se ejecutan: celular, tablet, pc etc.</p>
+
+	<p>Para ver su funcionamiento implementaremos una página que se adapte el "div" principal dependiendo del ancho del dispositivo.</p>
+
+	<p><span>Ejemplo:</span></p>
+
+	<div class="container">
+		<h2>Ejemplo de html adaptable con media queries</h2>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur veritatis obcaecati, illum magni quidem placeat alias quia quae, deleniti porro nam natus quam, inventore laudantium nihil, dolorum fuga excepturi adipisci.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam autem vitae odit consectetur illum voluptates iste ullam repudiandae incidunt impedit est, tenetur, adipisci libero, sed nam deserunt similique recusandae necessitatibus.</p>
+
+		<p>Fugiat officiis deleniti cum. Dolorum blanditiis eius sint reiciendis quo sed, eaque quas consequuntur expedita beatae repellat provident quisquam obcaecati odio enim iste nihil omnis quis alias animi fugiat ad?</p>
+
+		<p>Numquam unde commodi, neque sit aliquid autem quidem pariatur, ut possimus nisi alias maxime fuga voluptate obcaecati soluta quae optio recusandae doloremque sunt repellat, accusantium iure ipsa. Dignissimos, impedit, saepe.</p>
+
+		<p>Repellat aliquid debitis quas a eligendi voluptate modi reprehenderit soluta provident officia deserunt sunt quisquam libero atque labore ipsa omnis, est beatae suscipit dignissimos numquam fugiat aspernatur aut id. Cupiditate?</p>
+	</div>
+	
+	<p>Una media query se define con la palabra clave "media" antecedida por el caracter @. Luego entre paréntesis indicamos la condición que debe cumplir una propiedad de la hoja de estilos. En caso que se verifique verdadero el valor de la propiedad se ejecuta todo el bloque encerrado entre las llaves:</p>
+
+	<pre>
+	@media (min-width: 576px) {
+  		.container {
+    		max-width: 540px;
+    		background-color:#ddd;
+  		}
+	}
+	</pre>
+	
+	<p>La condición (min-width: 576px) se verifica con falso, luego no se ejecuta la regla:</p>
+
+	<pre>
+	.container {
+    	max-width: 540px;
+    	background-color:#ddd;
+    }
+	</pre>
+
+	<p>Es decir la clase container queda con el valor definido previamente:</p>
+
+	<pre>
+	.container {
+  		width:100%;
+  		margin:0 auto;
+  		height:200px;
+  		background-color:#eee;  
+	}
+	</pre>
+
+	<p>Ahora comencemos a aumentar el tamaño del ancho del navegador y podemos comprobar que cuando alcanza o supera el valor de 576 píxeles el ancho máximo se define con el valor 540px, esto debido a que se actualiza el estilo para la clase container por ser verdadero el media query dedefinido (min-width: 576px):</p>
+
+	<pre>
+	.container {
+    	max-width: 540px;
+    	background-color:#ddd;
+  	}
+	</pre>
+	
+	<p>Si seguimos aumentando el tamaño del ancho y alcanzamos o superamos los 768px luego también se verifica verdadera la segunda media query:</p>
+
+	<pre>
+	@media (min-width: 768px) {
+  		.container {
+    		max-width: 720px;
+    		background-color:#ccc;	
+  		}
+	}
+	</pre>
+
+	<p>Esto hace que el valor final para la propiedad max-width y background-color queden definidas con estos valores:</p>
+
+	<p>También definimos para tamaños mayores o iguales a 992px y 1200px:</p>
+
+	<pre>
+	@media (min-width: 992px) {
+  		.container {
+    		max-width: 960px;
+    		background-color:#bbb;	
+  		}
+	}
+
+	@media (min-width: 1200px) {
+  		.container {
+    		max-width: 1140px;
+    		background-color:#ccc;		
+  		}
+  	}
+	</pre>
+
+	<p>Es importante el orden que definimos las media queries para este problema ya que por ejemplo si el dispositivo tiene un ancho de 1920 píxeles todas las condiciones se verifican verdaderas pero las propiedades max-width y background-color quedan definidas por la última asignación:</p>
+
+	<pre>
+	@media (min-width: 1200px) {
+  		.container {
+    		max-width: 1140px;
+    		background-color:#ccc;		
+  		}
+	}
+	</pre>
+
+	<h2>Acotaciones</h2>
+
+	<p>Podemos definir un media query para un determinado dispositivo, por ejemplo para una impresora:</p>
+
+	<pre>
+	@media print and (min-width:1000px) {
+  		...
+	}
+	</pre>
+
+	<p>Cuando no disponemos el medio por defecto es para todos, el ejercicio anterior podíamos haberlo codificado como:</p>
+
+	<pre>
+	@media all and (min-width: 576px) {
+  		.container {
+    		max-width: 540px;
+    		background-color:#ddd;
+  		}
+	}
+	</pre>
+
+	<p>Es decir que si el media query se aplica a todos los medios podemos obviar la parte "all and".</p>
+
+	<p>Si analizamos el código fuente del framework Bootstrap veremos que hace un uso muy importante de los media queries para implementar el concepto de las páginas adaptables.</p>
+	
+</body>
+</html>

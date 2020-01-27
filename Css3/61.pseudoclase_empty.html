@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pseudo-clase: empty</title>
+	<link rel="stylesheet" href="css/61.estilos.css" type="text/css">
+</head>
+<body>
+	<h1>Pseudoclase Empty de CSS</h1>
+
+	<p>La pseudo-clase empty permite definir una regla css a un elemento html que no tenga elementos hijos y tampoco texto.</p>
+
+	<p>Por ejemplo: </p>
+
+	<pre>
+	&lt;p&gt; &lt;/p&gt;
+	</pre>
+
+	<p>Para probar esta pseudo-clase confeccionaremos una página que muestre un rectángulo amarillo cuando el div esté vacío. En caso que el div contenga datos no se mostrará el rectángulo amarillo.</p>
+
+	<div class="container">
+		
+		<div class="empty"></div>
+
+		<p>Esto es un ejemplo de la pseudoclase Empty</p>
+	</div>
+
+	<p>Si probamos agregar algún elemento HTML o texto dentro del div vemos que no cumple la regla de estilo y tenemos como resultado que no aparece el rectángulo amarillo:</p>
+
+	<p><span>Hay que tener cuidado con los elementos HTML que parecen vacíos como por ejemplo:</span></p>
+
+	<pre>
+	&lt;div&gt;
+	&lt;/div&gt;
+	</pre>
+
+	<p><span>Parece vacío el div pero en realidad tiene el salto de línea (estamos en presencia de texto en el div y por lo tanto no se verifica la regla empty)</span></p>
+	
+	<p><span>Para que se aplique la regla de estilo con la pseudo-clase empty el div debe estar escrito en el archivo HTML:</span></p>
+	
+	<pre>
+	&lt;div&gt;&lt;/div&gt;
+	</pre>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pseudo-elementos: first-letter y first-line</title>
+	<link rel="stylesheet" href="css/63.estilos.css" type="text/css">
+</head>
+<body>
+	
+	<h1>Pseudo-elementos: first-letter y first-line</h1>
+
+	<p>Los pseudo-elementos a diferencia de las pseudo-clases afectan a parte de un elemento HTML y no al elemento completo.</p>
+
+	<p>Los primeros dos pseudo-elementos que veremos son first-letter y first-line.</p>
+	
+	<h2>First-letter</h2>
+
+	<p>El pseudo-elemento first-letter permite seleccionar la primer letra del contenido de un elemento HTML y aplicarle un estilo. Veamos por ejemplo si queremos que la primer letra de un párrafo aparezca con un tamaño de fuente mayor y otro color:</p>
+
+	<pre>
+		&lt;p&gt;Esto es la prueba del pseudo-elemento first-letter.&lt;/p&gt;
+	</pre>
+
+	<p>Definimos:</p>
+
+	<pre>
+	p::first-letter {
+  		font-size:1.5rem;
+  		color:red;
+	}
+	</pre>
+	
+	<div class="primera_letra">
+		<p>El pseudo-elemento first-line permite aplicar un estilo a la primer linea del contenido de un elemento HTML. Tengamos en cuenta que la cantidad de datos a mostrar en la primer línea depende del ancho de la ventana del navegador</p>
+	</div>
+
+	<p>La sintaxis para definir un pseudo-elemento es distinta a las pseudo-clases ya que le antecedemos dos caracteres :: en lugar de uno.</p>
+
+	<p>Si no tuvieramos los pseudo-elementos este problema lo debemos resolver encerrando el primer caracter de un párrafo con el elemento HTML "span" y asignarle un estilo a dicho elemento. Luego gracias a esto tenemos un contenido del archivo HTML mucho más limpio.</p>
+
+	<h2>First-line</h2>
+
+	<p>El pseudo-elemento first-line permite seleccionar la primer línea de texto de un elemento HTML para aplicar un estilo. Si tenemos la siguiente página:</p>
+
+	<div class="primera_linea">
+		<p>El pseudo-elemento first-line permite aplicar un estilo a la primer linea del contenido de un elemento HTML. Tengamos en cuenta que la cantidad de datos a mostrar en la primer línea depende del ancho de la ventana del navegador</p>
+	</div>
+	
+	<p>Tengamos en cuenta que si redimensionamos el navegador solo los caracteres de la primer línea aparecen subrayados</p>
+
+</body>
+</html>

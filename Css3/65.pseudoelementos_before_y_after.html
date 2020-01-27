@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pseudo-elementos: before y after</title>
+	<link rel="stylesheet" href="css/65.estilos.css" type="text/css">
+</head>
+<body>
+	
+	<h1>Pseudo-elementos: before y after de CSS</h1>
+
+	<p>El pseudo-elemento before se utiliza para agregar algún contenido previo al contenido actual del elemento. Debemos inicializar la propiedad content con el dato a agregar.</p>
+
+	<p>El pseudo-elemento after agrega contenido al final del elemento.</p>
+
+	<p>Veamos un problema para entender su funcionamiento. Supongamos que queremos que cada vez que en la página utilizamos el elemento HTML strong>aparezca su contenido precedido por el caracter "¡" y que finalice con el caracter "!". Podemos utilizar los Pseudo-elementos before y after que agreguen estos caracteres.</p>
+
+	<div class="container">
+
+		<p>Lorem ipsum dolor <strong>culpa</strong> amet, consectetur adipisicing elit. Pariatur nostrum veritatis accusamus nesciunt ad eos temporibus <strong>culpa</strong>, quasi. Quia accusamus, hic, amet inventore voluptate doloribus tenetur quibusdam <strong>culpa</strong>. Necessitatibus, magni?</p>
+
+		<p>Ratione ipsam <strong>culpa</strong> minus nam hic adipisci aut tenetur voluptate labore, <strong>culpa</strong> doloremque delectus repellat officia commodi repudiandae <strong>culpa</strong> fugiat nisi, expedita accusantium dolores soluta modi enim veritatis. Explicabo, illum.</p>
+
+		<p>Ipsam, officia, atque? Veniam consectetur reprehenderit repudiandae aut soluta tenetur officia magnam, illo <strong>culpa</strong> exercitationem ab pariatur iste nisi minus accusamus asperiores, officiis blanditiis! Illo eligendi, officiis porro unde molestias!</p>
+
+		<p>Quaerat accusantium quod et laudantium explicabo, <strong>culpa</strong>, veritatis qui repellat debitis vitae <strong>culpa</strong> id eaque. Doloribus veniam voluptatibus placeat cupiditate soluta ratione tempore similique, earum nostrum amet vero, ex omnis!</p>
+
+		<p>Voluptate animi quisquam, ad illum, odit corrupti <strong>culpa</strong> suscipit vitae eaque nam molestiae consequuntur <strong>culpa</strong> sunt officia aliquid quis maiores mollitia <strong>culpa</strong> dolorem, tenetur atque. Eum tenetur magni eaque, nihil.</p>
+	</div>
+
+	<p>Como podemos ver donde en la página definimos los elementos strong se le añadieron un caracter al principio y otro al final.</p>
+
+	<p>Podemos agregar cualquier contenido pero no elementos HTML (h1, h2, p, table etc.)</p>
+</body>
+</html>	

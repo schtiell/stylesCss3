@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox</title>
+	<link rel="stylesheet" href="css/69.estilos.css" type="text/css">
+</head>
+<body>
+	
+	<h1>Flexbox</h1>
+
+	<p>Flexbox nos permite implementar interfaces de usuario y maquetación de páginas web en forma más sencilla de como las veníamos haciendo del 2000 al 2014.</p>
+
+	<p>La mayoría de los navegadores ya implementan la funcionalidad de Flexbox o en castellano "Cajas flexibles".</p>
+
+	<p>Si queremos conocer su especificación técnica podemos hacerla en el sitio del World Wide Web Consortium (W3C), de todos modos no es un buen lugar para aprender de su funcionamiento.</p>
+
+	<p>Gran cantidad de diseñadores están empleando la funcionalidad de Flexbox y las nuevas versiones de framework de CSS como Bootstrap 4 también lo incorporan para su funcionamiento.</p>
+
+	<p>Flexbox nos facilita la maquetación del sitio web y todos sus componentes. También facilita la adaptación de la página a distintos tamaños de pantalla</p>
+
+	<p>Un Flexbox o caja flexible consiste en un elemento contenedor y en su interior una serie de items:</p>
+
+	<div class="image">
+		<img src="images/flexbox.jpg" alt="imagen de flexbox y sus elementos hijo">
+	</div>
+	
+	<p>Para definir un elemento como contenedor de cajas flexibles debemos definir la propiedad display con el valor "flex", con esto ya tenemos un caja flexible.</p>
+
+	<p><span>Ejemplo:</span></p>
+
+	<h2>Ejemplo de div flex</h2>
+
+	<div class="container">
+	
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, numquam incidunt provident nesciunt non veritatis quis nisi velit sapiente, illum, praesentium. Reiciendis nulla deleniti, nam excepturi a optio eveniet odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, numquam incidunt provident nesciunt non veritatis quis nisi velit sapiente, illum, praesentium. Reiciendis nulla deleniti, nam excepturi a optio eveniet odio.</div>
+
+		<div>Possimus ipsam molestiae sint, incidunt rem eius reprehenderit voluptatem est, non, veniam atque adipisci. Explicabo delectus laboriosam natus. Dignissimos laboriosam facilis rem, ea ullam itaque tenetur dolore asperiores, reiciendis iure!. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, numquam incidunt provident nesciunt non veritatis quis nisi velit sapiente, illum, praesentium. Reiciendis nulla deleniti, nam excepturi a optio eveniet odio.</div>
+
+		<div>Accusamus, eos nobis, nemo fugit quos adipisci autem maiores dolor a necessitatibus beatae vitae iusto maxime corporis? Explicabo eveniet sed facilis, perferendis, modi unde labore, minima, consequatur dolor animi nisi!. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, numquam incidunt provident nesciunt non veritatis quis nisi velit sapiente, illum, praesentium. Reiciendis nulla deleniti, nam excepturi a optio eveniet odio.</div>
+	</div>
+
+	<p>Debemos cargar en la propiedad "display" el valor "flex" para que el .container se transforme en un contenedor de cajas flexibles:</p>
+
+	<pre>
+	.container {
+	display: flex;
+  	background-color: gold;
+	}
+	</pre>
+
+	<p>Luego los tres div contenidos se transforman en cajas flexibles que se redimensionan en ancho y alto automáticamente cuando cambiamos el tamaño del navegador.</p>
+
+	<p>Veremos que hay un conjunto de propiedades que nos permiten definir la ubicación, tamaño etc. de los items dentro del contenedor.</p>
+</body>
+</html>

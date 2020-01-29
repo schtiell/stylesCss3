@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox: justify-content <br>Aplicada al contenedor</title>
+	<link rel="stylesheet" href="css/71.estilos.css" type="text/css">
+</head>
+<body>
+
+	<h1>Flexbox: justify-content</h1>
+	
+	<p>La segunda propiedad que podemos cambiar a un contenedor de cajas flexibles se llama justify-content.</p>
+
+	<p>La propiedad justify-content controla como se distribuyen los items a lo largo del contenedor.</p>
+
+	<p>Por defecto la propiedad justify-content almacena el valor <span>"flex-start".</span></p>
+
+	<p>Los valores que podemos asignarle a la propiedad "justify-content" son:</p>
+
+	<ul>
+		<li>flex-start</li>
+		<li>flext-end</li>
+		<li>center</li>
+		<li>space-between</li>
+		<li>space-around</li>
+	</ul>
+
+	<p>Cuando la propiedad flex-direction almacena el valor "row" el eje principal es el horizontal y el eje transversal es el vertical:</p>
+	
+	<img src="images/flexbox_justify-content1.jpg" alt="imagen de flexbox justify content">
+	
+	<p>Cuando modificamos la propiedad "justify-content" los item se distribuyen con respecto al eje principal del contenedor.</p>
+
+	<p>Probemos ahora de seleccionar en la priedad "flex-direction" el valor "column" y pasemos a ver que sucede con cada valor que le podemos asignar a "justify-content". Los espacios ahora aparecen en forma vertical, esto debido a que ha cambiado el eje principal y el eje transversal:</p>
+
+	<img src="images/flexbox_justify-content2.jpg" alt="imagen de flexbox justify content">
+
+	<p>La propedad "justify-content" tiene sentido cuando hay espacio no ocupado por los items y la distribución de dicho espacio es:</p>
+
+	<ul>
+		<li><span>flex-start</span> Los items aparecen al inicio del contenedor</li>
+		<li><span>flex-end</span> Los items aparecen pegados al final del contenedor</li>
+		<li><span>center</span> Los items aparecen centrados en el contenedor</li>
+		<li><span>space-between</span> Se distribuyen los items ocupando todo el espacio disponible, con espacios iguales entre ellos, pero sin dejar espacio al inicio y al final del contenedor</li>
+		<li><span>space-around</span> Se distribuyen los items  ocupando todo el espacio disponible con espacios iguales entre ellos, pero dejando espacio al inicio y al final</li>
+	</ul>
+
+	<div class="container">
+		<div id="caja1">Caja 1</div>
+		<div id="caja2">Caja 2</div>
+		<div id="caja3">Caja 3</div>
+		<div id="caja4">Caja 4</div>
+		<div id="caja5">Caja 5</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox - flex-direction <br>Aplicada al contenedor</title>
+	<link rel="stylesheet" href="css/70.estilos.css" type="text/css">
+</head>
+<body>
+
+	<h1>Flexbox - (flex-direction aplicada al contenedor)</h1>
+
+	<p>La primera propiedad que podemos configurar cuando implementamos una caja flexible se llama flex-direction. Por defecto esta propiedad se inicializa con el valor "row".</p>
+
+	<p>Los valores que podemos asignarle a la propiedad "flex-direction" son:</p>
+
+	<ul>
+		<li>row</li>
+		<li>column</li>
+		<li>row-reverse</li>
+		<li>column-reverse</li>
+	</ul>
+
+	<p>Cuando la propiedad flow-direction almacena el valor "row" los items se ubican uno al lado del otro es decir en forma horizontal y se respetan el orden de los items (valor por defecto):</p>
+
+	<img class="img1" src="images/flex-row.jpg" alt="Imagen de ejemplo flexdirection: row">
+
+	<p>Si almacenamos el valor "column" en la propiedad flex-direction luego los item se disponen uno debajo del otro:</p>
+
+	<img class="img2" src="images/flex-colum.jpg" alt="Imagen de ejemplo flexdirection: column">
+
+	<p>Tenemos la posibilidad que los items se muestren al revés, es decir el último sea primero, el ante anteúltimo sea segundo y así sucesivamente:</p>
+	
+	<img class="img3" src="images/flex-row-reverse.jpg" alt="Imagen de ejemplo flexdirection: row-reverse">
+	
+	<img class="img4" src="images/flex-colum-reverse.jpg" alt="Imagen de ejemplo flexdirection: column-reverse">
+	
+	<p><span>Ejemplo: </span></p>
+	
+	<p><span>flex-direction: row </span></p>
+	<div class="container">
+		<div class="caja1">Caja 1</div>
+		<div class="caja2">Caja 2</div>
+		<div class="caja3">Caja 3</div>
+	</div>
+	
+	<p><span>Flex-direction: column </span></p>
+	<div class="container2">
+		<div class="caja1">Caja 1</div>
+		<div class="caja2">Caja 2</div>
+		<div class="caja3">Caja 3</div>
+	</div>
+	
+	<p><span>Flex-direction: row-reverse </span></p>
+	<div class="container3">
+		<div class="caja1">Caja 1</div>
+		<div class="caja2">Caja 2</div>
+		<div class="caja3">Caja 3</div>
+	</div>
+
+	<p><span>Flex-direction: column-reverse </span></p>
+	<div class="container4">
+		<div class="caja1">Caja 1</div>
+		<div class="caja2">Caja 2</div>
+		<div class="caja3">Caja 3</div>
+	</div>
+	
+	<p>Si queremos que la caja flexible sea vertical es necesario asignar a la propiedad flex-direction el valor "column". Cuando es horizontal no es necesario asignar el valor "row" ya que es el valor por defecto que se inicia la propiedad.</p>
+</body>
+</html>

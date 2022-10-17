@@ -2,33 +2,101 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Agrupación de varios elementos HTML con una misma regla de estilo</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+        
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+            
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+            
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/01.template.css" type="text/css">
+            
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
 	<style>
-		h1,h2,h3{
+		.h1,.h2,.h3{
 			font-family: verdana;
 			font-size: 25px;
-			color: green;
+			color: #2ECC71 ;
 			margin: 10px;
 			border: 1px solid black;
 		}
 
-		h4,h5,h6{
+		.h4,.h5,.h6{
 			font-weight: bold;
-			background: yellow;
-			color: blue;
+			background: #F4D03F ;
+			color: #21618C ;
 			font-variant:small-caps;
 			padding: 20px;
 		}
 	</style>
+
+	<title>Agrupación de varios elementos HTML con una misma regla de estilo</title>
 </head>
 <body>
-	<h1>Agrupación de varios elementos HTML con una misma regla de estilo</h1>
-	<h2>Agrupación de varios elementos HTML con una misma regla de estilo</h2>
-	<h3>Agrupación de varios elementos HTML con una misma regla de estilo</h3>
-	<h4>Agrupación de varios elementos HTML con una misma regla de estilo</h4>
-	<h5>Agrupación de varios elementos HTML con una misma regla de estilo</h5>
-	<h6>Agrupación de varios elementos HTML con una misma regla de estilo</h6>
+	<div class="container">
 
-	<p>Se pueden aplicar a varios elementos html estilos, ya sea por id, por clase o por etiquetas definidas en un html</p>
+		<h1 class="titulo">
+			CSS3: Cascading Style Sheets
+			<small class="subtitulo">Propiedades de las fuentes</small>
+		</h1>
+	
+		<hr>
+	
+		<p>Esta característica nos permite ahorrar la escritura de reglas duplicadas para diferentes elementos de HTML.</p>
+
+		<p>La sintaxis es disponer los nombres de los elementos HTML que queremos aplicar una regla separados por comas:</p>
+
+		<pre>
+		&lt;style&gt;
+			h1,h2,h3{
+				font-family: verdana;
+				font-size: 25px;
+				color: #2ECC71 ;
+				margin: 10px;
+				border: 1px solid black;
+			}
+		
+			h4,h5,h6{
+				font-weight: bold;
+				background: #F4D03F ;
+				color: #21618C ;
+				font-variant:small-caps;
+				padding: 20px;
+			}
+		&lt;/style&gt;
+		</pre>
+
+		<div class="container ejercicio">
+			
+			<h2>
+				Ejemplo:
+			</h2>
+
+			<hr>
+
+			<h1 class="h1">Agrupación de varios elementos HTML con una misma regla de estilo</h1>
+			<h2 class="h2">Agrupación de varios elementos HTML con una misma regla de estilo</h2>
+			<h3 class="h3">Agrupación de varios elementos HTML con una misma regla de estilo</h3>
+			<h4 class="h4">Agrupación de varios elementos HTML con una misma regla de estilo</h4>
+			<h5 class="h5">Agrupación de varios elementos HTML con una misma regla de estilo</h5>
+			<h6 class="h6">Agrupación de varios elementos HTML con una misma regla de estilo</h6>
+		</div>
+	</div>
 </body>
 </html>

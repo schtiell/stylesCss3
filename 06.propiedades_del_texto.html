@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+        
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+            
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+            
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/01.template.css" type="text/css">
+            
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+	<title>Propiedades relacionadas a textos</title>
+	<style>
+		.h1{
+			color: #A569BD ;
+			text-align: right;
+			text-decoration: overline;
+			text-transform: capitalize;
+			text-align: center;
+			margin: 40px;
+		}
+		
+		.h2{
+			color: #E74C3C ;
+			text-align: left;
+			text-decoration: underline;
+			text-shadow: 2px 3px #EB984E;
+			margin: 30px;
+
+		}
+		
+		.parrafo{
+			text-decoration: line-through;
+			letter-spacing: 5px;
+			word-spacing: 20px;
+			text-align: justify;
+			margin: 40px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="titulo">
+			CSS3: Cascading Style Sheets
+			<small class="subtitulo">Propiedades elacionadas a los textos</small>
+		</h1>
+	
+		<hr>
+	
+		<p>Para dar formato a los textos existen propiedades, como:</p>
+	
+		<ul>
+			<li><span>color: </span>define el color del texto, recibe valores de colores en "ingles", "rgba" o "hexadecimal"</li> 
+			<li><span>text-align: </span>propiedad que define la alineacion horizontal del texto, puede estar alineado: <span>"left", "right", "center" o "justify"</span></li> 
+			<li><span>text-decoration: </span>se utiliza para agregar una linea de decoración, es decir tipos de subrayado: <span>"overline", "underline", "line-through", "overline underline"</span></li> 
+			<li><span>text-transform: </span>propiedad utilizada para transformar los textos, mayusculas, minusculas o letra capital, "uppercade", "lowercase" o "capitalize"</li> 
+			<li><span>text-spacing: </span>esta propiedad se utiliza para especificar espacios
+				<ol>
+					<li>text-indent: Especifica una sangria en la primera linea</li>
+					<li>letter-spacing: Especifica espacio entre letras</li>
+					<li>line-height: Especifica espacio entre lineas</li>
+					<li>word-spacing: Especifica espacio entre palabras</li>
+					<li>white-space: Especifica como se maneja el espacio en blanco de un elemento</li>
+				</ol>
+			</li> 
+			<li><span>text-shadow: </span>Agrega una sombra al texto</li> 
+		</ul>
+
+		<p>Los estilos aplicados en los elementos HTML son los siguientes: </p>
+
+		<pre>
+		h1{
+			color: #A569BD ;
+			text-align: right;
+			text-decoration: overline;
+			text-transform: capitalize;
+			text-align: center;
+		}
+		
+		h2{
+			color: #E74C3C ;
+			text-align: left;
+			text-decoration: underline;
+			text-shadow: 2px 3px #EB984E;
+		}
+		
+		p{
+			text-decoration: line-through;
+			letter-spacing: 5px;
+			word-spacing: 20px;
+			text-align: justify;
+		}
+		</pre>
+	
+		<div class="container ejercicio">
+
+			<h2>
+				Ejemplo:
+			</h2>
+	
+			<hr>
+			
+			<h1 class="h1">Propiedades del texto</h1>
+	
+			<h2 class="h2">Propiedades del texto</h2>
+	
+			<p class="parrafo">This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified.</p>
+		</div>
+	</div>
+</body>
+</html>

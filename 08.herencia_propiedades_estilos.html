@@ -53,8 +53,22 @@
 		</h1>
 	
 		<hr>
+
+		<p>La herencia en CSS es el mecanismo mediante el cual determinadas propiedades de un elemento padre se transmiten a sus hijos. De hecho, se parece mucho a la herencia genética. Si los progenitores tienen los ojos azules, los hijos seguramente también tendrán los ojos azules.</p>
 	
-		<p>La herencia de las propiedades de los estilos se aplican a todos los elementos o etiquetas dentro de otras etiquetas, es decir la herencia debe entenderse en este contexto: algunos valores de las propiedades css que se han establecido para los elementos padre los heredan los elementos hijo, pero otros no</p>
+		<p>La <span>herencia de las propiedades de los estilos</span> se aplican a todos los elementos o etiquetas dentro de otras etiquetas, es decir la herencia debe entenderse en este contexto: algunos valores de las propiedades css que se han establecido para los elementos padre los heredan los elementos hijo, pero otros no</p>
+
+		<p>Por ejemplo los márgenes no son heredables porque es poco probable que un elemento hijo necesite los mismos márgenes que su padre. Normalmente, el sentido común dicta qué propiedades se heredan y cuáles no</p>
+
+		<p>Todos los elementos de un documento HTML heredan todas las propiedades heredables de su padre excepto el elemento raíz (html), que no tiene progenitor.</p>
+
+		<p>El hecho de que las propiedades heredadas tengan algún efecto o no depende de otros factores, como veremos más adelante cuando hablemos de la cascada. De la misma manera que una madre de ojos azules puede tener un hijo de ojos marrones si el padre tiene los ojos marrones, las propiedades heredadas en CSS pueden anularse.</p>
+
+		<p>La herencia puede forzarse utilizando la palabra clave <span>inherit (heredar)</span> incluso para propiedades que no son heredables normalmente.</p>
+
+		<p>Con las propiedades abreviadas se puede utilizar inherit en vez de los valores normales.</p>
+
+		<p>Se debe utilizar la versión abreviada o bien para todo o bien para nada en absoluto. En la versión no abreviada no se pueden especificar algunos valores y utilizar inherit para otros porque los valores pueden darse en cualquier orden y no hay manera de especificar qué valores queremos heredar.</p>
 
 		<p>Los siguientes parrafos heredan los estilos definidos para el contenedor padre, hasta que se define un estilo diferente para el tercer parrafo, de acuerdo a lo visto con el termino: <span>especificidad</span></p>
 

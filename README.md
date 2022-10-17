@@ -6,3 +6,4 @@
 4. Conociendo las propiedades de las fuentes: **font-family, font-weight, font-style, font-size, font-variant**
 5. Aplicando un grupo de estilos a diferentes elementos HTML para ahorrar lineas de código.
 6. Propiedades relacionadas con el formato de texto.
+8. **Herencia** de propiedades de estilos, los cuales son aplicados a todos los elementos hijos dentro de un elemento padre

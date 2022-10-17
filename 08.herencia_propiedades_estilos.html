@@ -2,23 +2,93 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Herencia de propiedades de estilo</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+        
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+            
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+            
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/01.template.css" type="text/css">
+            
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
 	<style>
-		body{
-			color: blue;
+		.ejercicio{
+			color: #E74C3C ;
 			font-family: tahoma;
 			text-indent: 30px;
-			background: yellow;
-			text-align: center;
-			text-decoration: underline;
+		}
+
+		.parrafo{
+			color: #000;
+			font-family: verdana;
+			text-indent: 0%;
+			text-transform: uppercase;
 		}
 	</style>
+
+	<title>Herencia de propiedades de estilos</title>
 </head>
 <body>
-	<h1>Herencia de propiedades de estilo</h1>
-
-	<p>La herencia de las propiedades de los estilos se aplican a todos los elementos o etiquetas dentro de otras etiquetas. En este caso todas las etiquetas se ven afectdas cuando se define un estilo para el body html</p>
+	<div class="container">
+		<h1 class="titulo">
+			CSS3: Cascading Style Sheets
+			<small class="subtitulo">Herencia de propiedades de estilos</small>
+		</h1>
 	
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus laboriosam modi alias animi ex, accusantium eius, minus libero labore magnam ea quo laborum architecto, facere vitae doloribus. Facilis explicabo, dolores.</p>
+		<hr>
+	
+		<p>La herencia de las propiedades de los estilos se aplican a todos los elementos o etiquetas dentro de otras etiquetas, es decir la herencia debe entenderse en este contexto: algunos valores de las propiedades css que se han establecido para los elementos padre los heredan los elementos hijo, pero otros no</p>
+
+		<p>Los siguientes parrafos heredan los estilos definidos para el contenedor padre, hasta que se define un estilo diferente para el tercer parrafo, de acuerdo a lo visto con el termino: <span>especificidad</span></p>
+
+		<pre>
+		.ejercicio{
+			color: #E74C3C ;
+			font-family: tahoma;
+			text-indent: 30px;
+		}
+
+		.parrafo{
+			color: #000;
+			font-family: verdana;
+			text-indent: 0%;
+			text-transform: uppercase;
+		}
+		</pre>
+		
+		<div class="container ejercicio">
+			
+			<h2>
+				Ejemplo:
+			</h2>
+
+			<hr>
+
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo veniam odio neque commodi deleniti sequi, numquam itaque accusantium aliquam doloremque quo beatae ex provident eius laborum non corrupti nobis culpa?</p>
+
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sunt fugit tenetur ex in, dolores minima quae ratione suscipit sed, incidunt iure laudantium consectetur ipsam reiciendis quod assumenda repellat distinctio.</p>
+
+			<p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A labore minima fugiat, consectetur eum atque iste, sed id vero consequuntur nostrum natus in, laudantium nemo ipsum ad? Molestiae, itaque rem.</p>
+
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo necessitatibus, quaerat laborum iure est autem dicta quae? Quia cum pariatur a temporibus blanditiis facere velit voluptatibus recusandae, sed architecto aspernatur?</p>
+		</div>
+	</div>
 </body>
 </html>

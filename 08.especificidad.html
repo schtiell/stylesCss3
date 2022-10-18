@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    	<!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+        
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+            
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+            
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/01.template.css" type="text/css">
+            
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+    <title>Especificidad de selectores</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="titulo">
+			CSS3: Cascading Style Sheets
+			<small class="subtitulo">Especificidad de selectores</small>
+		</h1>
+	
+		<hr>
+
+        <p>El segundo peso en la cascada es la especificidad del selector. En este nivel, el navegador se fija en los selectores utilizados en las reglas CSS.</p>
+
+        <a href="https://mosaic.uoc.edu/ac/le/es/m6/ud2/index.html">Mas sobre cascada, especificidad y herencia</a>
+
+        <p>La especificidad utiliza un sistema de ponderación o puntuación para determinar qué selector es el más específico, es decir, se asigna prioridad a los distintos tipos de selectores CSS. Al evaluar la especificidad, se tiene en cuenta el número de selectores y su prioridad.</p>
+
+        <p>Los diferentes tipos de selectores CSS tienen diferente peso. En orden de mayor a menor prioridad:</p>
+
+        <ol>
+            <li>inline styles. Declarados en cada etiqueta de los elementos HTML</li>
+            <li>ID selectors (#something)</li>
+            <li>Classes (.something) / pseudo-selectors (:hover).</li>
+            <li>Type selectors: etiquetas HTML declaradas en el css & pseudo-elements (::before).</li>
+        </ol>
+
+        <p>Los combinadores (+, > y ~), el selector universal (*) y la pseudoclase :not() no tienen ningún efecto sobre la especificidad.</p>
+
+        <p>En el siguiente ejemplo, la clase title del elemento &lt;h1&gt; hará que esa regla sea más específica y por lo tanto se considera más importante para ser aplicada. Esto significa que el &lt;h1&gt; tendrá el color red.</p>
+
+        <pre>
+        .title {
+            color: red;
+        }
+          
+        h1 {
+            color: blue;
+        }
+
+        &lt;h1 class="title"&gt;Heading&lt;/h1&gt;
+        </pre>
+
+        <p>A pesar de que el selector &lt;h1&gt; se encuentra más abajo, se podría pensar que va a sobrescribir a los estilos de la clase, pero no es así, ya que la especificidad considera más importante la clase.</p>
+
+        
+
+
+
+    </div>
+</body>
+</html>

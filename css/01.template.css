@@ -8,9 +8,14 @@
 }
 
 .ejercicio{
+    display: block;
     margin-top: 20px;
     padding: 10px 20px;
     width: 80%;
+}
+
+.ejercicio p{
+    text-align: justify;
 }
 
 .titulo,
@@ -56,3 +61,28 @@ li{
     text-align: left;
 }
 
+.ejemplo1,
+.ejemplo2{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #A6ACAF;
+    margin: 30px auto;
+}
+
+.ejemplo2{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    display: block;
+    margin: 40px auto;
+    text-align: left;
+    text-indent: 20px;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #F8C471;
+}

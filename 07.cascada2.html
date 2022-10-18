@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+        
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+            
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+            
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/01.template.css" type="text/css">
+            
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+    <title>Aplicación de estilos en cascada</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">
+            CSS3: Cascading Style Sheets
+            <small class="subtitulo">Aplicación de estilos en Cascada</small>
+        </h1>
+
+        <hr>
+
+        <h2>¿Que es la cascada?</h2>
+
+        <p>La cascada es el algoritmo por el cual el navegador decide qué estilos CSS aplicar a un elemento</p>
+
+        <p>La cascada especifica cómo el navegador debe manejar múltiples estilos que se aplican a la misma etiqueta HTML y qué hacer cuando las propiedades CSS entran en conflicto. La cascada es una parte fundamental del funcionamiento del lenguaje.</p>
+
+        <p>Los conflictos de estilo se producen en dos casos: por herencia y cuando uno o más estilos se aplican al mismo elemento.</p>
+
+        <p>La cascada es el algoritmo para resolver conflictos cuando se aplican varias reglas CSS a un elemento HTML. La forma en que se comporta la cascada es la clave para comprender el CSS.</p>
+
+        <p>La cascada puede ser una herramienta poderosa, pero su uso incorrecto puede conducir a hojas de estilo frágiles que dan pesadillas a los desarrolladores/as de front-end cada vez que tienen que hacer un cambio.</p>
+
+        <h2>Las 4 etapas de la cascada</h2>
+
+        <ol>
+            <li><span>Posición y orden de aparición: </span>El orden en que aparecen tus reglas CSS en la hoja de estilos.</li>
+            <li><span>Especificidad de los selectores: </span>Qué selectores tienen prioridad sobre otros.</li>
+            <li><span>Origen de la hoja de estilo: </span>El orden de aparición del CSS y su procedencia, ya sea un estilo del navegador, el CSS de una extensión del navegador o el CSS de tu autoría.</li>
+            <li>Importancia: Algunas reglas CSS tienen más peso que otras, especialmente con el tipo de regla <span>!important</span>.</li>
+        </ol>
+
+        <p>Las reglas de la cascada se consideran en este orden. Aunque hay varios autores de diversos libros de CSS que solo consideran tres etapas de manera general:</p>
+
+        <ol>
+            <li>Origen de la hoja de estilos</li>
+            <li>Especificidad de selectores</li>
+            <li>Orden en que se declaran los estilos</li>
+        </ol>
+
+        <p>El siguiente diagrama de flujo muestra cómo son aplicadas estas reglas.</p>
+
+        <img src="./images/cascading.png" alt="cascadin">
+
+        <p>Estas reglas permiten que los navegadores se comporten de forma predecible al resolver cualquier ambigüedad en el CSS.</p>
+
+    </div>
+</body>
+</html>

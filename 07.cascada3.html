@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+        
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+            
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+            
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/01.template.css" type="text/css">
+            
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+    <style>
+        .ejemplo1{
+            background-color: #F4D03F ;
+        }
+
+        .ejemplo1{
+            background-color: #21618C ;
+        }
+
+        .green{
+            background-color: #ABEBC6;
+        }
+
+        .purple{
+            background-color: #E8DAEF;
+        }
+    </style>
+
+    <title>Aplicación de estilos en cascada</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">
+            CSS3: Cascading Style Sheets
+            <small class="subtitulo">Aplicación de estilos en Cascada</small>
+        </h1>
+
+        <hr>
+
+        <p>El CSS consiste en declarar reglas: Bajo varias condiciones, queremos que ocurran ciertas cosas. Si esta clase se añade a ese elemento, aplique estos estilos. Si el elemento X es hijo del elemento Y, aplica estos estilos. El navegador toma estas reglas, calcula cuáles se aplican y dónde se van aplicar, y las utiliza para representarlas en la página web.</p>
+
+        <a href="https://dev.to/lupitacode/la-cascada-en-css-que-es-y-como-funciona-31cd">Mas sobre los estilos en cascada</a>
+
+        <div class="container ejercicio">
+            <h2>Posición y orden de aparición:</h2>
+
+            <hr>
+
+            <p>El orden en el que aparecen tus reglas CSS y cómo aparecen es tomado en consideración por la cascada mientras ésta calcula la resolución de conflictos.</p>
+
+            <div class="ejemplo1"></div>
+
+            <pre>
+            .ejemplo1{
+                background-color: #F4D03F ;
+            }
+    
+            .ejemplo1{
+                background-color: #21618C ;
+            }
+            </pre>
+
+            <p>En este ejemplo hay dos reglas que tienen selectores de idéntica especificidad, por lo que gana la última en ser declarada, es decir, aquí prevalece siempre la última regla definida, la cuál sobreescribe las propiedades anteriores.</p>
+
+            <p>Otro ejemplo:</p>
+
+            <p>Ahora un reto, dada las siguientes clases, ¿De qué color serían estos divs?</p>
+
+            <pre>
+            .green{
+                background-color: #ABEBC6;
+            }
+    
+            .purple{
+                background-color: #E8DAEF;
+            }
+            -----
+            &lt;div class="green purple"&gt;&lt;/div&gt;
+            &lt;div class="purple green"&gt;&lt;/div&gt;
+            </pre>
+
+            <div class="ejemplo2 green purple"></div>
+
+            <div class="ejemplo2 purple green"></div>
+
+            <p>El verdadero truco de la pregunta es que los navegadores no miran el orden en que se declaran las clases en el HTML, sino en el CSS.</p>
+
+            <p>Se debe recuerdar que cuando dos selectores tienen la misma especificidad, gana la declaración que aparece en último lugar.</p>
+
+            <p>Sin embargo hay algunos casos que no esta muy claro que estilo debería sobreescribir a los anteriores, ahí es cuando aplicamos el concepto de cascada, que es la que se encarga de determinar el que tiene mayor prioridad.</p>
+        </div>
+
+        <div class="container ejercicio">
+
+            <h2>Orden de las hojas de estilo</h2>
+
+            <hr>
+
+            <p>Hay cuatro formas de incluir CSS en un documento HTML que van de mayor a menor prioridad:</p>
+
+            <ol>
+                <li>En línea dentro de la etiqueta HTML usando el atributo style. El CSS en línea es el que tiene mayor precedencia, por lo que siempre será el que tenga prioridad sobre otras reglas CSS, lo que puede ganarle a este estilo en línea es el !important.</li>
+
+                <li>En el &lt;head&gt; a través de la la etiqueta &lt;style&gt; el CSS incrustado/interno será el siguiente a tener en cuenta en orden de prioridad.</li>
+
+                <li>Asociando una hoja de estilo externa a nuestro documento HTML usando la etiqueta &lt;link&gt; añadida en el &lt;head&gt; CSS externos son la tercera opción de prioridad al momento de tomar en cuenta las reglas CSS.</li>
+
+                <li>En el &lt;head&gt; usando @import dentro de la etiqueta &lt;style&gt;, ejemplo: &lt;style&gt; @import url('style.css') &lt;/style&gt; (poco usable).</li>
+            </ol>
+
+            <p> A pesar de que hay muchas maneras de incluir CSS en nuestro documento HTML, la forma más usada es asociar una hoja de estilo externa.</p>
+
+            <p>Como se puede notar los estilos pueden venir de varias partes en una página HTML. Si se tiene un &lt;link&gt; que incluye CSS en la parte superior de tu página HTML, y luego otro &lt;link&gt; que incluye CSS en la parte inferior de tu página: el &lt;link&gt; inferior tendrá la mayor especificidad. Lo mismo ocurre con los elementos &lt;style&gt; incrustados. Se vuelven más específicos cuanto más abajo en la página estén.</p>
+            
+        </div>
+    </div>
+</body>
+</html>

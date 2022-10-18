@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+        
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+            
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+            
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/01.template.css" type="text/css">
+            
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+    <title>Cascada</title>
+
+</head>
+<body>
+    <div class="container">
+        
+        <h1 class="titulo">
+            CSS3: Cascading Style Sheets
+            <small class="subtitulo">Aplicación de estilos en Cascada</small>
+        </h1>
+
+        <hr>
+
+        <p>CSS significa cascading style sheets (hojas de estilo en cascada) y, por lo tanto, no debería extrañarnos que la cascada sea un concepto importante. <span>La cascada</span> ss el mecanismo que controla el resultado final cuando se aplican varias declaraciones CSS contrapuestas al mismo elemento.</p>
+
+        <p>Hay tres conceptos principales que controlan el orden en el que se aplican las declaraciones de CSS:</p>
+
+        <ol>
+            <li>Importancia</li>
+            <li>Especificidad</li>
+            <li>Orden de las fuentes</li>
+        </ol>
+
+        <h2>Importancia</h2>
+
+        <hr>
+
+        <p><span>Importancia: </span>Es uno de los conceptos más... pues... importantes. Si dos declaraciones tienen la misma importancia, la especificidad de las reglas decidirá cuál se debe aplicar. Si las reglas tienen la misma especificidad, el orden de las fuentes controla el resultado.</p>
+
+        <ol>
+            <li>Hojas de estilos de agentes de usuarios</li>
+            <li>Declaraciones normales en hojas de estilos de usuario</li>
+            <li>Declaraciones normales en hojas de estilos de autor</li>
+            <li>Declaraciones importantes en hojas de estilos de autor</li>
+            <li>Declaraciones importantes en hojas de estilos de usuarios</li>
+        </ol>
+
+        <p>Una <span>hoja de estilos de agente de usuario</span> es la hoja de estilo integrada del navegador. Cada navegador tiene sus propias reglas sobre cómo mostrar varios elementos de HTML si el usuario o diseñador de la página no especifica ningún estilo. Por ejemplo, los enlaces no visitados suelen ser azules y estar subrayados.</p>
+
+        <p>Una <span>hoja de estilos de usuario </span>es una hoja de estilo que ha especificado el usuario. No todos los navegadores son compatibles con las hojas de estilo de usuario, pero pueden ser muy prácticas, sobre todo para los usuarios con determinados tipos de minusvalía. Por ejemplo, una persona disléxica puede tener una hoja de estilo de usuario que especifique determinadas fuentes y colores que le faciliten la lectura.</p>
+
+        <p>Cuando hablamos de <span>"hojas de estilo"</span>, normalmente hacemos referencia a una hoja de estilo de autor. Es la hoja de estilos que ha creado o enlazado el autor del documento (o, más probablemente, el diseñador de la web).</p>
+
+        <p>Las <span>declaraciones normales</span> son exactamente lo que su nombre indica: declaraciones normales. Lo contrario son las declaraciones importantes, que son las declaraciones que van seguidas de una directiva <span>!important.</span></p>
+    </div>
+</body>
+</html>

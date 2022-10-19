@@ -10,3 +10,4 @@
 8. **Especificidad** explicacion sobre la prioridad de aplicación de estilos sobre estilos en linea, id, clase o etiquedas
 8. **Herencia** de propiedades de estilos, los cuales son aplicados a todos los elementos hijos dentro de un elemento padre.
 9. Aplicación de estilos a selectores en función del contexto.
+10. Definición de estilos css en fichero externo, utilizando la etiqueta link y sus atributos: rel, ur y type

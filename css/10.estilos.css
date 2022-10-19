@@ -1,15 +1,59 @@
-h1{
-	font-family: tahoma;
-	text-align: center;
-	margin: 20px;
-	padding: 30px;
-	border: 1px solid black;
+.container{
+    display: block;
+    text-align: center;
+    background-color: #FAFAFA;
+    color: #212F3D;
+    font-size: 16px;
+    padding: 20px 30px;
 }
 
+.ejercicio{
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    width: 80%;
+}
+
+.ejercicio p{
+    text-align: justify;
+}
+
+h1{
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+small{
+    display: block;
+    color: #8C9193;
+}
+
+hr{
+    margin: 40px;
+}
+
+
 p{
-	text-align: justify;
-	color: blue;
-	font-family: arial;
-	font-size: 20px;
-	margin: 10px 50px;
+    margin: 20px;
+    text-align: justify;
+}
+
+span{
+    font-weight: bold;
+}
+
+pre{
+    margin: 0;
+    text-align: justify;
+    font-weight: bold;
+    font-style: italic;
+}
+
+ul{
+	list-style-image: url(https://img.icons8.com/material-outlined/20/000000/css-filetype.png);
+}
+
+ul li{
+	text-align: left;
 }

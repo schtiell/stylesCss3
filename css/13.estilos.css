@@ -1,4 +1,4 @@
-container{
+.container{
     display: block;
     text-align: center;
     background-color: #FAFAFA;
@@ -18,7 +18,7 @@ container{
     text-align: justify;
 }
 
-h1, h2{
+h1{
     margin: 20px auto;
     text-align: center;
     font-weight: bold;
@@ -50,6 +50,14 @@ pre{
     font-style: italic;
 }
 
+ul{
+	list-style-image: url(https://img.icons8.com/material-outlined/20/000000/css-filetype.png);
+}
+
+ul li{
+	text-align: left;
+}
+
 .cajas{
 	display: flex;
 	flex-direction: row;
@@ -76,7 +84,7 @@ pre{
 	background-color: #F2F4F4;
 	border-width: 3px 16px;
 	border-style: dotted dashed;
-	border-color: #52BE80 #5499C7;
+	border-color: #52BE80 #F7DC6F;
 }
 
 .box3{

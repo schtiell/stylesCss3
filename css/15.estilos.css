@@ -1,10 +1,25 @@
+.cajas{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
 .codigo{
-	width: 50%;
-	border: 2px solid black;
-	background: yellow;
+	display: block;
 	margin: 30px auto;
-	padding-top: 40px;
-	padding-left: 55px;
-	padding-bottom: 60px;
-	padding-right: 35px;
+	padding-top: 50px;
+	padding-left: 30px;
+	padding-bottom: 50px;
+	padding-right: 80px;
+	border: 2px solid #000;
+	width: 350px;
+	height: 350px;
+}
+
+.paddingImg{
+	display: block;
+	width: 360px;
+	height: 360px;
+	background-image: url("../images/padding1.png");
+	background-repeat: no-repeat;
 }

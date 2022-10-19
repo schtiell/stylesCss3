@@ -2,49 +2,88 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Propiedades relacionadas al padding de un elemento HTML</title>
-	<link rel="stylesheet" href="css/15.estilos.css" type="text/css">
+
+	<!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+			
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+			
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+				
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+				
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+				
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="./css/14.template2.css" type="text/css">
+	<link rel="stylesheet" href="./css/15.estilos.css" type="text/css">
+	
+				
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<title>Propiedades del padding</title>
 </head>
 <body>
-	<h1>Propiedades relacionadas al padding de un elemento HTML</h1>
-
-	<p>El padding (almohadilla) suma espacio entre el contenido del elemento HTML (por ejemplo dentro del elemento párrafo el texto propiamente dicho es el contenido) y el borde (recordar propiedad border)</p>
-
-	<p>Podemos configurar los 4 en caso que tengan el mismo valor accediendo a la propiedad: padding</p>
-
-	<ul>
-		<li>padding-top</li>
-		<li>padding-right</li>
-		<li>padding-bottom</li>
-		<li>padding-left</li>
-	</ul>
-
-	<div class="codigo">
-		<pre>
-		public class Rectangulo{
-		  //atributos
-		  int alto;
-		  int ancho;
-		  boolean relleno;
-		  //métodos
-		  public int devolverArea(){
-		    return alto*ancho;
-		  }
-		  public void rellenar(boolean r){
-		    relleno=r;
-		  }
-		  public void cambiarTamano(int an, int al){
-		    ancho=an;
-		    alto=al;
-		  }
-		  public Rectangulo() {// constructor
-		    alto=20;
-		    ancho=10;
-		    relleno=false;
-		  }
-		}
-		</pre>	
-	</div>
+	<div class="container">
+		<h1>
+			CSS3: Cascading Style Sheets
+			<small>Propiedades del padding</small>
+		</h1>
 	
+		<hr>
+	
+		<p>El <span>padding</span> o relleno es utilizado para crear un espacio alrededor del contenido de un elemento, dentro de los bordes definidos por el <span>box model</span>.Es decir se genera yb espacio entre el contenido del elemento HTML y la frontera o borde</p>
+
+		<p>Con CSS se tiene un control total sobre el padding. Existen propiedades para establecer el relleno para cada lado del elemento (top, left, bottom y right)</p>
+	
+		<ul>
+			<li><span>padding-top: </span> Relleno superior del elemento</li>
+			<li><span>padding-right: </span>Relleno izquierdo del elemento</li>
+			<li><span>padding-bottom: </span>Relleno inferior del elemento</li>
+			<li><span>padding-left: </span>Relleno derecho del elemento</li>
+		</ul>
+
+		<pre>
+		div {
+			padding-top: 50px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			padding-left: 80px;
+		  }
+		</pre>
+
+		<p>Todas la propiedades de padding pueden tener los siguientes valores: </p>
+
+		<ul>
+			<li><span>longitud:</span> Especifica un padding en px, pt, em, cm, etc</li>
+			<li><span>%:</span> Especifica un padding en % del ancho del elemento contenedor</li>
+			<li><span>inherit:</span> Especifica que el padding se debe heredar del elemento principal</li>
+		</ul>
+	
+		<div class="container ejercicio">
+
+			<h2>Ejemplo:</h2>
+
+			<hr>
+
+			<p>Los siguientes contenedores muestran el padding aplicado a contenedor div, es posible ver estos espacios generados del padding haciendo un inspect sobre el navegador</p>
+
+			<div class="row cajas">	
+				<div class="col-sm-6">
+					<div class="codigo"></div>
+				</div>
+				<div class="col-sm-6">
+					<div class="paddingImg">....</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

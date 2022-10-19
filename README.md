@@ -14,3 +14,6 @@
 11. Selectores css de clase.
 12. Selectores css de id.
 13. Propiedades de los bordes, border-width, border-style, border-color.
+14. 
+15. Propiedades del padding para generar espacios entre el elemento y su borde
+

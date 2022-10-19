@@ -15,5 +15,6 @@
 12. Selectores css de id.
 13. Propiedades de los bordes, border-width, border-style, border-color.
 14. 
-15. Propiedades del padding para generar espacios entre el elemento y su borde
+15. Propiedades del padding para generar espacios entre el elemento y su borde.
+16. Propiedades del margen para generar espacio entre elementos html, del borde hacia afuera.
 

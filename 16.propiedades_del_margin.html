@@ -2,22 +2,121 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Propiedades relacionadas al margen de un elemento HTML</title>
+
+	<!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+			
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+			
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+				
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+				
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+				
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="./css/14.template2.css" type="text/css">
+	<link rel="stylesheet" href="./css/16.estilos.css" type="text/css">
+	
+				
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<title>Propiedades del margen</title>
+
 	<link rel="stylesheet" href="css/16.estilos.css" type="text/css">
 </head>
 <body>
-	<h1 class="titulo">Propiedades relacionadas al margen de un elemento HTML</h1>
-	<ul>
-		<li>margin-top</li>
-		<li>margin-right</li>
-		<li>margin-bottom</li>
-		<li>margin-left</li>
-	</ul>
-	<p>El margen está después del borde. El margen separa un elemento HTML de otro elemento HTML dentro de la página.</p>
+
+	<div class="container">
+		<h1>
+			CSS3: Cascading Style Sheets
+			<small>Propiedades del margin</small>
+		</h1>
 	
-	<p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit atque nemo, possimus quia aliquid architecto eveniet nisi ipsa eaque, laudantium eligendi hic nostrum esse fugit officiis quasi vitae unde quam.</p>
+		<hr>
 
-	<p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iste libero in dicta ut adipisci magnam tempore ea, laboriosam facere nulla sit animi necessitatibus, obcaecati doloremque quia omnis dolores culpa?</p>
+		<p>Los márgenes se utilizan para crear espacio alrededor de los elementos, fuera de los bordes definidos.</p>
 
+		<p>Con CSS, tienes control total sobre los márgenes utilizando la propiedad <span>margin</span>. Hay propiedades para establecer el margen de cada lado de un elemento (superior, derecho, inferior e izquierdo).</p>
+
+		<ul>
+			<li><span>margin-top: </span>Margen superior</li>
+			<li><span>margin-right: </span>Margen derecho</li>
+			<li><span>margin-bottom: </span>Margen inferior</li>
+			<li><span>margin-left: </span>Margen izquierdo</li>
+		</ul>
+
+		<p>A igual que el padding las propiedades de margen pueden especificarse una por una, son:</p>
+
+		<pre>
+		.contenedor{
+			margin-top: 20px;
+			margin-right: 30px;
+			margin-bottom: 15px;
+			margin-left: 25px;
+		}
+		</pre>
+
+		<p>Si solo 2 propiedades son especificadas entonces se aplica el primero para el margen superior e inferior y el segundo valor para el margen izquierdo y derecho</p>
+
+		<pre>
+		.contenedor{
+			margin: 20px 30px;
+		}
+		</pre>
+
+		<p>Si solo es especificado un valor, este será aplicado a los 4 lados:</p>
+
+		<pre>
+		.contenedor{
+			margin: 20px;
+		}
+		</pre>
+
+		<p>El margen está después del borde. El margen separa un elemento HTML de otro elemento HTML dentro de la página.</p>
+
+		<ul>
+			<li><span>longitud:</span> Especifica un padding en px, pt, em, cm, etc</li>
+			<li><span>%:</span> Especifica un padding en % del ancho del elemento contenedor</li>
+			<li><span>inherit:</span> Especifica que el padding se debe heredar del elemento principal</li>
+		</ul>
+	
+
+		<div class="container ejercicio">
+
+			<h2>
+				Ejemplo:
+			</h2>
+
+			<hr>
+
+			<p>La siguiente imagen muestra los margenes generados por el contenedor, los cuales lo separan del resto de elementos html</p>
+
+			<pre>
+			.contenedor{
+				margin-top: 50px;
+				margin-right: 30px;
+				margin-bottom: 20px;
+				margin-left: 15px;			
+			}
+			</pre>
+
+			<div class="cajas row">
+				<div class="col-sm-6">
+					<div class="contenedor"></div>
+				</div>
+				<div class="col-sm-6">
+					<div class="marginImg"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

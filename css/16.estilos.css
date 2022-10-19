@@ -1,15 +1,25 @@
-.titulo{
-	border: 1px solid silver;
-	background: green;
-	text-align: center;
-	padding: 15px;
-	color: white;
-	margin: 20px;
+.cajas{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
-.parrafo{
-	margin: 80px 80px;
-	border: 1px solid blue;
-	background: silver;
-	padding: 10px;
+.contenedor{
+	display: block;
+	border: 2px solid #000;
+	width: 250px;
+	height: 250px;
+	margin-top: 50px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	margin-left: 15px;
+
+}
+
+.marginImg{
+	display: block;
+	width: 350px;
+	height: 330px;
+	background-image: url("../images/margin1.png");
+	background-repeat: no-repeat;
 }

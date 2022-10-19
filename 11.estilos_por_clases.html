@@ -3,16 +3,77 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Definición de estilos por medio de clases.</title>
-	<link rel="stylesheet" href="css/11.estilos.css" type="text/css">
+
+	<!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+			
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+			
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+				
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+				
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+				
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="./css/11.estilos.css" type="text/css">
+				
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
 </head>
 <body>
-	<h1 class="resaltado">Definición de estilos por medio de clases.</h1>
+	<div class="container">
+		<h1>
+			CSS3: Cascading Style Sheets
+			<small>Selectores de clases</small>
+		</h1>
+	
+		<hr>
+	
+		<p>En muchas situaciones una regla de estilo puede ser igual para un conjunto de elementos HTML, en esos casos conviene plantear una regla de estilo con un nombre genérico que posteriormente se puede aplicar a varios elementos de HTML.</p>
+	
+		<p>Los estilos definidos por una clase funcionarán para aplicar cambios a todos aquellos elementos HTML que tengas definido un atributo <span>class</span> </p>
 
-	<p>En muchas situaciones una regla de estilo puede ser igual para un conjunto de elementos HTML, en esos casos conviene plantear una regla de estilo con un nombre genérico que posteriormente se puede aplicar a varios elementos de HTML.</p>
+		<p>El selector de clase selecciona elementos HTML con un atributo de <span>class</span> específico.</p>
 
-	<p>La clase funcionará para aplicar un estilo a la etiqueta <span class="resaltado">h1</span>y a unas palabras especificas agrupadas por una etiqueta <span class="resaltado">span</span> del parrafo</p>
+		<p>Para seleccionar elementos con una clase específica, escriba un carácter de punto "." seguido del nombre de la clase.</p>
+	
+		<div class="container ejercicio">
+			
+			<h2>Ejemplo</h2>
+	
+			<hr>
 
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dolores recusandae dolore repellat nam consectetur magnam ad porro, itaque quod vero iste est eligendi nisi <span class="resaltado">incidunt consequuntur sequi</span> ipsum explicabo.</p>
+			<p>La siguiente clase css será aplicada a los elementos HTML que la declaren en su atributo class</p>
 
+			<pre>
+			.resaltar{
+				color: #9B59B6 ;
+				background-color: #EBEDEF;
+				border: 1px solid #ABB2B9;					
+				font-style: italic;
+			}
+			</pre>
+	
+			<p class="resaltar">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dolores recusandae dolore repellat nam consectetur magnam ad porro, itaque quod vero iste est eligendi nisi</p>
+
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste inventore eos nostrum fuga reiciendis non nulla! <span class="resaltar">Animi incidunt autem sapiente</span> cum tempore placeat eveniet dolor quisquam! Omnis repudiandae at quas.</p>
+
+			<ul>
+				<li>Elemento 1</li>
+				<li>Elemento 2</li>
+				<li class="resaltar">Elemento 3</li>
+				<li>Elemento 4</li>
+				<li>Elemento 5</li>
+			</ul>
+		</div>
+	</div>
 </body>
 </html>

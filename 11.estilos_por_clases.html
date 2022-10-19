@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Definición de estilos por medio de clases.</title>
-
+	
 	<!-- Importando la libreria jQuery -->
 	<script src="./js/jquery-3.6.0.min.js"></script>
 
@@ -27,6 +26,7 @@
 	<!-- cdn favicon -->
 	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
 
+	<title>Selectores de clase</title>
 </head>
 <body>
 	<div class="container">
@@ -44,6 +44,17 @@
 		<p>El selector de clase selecciona elementos HTML con un atributo de <span>class</span> específico.</p>
 
 		<p>Para seleccionar elementos con una clase específica, escriba un carácter de punto "." seguido del nombre de la clase.</p>
+
+		<pre>
+		.resaltar{
+			color: #9B59B6 ;
+			background-color: #EBEDEF;
+			border: 1px solid #ABB2B9;					
+			font-style: italic;
+		}
+
+		&lt;p class="resaltar"&gt; Lorem ipsum dolor sit amet.... &lt;/p&gt;
+		</pre>
 	
 		<div class="container ejercicio">
 			
@@ -53,15 +64,6 @@
 
 			<p>La siguiente clase css será aplicada a los elementos HTML que la declaren en su atributo class</p>
 
-			<pre>
-			.resaltar{
-				color: #9B59B6 ;
-				background-color: #EBEDEF;
-				border: 1px solid #ABB2B9;					
-				font-style: italic;
-			}
-			</pre>
-	
 			<p class="resaltar">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dolores recusandae dolore repellat nam consectetur magnam ad porro, itaque quod vero iste est eligendi nisi</p>
 
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste inventore eos nostrum fuga reiciendis non nulla! <span class="resaltar">Animi incidunt autem sapiente</span> cum tempore placeat eveniet dolor quisquam! Omnis repudiandae at quas.</p>

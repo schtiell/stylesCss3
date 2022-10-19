@@ -2,14 +2,82 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Definición de estilos por medio de id.</title>
-	<link rel="stylesheet" href="css/12.estilos.css" type="text/css">
+
+	<!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+			
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+			
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+				
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+				
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+				
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="./css/12.estilos.css" type="text/css">
+				
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<title>Selectores de estilos por id</title>
 </head>
 <body>
-	<h1 id="titulo">Definición de estilos por medio de id</h1>
+	<div class="container">
 
-	<p id="parrafo">La diferencia fundamental en la definición de un estilo por medio de id con respecto a las clases, es que sólo podremos aplicar dicho estilo a una solo elemento HTML dentro de la página, ya que todos los id que se definen en una página HTML deben tener nombres distintos.</p>
+		<h1>
+			CSS3: Cascading Style Sheets
+			<small>Selectores de id</small>
+		</h1>
+	
+		<hr>
 
-	<p id="parrafo2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus placeat inventore alias ab accusantium soluta voluptatibus cumque repellendus quas debitis, tempore aut dolorum ipsum, aperiam, id vitae veniam, maxime unde.</p>
+		<p>El selector de id usa el atributo <span>id</span> de un elemento HTML para seleccionar un elemento específico.</p>
+
+		<p>La identificación de un elemento es única dentro de una página, por lo que el selector de identificación se usa para seleccionar un elemento único.</p>
+
+		<p>Para indicar que se trata de un selector de id se utiliza el caracter "#" seguido del nombre del id</p>
+
+		<pre>
+		#parrafo1{
+			padding: 20px;
+			margin: 20px auto;
+			text-align: justify;
+			color: #808B96;
+			border: 1px solid #85C1E9;
+			background-color: #FEF5E7;
+		}
+		
+		#parrafo2{
+			padding: 20px;
+			margin: 20px auto;
+			text-align: center;
+			color: #273746;
+			border: 1px solid #F4D03F;
+			background-color: #F4F6F6 ;
+		}
+
+		&lt;p id="parrafo1"&gt; Lorem ipsum dolor sit amet.... &lt;/p&gt;
+		&lt;p id="parrafo2"&gt; Lorem ipsum dolor sit amet.... &lt;/p&gt;
+		</pre>
+	
+		<div class="container ejercicio">
+			<h2>
+				Ejemplo:
+			</h2>
+
+			<hr>
+
+			<p id="parrafo1">La diferencia fundamental en la definición de un estilo por medio de id con respecto a las clases, es que sólo podremos aplicar dicho estilo a una solo elemento HTML dentro de la página, ya que todos los id que se definen en una página HTML deben tener nombres distintos.</p>
+	
+			<p id="parrafo2">Los selectores ID son asignados individualmente con el propósito de una definición en términos 'por elemento'. Este tipo de selector debería ser usado con moderación debido a sus inherentes limitaciones.</p>
+		</div>
+	</div>
 </body>
 </html>

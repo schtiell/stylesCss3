@@ -12,3 +12,4 @@
 9. Aplicación de estilos a selectores en función del contexto.
 10. Definición de estilos css en fichero externo, utilizando la etiqueta link y sus atributos: rel, ur y type.
 11. Selectores css de clase.
+12. Selectores css de id.

@@ -86,3 +86,15 @@ a:hover{
     text-decoration: none;
     color: #F8C471;
 }
+
+.contenedor .parrafo{
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.contenedor .parrafo .resaltar{
+    color: #138D75;
+    font-weight: bolder;
+    font-style: oblique;
+    text-decoration: underline; 
+}

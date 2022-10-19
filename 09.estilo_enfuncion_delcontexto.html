@@ -2,28 +2,97 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Definición de un estilo en función del contexto.
-</title>
-<style>
-	p{
-		color: red;
-		text-indent: 50px;
-	}
 
-	div p{
-		color: blue;
-		text-indent: 0px;
-		font-size: 30px;
-	}
-</style>
+	<!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+        
+    <!-- cdn jquery for bootstrap framework-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            
+    <!-- css3 for bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+            
+    <!-- cdn bundle bootstrap include Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+            
+    <!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/01.template.css" type="text/css">
+            
+    <!-- cdn favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+	
+	<title>Selectores en función del contexto</title>
+
 </head>
 <body>
-	<p>Este otro recurso que provee las hojas de estilo en cascada (css) es la definición de un estilo para un elemento HTML siempre y cuando la misma esté contenida por otro elemento determinado. Sólo en ese caso el estilo para dicha elemento se activará.</p>
+	<div class="container">
 
-	<div>
-		<p>Este otro recurso que provee las hojas de estilo en cascada (css) es la definición de un estilo para un elemento HTML siempre y cuando la misma esté contenida por otro elemento determinado. Sólo en ese caso el estilo para dicha elemento se activará.</p>
+		<h1 class="titulo">
+			CSS3: Cascading Style Sheets
+			<small class="subtitulo">Selectores en función del contexto</small>
+		</h1>
+	
+		<hr>
+
+		<p>Este otro recurso que proveen las hojas de estilo en cascada, es la definición de un estilo para un elemento HTML siempre y cuando la misma esté contenida por otro elemento determinado. Sólo en ese caso el estilo para dicha elemento se activará.</p>
+
+		<p>Los <span>selectores de contexto</span> son simples cadenas de dos o más selectores simples separados por espacio en blanco. A estos selectores se les pueden asignar propiedades normales y, debido a las reglas del orden de cascada, tendrán precedencia sobre selectores simples. Por ejemplo, el selector de contexto en:</p>
+
+		<pre>
+		div p{
+			background-color: #E74C3C;
+			font-family: verdana;
+			font-indent: 20px;
+		}
+
+		.contenedor .parrafo{
+			color: #239B56;
+			font-size: 20px;
+			text-decoration: underline;
+			font-style: oblique;
+		}
+		</pre>
+
+		<p>En los reglas css anteriores, se aplica el contexto mencionado, de aplicación de estilo en función del contexto y es que en el primer caso solo los parrafos que sean elementos hijos de un elemento padre div serán modificados.</p>
+
+		<p>Para el segundo caso aplica color de fuente, tamaño y otros unicamente a los elemento marcados como span cuyo padre tenga definidad una clase contenedor</p>
+
+		<div class="container ejercicio">
+			
+			<h2>
+				Ejemplo:
+			</h2>
+
+			<hr>
+
+			<pre>
+			.contenedor .parrafo{
+				text-indent: 30px;
+				text-align: justify;
+			}
+			
+			.contenedor .parrafo .resaltar{
+				color: #138D75;
+				font-weight: bolder;
+				font-style: oblique;
+				text-decoration: underline; 
+			}
+			</pre>
+
+			<p>Los estilos anteriores se aplicarán a los siguientes parrafos</p>
+			
+			<div class="contenedor">
+
+				<p class="parrafo"><span class="resaltar">PHP: Hypertext Preprocessor</span> is one of my favorite languages, not just because I got into web programming in the wayward days of PHP2, but because of how empowering it is to beginners. When you write PHP, you always have a running website</p>
+
+				<p>The language feeds and sustains your motivation. Fighting pip, setting up a remote environment in WSL, and having to learn vim is why many people drop out or feel they don’t belong.</p>
+			</div>
+		</div>
 	</div>
-
-	<p>Este otro recurso que provee las hojas de estilo en cascada (css) es la definición de un estilo para un elemento HTML siempre y cuando la misma esté contenida por otro elemento determinado. Sólo en ese caso el estilo para dicha elemento se activará.</p>
 </body>
 </html>

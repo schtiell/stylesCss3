@@ -50,13 +50,31 @@
 			<li><span>padding-left: </span>Relleno derecho del elemento</li>
 		</ul>
 
+		<p>Se pueden especificar los 4 valores, 2 valores o bien 1 valor a la propiedad padding.</p>
+
 		<pre>
 		div {
 			padding-top: 50px;
 			padding-right: 30px;
 			padding-bottom: 50px;
 			padding-left: 80px;
-		  }
+		}
+		</pre>
+
+		<p>Si se especifican solo 2, el primer valor se aplica al padding superior e inferior y el segundo valor al paddign derecho e izquierdo.</p>
+
+		<pre>
+		div {
+			padding: 50px 30px;
+		}
+		</pre>
+
+		<p> Si solo un valor es indicado, significa que ese padding debe aplicarse a los 4 lados de la caja</p>
+
+		<pre>
+		div {
+			padding: 30px;
+		}
 		</pre>
 
 		<p>Todas la propiedades de padding pueden tener los siguientes valores: </p>

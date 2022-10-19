@@ -1,18 +1,91 @@
-.titulo{
-	font-family: verdana;
-	border: 2px dashed green;
-	background: orange;
-	text-align: center;
+container{
+    display: block;
+    text-align: center;
+    background-color: #FAFAFA;
+    color: #212F3D;
+    font-size: 16px;
+    padding: 20px 30px;
+}
+
+.ejercicio{
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    width: 80%;
+}
+
+.ejercicio p{
+    text-align: justify;
+}
+
+h1, h2{
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+small{
+    display: block;
+    color: #8C9193;
+}
+
+hr{
+    margin: 40px;
+}
+
+
+p{
+    margin: 20px;
+    text-align: justify;
 }
 
 span{
-	font-weight: bold;
-	font-family: 13px;
-	font-family: tahoma;
-	border: 1px dotted red;
+    font-weight: bold;
 }
 
-ol li{
-	background: silver;
-	margin: 5px;
-};
+pre{
+    margin: 0;
+    text-align: justify;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.cajas{
+	display: flex;
+	flex-direction: row;
+	margin: 20px auto;
+	justify-content: center;
+}
+
+.box{
+	display: block;
+	width: 250px;
+	height: 250px;
+	margin: 20px 30px;
+	background-color: #F2F4F4;
+	border-width: 3px 6px 8px 1px;
+	border-style: dotted dashed solid double;
+	border-color: #52BE80 #5499C7 #AF7AC5 #E74C3C;
+}
+
+.box2{
+	display: block;
+	width: 250px;
+	height: 250px;
+	margin: 20px 30px;
+	background-color: #F2F4F4;
+	border-width: 3px 16px;
+	border-style: dotted dashed;
+	border-color: #52BE80 #5499C7;
+}
+
+.box3{
+	display: block;
+	width: 250px;
+	height: 250px;
+	margin: 20px 30px;
+	background-color: #F2F4F4;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #52BE80;
+}

@@ -2,22 +2,116 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Propiedades relacionadas al borde de un elemento HTML</title>
-	<link rel="stylesheet" href="css/13.estilos.css" type="text/css">
+	
+	<!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+			
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+			
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+				
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+				
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+				
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="./css/13.estilos.css" type="text/css">
+				
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<title>Propiedades de bordes</title>
 </head>
 <body>
-	<h1 class="titulo">Propiedades relacionadas al borde de un elemento HTML (border-width, border-style, border-color)</h1>
 
-	<p>Debemos ahora hacernos la idea que todo elemento que se crea dentro de una página HTML genera una caja. Imaginemos los controles que hemos creado h1, p, li, etc. si fijamos la propiedad background-color veremos que el contenido se encuentra dentro de un rectángulo.</p>
+	<div class="container">
 
-	<p>Podemos acceder a las propiedades del borde de ese rectángulo mediante las hojas de estilo CSS; las propiedades más importantes a las que tenemos acceso son:</p>
-
-	<ol>
-		<li><span>border-width:</span> ancho del borde</li>
-		<li><span>border-style:</span> tipos: none, hidden, dotted, dashed, solid, double, groove, ridge, inset. outset</li>
-		<li><span>border-color:</span> color del borde</li>
-	</ol>
+		<h1>
+			CSS3: Cascading Style Sheets
+			<small>Propiedades de bordes</small>
+		</h1>
 	
-</h1>
+		<hr>
+	
+		<p>Es importante saber que todo elemento que se crea dentro de una página HTML genera una caja. Por ejemplo si se han creado elemento h1, p, li, etc, y se les fija la propiedad background-color podrá verse que el contenido se encuentra dentro de un rectángulo.</p>
+	
+		<p>A este rectangulo que cubre cada elemento html se le conoce como <span>box model o modelo de caja</span></p>
+
+		<p>De acuerdo con este modelo de caja se puede aprender sobre los limites o fronteras que tiene cada elemento, a estos se les conoce como <span>bordes</span> y son estos los que afectan o definen el tamaño de cada elemento</p>
+
+		<p>Las propiedades de borde son utilizadas para definir el ancho, el estilo y el color, son las siguientes</p>
+
+		<ul>
+			<li><span>border-width: </span>Define el ancho del borde, puede definirse en px, pt, cm, em, etc, propiedad puede tener de uno a cuatro valores: borde (superior, derecho, inferior e izquierdo)</li>
+
+			<li><span>border-style: </span>Propiedad especifica qué tipo de borde mostrar, dotted, dashed, solid, double, entre otros.La propiedad puede tener de uno a cuatro valores: borde (superior, derecho, inferior e izquierdo) </li>
+
+			<li><span>border-color: </span>Propiedad se utiliza para establecer el color de los cuatro bordes, el color puede ser definido: nombre, HEX, rgb, rgba, hsl. La propiedad puede tener de uno a cuatro valores: borde (superior, derecho, inferior e izquierdo)</li>
+		</ul>
+
+		<p>y son utilizadas de la siguiente manera:</p>
+
+		<pre>
+		.box{
+			border-width: 3px 16px 8px 21px;
+			border-style: dotted dashed solid double;
+			border-color: #52BE80 #F7DC6F #AF7AC5 #E74C3C;
+		}
+
+		.box2{
+			border-width: 3px 16px;
+			border-style: dotted dashed;
+			border-color: #52BE80 #F7DC6F;
+		}
+
+		.box3{
+			border-width: 3px;
+			border-style: solid;
+			border-color: #52BE80;
+		}
+		</pre>
+
+		<p><span>Importante: </span>Si las propiedades solo especifican 2 de los 4 posibles valores, se le está indicando al navegador que el primer valor son para (arriba y abajo), si solo es 1 valor entonces se aplica el mismo para los 4 lados</p>
+
+		<p>Es posible tambien especificar el ancho, el estilo y el color de cada borde en propiedades separadas, por ejemplo:</p>
+
+		<pre>
+		border-top-width: 1px;
+		border-left-width: 1px;
+		border-bottom-width: 1px;
+		border-right-width: 1px;
+
+		border-top-style: solid;
+		border-left-style: dashed;
+		border-bottom-style: double;
+		border-right-style: dotted;
+
+		border-top-color: #212F3D;
+		border-left-color: #52BE80;
+		border-bottom-color: #AF7AC5;
+		border-right-color: #E74C3C;
+		</pre>
+
+		<div class="container ejercicio">
+
+			<h2>Ejemplo</h2>
+
+			<hr>
+
+			<p>Aplicando los estilos mostrados a 3 contenedores div</p>
+
+			<div class="cajas">
+				<div class="box"></div>
+				<div class="box2"></div>
+				<div class="box3"></div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

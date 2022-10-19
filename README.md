@@ -13,3 +13,4 @@
 10. Definición de estilos css en fichero externo, utilizando la etiqueta link y sus atributos: rel, ur y type.
 11. Selectores css de clase.
 12. Selectores css de id.
+13. Propiedades de los bordes, border-width, border-style, border-color.

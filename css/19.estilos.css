@@ -1,9 +1,3 @@
-h1{
-	font: bold 40px tahoma;
+a{
+	font: italic small-caps bold 20px Georgia, serif;
 }
-
-p{
-	font: italic 10px verdana;
-	text-decoration: underline;
-}
-

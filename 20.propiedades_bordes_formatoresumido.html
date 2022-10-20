@@ -2,30 +2,95 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Propiedades relacionadas al border</title>
+
+	<!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+			
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+			
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+				
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+				
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/20.estilos.css" type="text/css">
+	<title>Propiedades de bordes shorthand</title>
 </head>
 <body>
-	<h1>Propiedades relacionadas al border</h1>
-	<p>Podemos inicializar todos los bordes con una sola propiedad, border. 
-	<p>Debemos indicar el border-width border-style border-color</p>
-	<p>No debemos separarlas por coma y deben estar especificados en ese orden.</p>
-	<div class="resumido">
+
+	<div class="container">
+
+		<h1>
+			CSS3: Cascading Style Sheets
+			<small>Propiedades de bordes metodo corto</small>
+		</h1>
+	
+		<hr>
+	
+		<p>Al igual que las fuentes es posible inicializar todas las propiedades de los bordes con una sola propiedad: <span>border</span>. 
+		<p>Se debemos indicar el border-width border-style border-color en la misma instrucción, para ello no se debe separarlas por coma y deben estar especificados en ese orden.</p>
+	
 		<pre>
-			h1 {
-  				border:1px solid #ff0000;
+			selector{
+				border: 1px solid #000;
+			}
+	
+			selector{
+				border: border-width border-style border-color;
 			}
 		</pre>
+
+		<div class="container ejercicio">
+			
+			<h2>Ejemplo</h2>
+
+			<hr>
+
+			<p>Se aplicarás los siguientes borders al elemento div que contiene un parrado lorem</p>
+
+			<pre>
+			.bordes{
+				display: block;
+				border: 2px solid #1880C6;
+				background-color: #E1E7EC;
+			}
+
+			.bordersPorLado{
+				display: block;
+				border-right: 5px solid red;
+				border-top: 4px dotted blue;
+				border-left: 4px dashed orange;
+				border-bottom: 7px solid gray;
+				background-color: #E1E7EC;
+			}
+			</pre>
+
+			<div class="container bordes">
+
+				<h3>Aplicación de bordes</h3>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo magnam, illo in deserunt odit sint distinctio qui voluptate dicta porro, excepturi nisi officiis nam voluptas sit odio ipsum obcaecati necessitatibus.</p>
+			</div>
+
+			<div class="container bordesPorLado">
+
+				<h3>Aplicación de estilos de bordes por lado</h3>
+
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo magnam, illo in deserunt odit sint distinctio qui voluptate dicta porro, excepturi nisi officiis nam voluptas sit odio ipsum obcaecati necessitatibus.</p>
+			</div>
+		</div>
 	</div>
-	<p>Por otro lado se puede iniar la propiedad resumida por cada lado del borde</p>
-	<div class="por_lado">
-		<pre>
-			border-top
-			border-right
-			border-bottom
-			border-left
-		</pre>
-	</div>
+
 
 </body>
 </html>

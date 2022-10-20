@@ -19,5 +19,6 @@
 16. Propiedades del margen para generar espacio entre elementos html, del borde hacia afuera.
 17. Propiedades de las listas.
 18. Propiedades de background.
-19. Propiedades de fuentes Shorthand, metodo corto; 
+19. Propiedades de fuentes Shorthand, metodo corto
+20. Propiedades de bordes shorthand, metodo corto. 
 

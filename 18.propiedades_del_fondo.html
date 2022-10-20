@@ -2,23 +2,93 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Propiedades relacionadas al fondo</title>
+
+	<!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+			
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+			
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+				
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+				
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+				
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/18.estilos.css" type="text/css">
+
+	<title>Propiedades del fondo</title>
 </head>
 <body>
-	<h1>Propiedades relacionadas al fondo (background)</h1>
+	<div class="container">
+		<h1>
+			CSS3: Cascading Style Sheets
+			<small>Propiedades del fondo</small>
+		</h1>
+	
+		<hr>
 
-	<p>Hasta ahora hemos probado y utilizado la propiedad background-color para fijar el color de fondo del contenido de un elemento HTML (body, h1, h2, p, etc.).</p>
+		<p>Las propiedades de fondo de CSS se utilizan para agregar efectos de fondo a los elementos. Para ello existe la propiedad <span>background</span></p>
+	
+		<p>Las propiedades relacionadas al background y sus valores son:</p>
 
-	<p>Hay otras propiedades relacionadas al fondo que nos permiten, entre otras cosas, disponer un archivo de imagen. Las propiedades relacionadas al background y sus valores son:</p>
+		<ul>
+			<li><span>background-color: </span>Especifica el color de fondo de una elemento, recibe valor de color en ingles, HEX, RGB, etc, ademas de poder especificar una transparencia con la propiedad <span>opacity</span></li>
 
-	<div class="color">
-		<p>Ejemplo de backgroud utilizando un color de fondo</p>
-	</div>
+			<li><span>background-image: </span>Especifica una imagen para usar de fondo de un elemento, de forma predeterminada está se repite hasta cubrir todo el elemento</li>
 
+			<li><span>background-repeat: </span>Repite una imagen tanto vertical como horizontalmente, puede tomar valores <span>repeat-x, repeat-y o no-repeat</span></li>
 
-	<div class="imagen">
-		<p>Ejemplo de backgroud utilizando una imagen</p>
+			<li><span>background-attachment: </span>Especifica si la imagen de fondo debe ser fija o debe desplazarse con el resto de la pagina</li>
+
+			<li><span>background-position: </span>Propiedad utilizada para especificar la posición de la imagen. Recibe 2 valores por ejemplo top left, que alineará la imagen en la parte superior a la izquierda</li>
+		</ul>
+	
+		<div class="container ejericicio">
+
+			<h2>Ejemplo:</h2>
+
+			<hr>
+
+			<p>Los siguientes contenedores muestran ejemplos de aplicación de color e imagen como fondo con la propiedad <span>background</span></p>
+
+			<pre>
+			.color-fondo{
+				background-color: silver;
+			}
+
+			.color-fondo2{
+				background-color: #5499C7;
+				opacity: .3;
+			}
+
+			.imagen{
+				background-image: url(https://imagentomadadeunsitioweb.net);
+				background-position: top left;
+			}
+			</pre>
+
+			<div class="box">
+				<div class="color-fondo">
+					<p>Background-color usando color en ingles</p>
+				</div>
+
+				<div class="color-fondo2">
+					<p>Background-color usando color en HEXADECIMAL y opacidad de .6</p>
+				</div>
+			
+				<div class="imagen">
+					<p>Ejemplo de backgroud-image</p>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

@@ -1,8 +1,72 @@
-div{
-	border:1px solid black;
-	background: yellow;
-	width: 40%;
-	margin: 30px auto;
+.container{
+    display: block;
+    text-align: center;
+    background-color: #FAFAFA;
+    color: #212F3D;
+    font-size: 16px;
+    padding: 20px 30px;
+}
+
+.ejercicio{
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    width: 80%;
+}
+
+.ejercicio p{
+    text-align: justify;
+}
+
+h1,
+h2{
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+small{
+    display: block;
+    color: #8C9193;
+}
+
+hr{
+    margin: 40px;
+}
+
+
+p{
+    margin: 20px;
+    text-align: justify;
+}
+
+span{
+    font-weight: bold;
+}
+
+pre{
+    margin: 0;
+    text-align: justify;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.row{
+	display: flex;
+	margin: 40px auto;
+	border: 1px solid #000;
+	align-items: center;
+	padding: 10px;
+}
+
+.ejemplo{
+	list-style-image: url(https://img.icons8.com/material-outlined/20/000000/css-filetype.png);
+    margin-left: 30px;
+}
+
+li{
+	text-align: left;
+    text-indent: 10px;
 }
 
 .vacio{

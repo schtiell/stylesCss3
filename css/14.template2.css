@@ -53,8 +53,10 @@ pre{
 
 ul{
 	list-style-image: url(https://img.icons8.com/material-outlined/20/000000/css-filetype.png);
+    margin-left: 30px;
 }
 
 ul li{
 	text-align: left;
+    text-indent: 10px;
 }

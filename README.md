@@ -17,4 +17,5 @@
 14. 
 15. Propiedades del padding para generar espacios entre el elemento y su borde.
 16. Propiedades del margen para generar espacio entre elementos html, del borde hacia afuera.
+17. Propiedades de las listas.
 

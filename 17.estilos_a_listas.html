@@ -2,107 +2,205 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Propiedades relacionadas a listas.</title>
-	<link rel="stylesheet" href="css/17.estilos.css" type="text/css">
+
+	<!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+			
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+			
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+				
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+				
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+				
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="./css/17.estilos.css" type="text/css">
+	
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<title>Propiedades de listas</title>
 </head>
 <body>
-	<h1>Propiedades relacionadas a listas</h1>
+	<div class="container">
+
+		<h1>
+			CSS3: Cascading Style Sheets
+			<small>Propiedades de listas</small>
+		</h1>
 	
-	<p>Las listas se utilizan para enumerar una serie de elementos, se utiliza el elemento HTML ul (Unordered List), y cada item de la lista con el elemento HTML li (List Item).</p>
+		<hr>
 
-	<p>Las CSS nos permiten configurar las listas por medio de tres propiedades:</p>
+		<p>En html existen 2 tipos de listas que son usadas para enumerar una serie de elementos. Se utiliza el elemento HTML &lt;ul&gt; &lt;/ul&gt; para generar listas no ordenadas. Listas en viñetas. Se utiliza el elemento HTML &lt;ol&gt; &lt;/ol&gt; para generar listas ordenadas. Listas numeradas</p>
+
+		<p>Y cada item de la lista con el elemento HTML &lt;li&gt; &lt;/li&gt;</p>
+
+		<p>Las propiedades de la lista CSS permiten:</p>
+
+		<ul class="ejemplo">
+			<li>Establecer diferentes marcadores de elementos de lista para listas ordenadas</li>
+			<li>Establezca diferentes marcadores de elementos de lista para listas desordenadas</li>
+			<li>Establecer una imagen como marcador de elemento de lista</li>
+			<li>Agregar colores de fondo a listas y elementos de lista</li>
+		</ul>
+
+		<p>Css tiene su manera de tratar con las propiedades de ambas listas:</p>
 	
-	<ul>
-		<li>list-style-type</li>
-		<li>list-style-position</li>
-		<li>list-style-image</li>
-	</ul>
+		<ul class="ejemplo">
+			<li><span>list-style-type: </span>propiedad especifica el tipo de marcador de elemento de lista.</li>
 
-	<p>Las opciones para list-style-type son:</p>
+			<li><span>list-style-position: </span>especifica si los marcadores de elementos de lista deben aparecer dentro o fuera del flujo de contenido.</li>
 
-	<ul>
-		<li>none</li>
-		<li>disc</li>
-		<li>circle</li>
-		<li>square</li>
-		<li>decimal</li>
-		<li>decimal-leading-zero</li>
-		<li>lower-roman</li>
-		<li>upper-roman</li>
-		<li>lower-alpha</li>
-		<li>upper-alpha</li>
-	</ul>
+			<li><span>list-style-image: </span>propiedad especifica una imagen como marcador de elemento de lista.</li>
+		</ul>
 
-	<p>Los valores para list-style-position:</p>
+		
 
-	<ul>
-		<li>inside</li>
-		<li>outside</li>
-	</ul>
+		<p>Los valores para <span>list-style-type</span> son:</p>
 
-	<p>Los valores para list-style-image:</p>
+		<ul class="ejemplo">
+			<li>none</li>
+			<li>disc</li>
+			<li>circle</li>
+			<li>square</li>
+			<li>decimal</li>
+			<li>decimal-leading-zero</li>
+			<li>lower-roman</li>
+			<li>upper-roman</li>
+			<li>lower-alpha</li>
+			<li>upper-alpha</li>
+		</ul>
 
-	<ul>
-		<li>none</li>
-		<li>url</li>
-	</ul>
+		<p>Los valores para <span>list-style-position</span> son:</p>
 
-	<div>
-		<ul class="vacio">
-			<li>México</li>
-			<li>Brasil</li>
-			<li>Argentina</li>
+		<ul class="ejemplo">
+			<li>inside</li>
+			<li>outside</li>
 		</ul>
-		<ul class="disco">
-			<li>México</li>
-			<li>Brasil</li>
-			<li>Argentina</li>
+
+		<p>Los valores para <span>list-style-image</span> son:</p>
+
+		<ul class="ejemplo">
+			<li>none</li>
+			<li>url</li>
 		</ul>
-		<ul class="circulo">
-			<li>México</li>
-			<li>Brasil</li>
-			<li>Argentina</li>
-		</ul>
-		<ul class="cuadrado">
-			<li>México</li>
-			<li>Brasil</li>
-			<li>Argentina</li>
-		</ul>
-		<ul class="decimal">
-			<li>México</li>
-			<li>Brasil</li>
-			<li>Argentina</li>
-		</ul>
-		<ul class="decimal_2">
-			<li>México</li>
-			<li>Brasil</li>
-			<li>Argentina</li>
-		</ul>
-		<ul class="minus_roman">
-			<li>México</li>
-			<li>Brasil</li>
-			<li>Argentina</li>
-		</ul>
-		<ul class="mayus_roman">
-			<li>México</li>
-			<li>Brasil</li>
-			<li>Argentina</li>
-		</ul>
-		<ul class="minus_alfa">
-			<li>México</li>
-			<li>Brasil</li>
-			<li>Argentina</li>
-		</ul>
-		<ul class="mayus_alfa">
-			<li>México</li>
-			<li>Brasil</li>
-			<li>Argentina</li>
-		</ul>
-		<ul class="imagen">
-			<li>México</li>
-			<li>Brasil</li>
-			<li>Argentina</li>
-		</ul>
+
+		<div class="container ejercicio">
+
+			<h2>Ejemplos:</h2>
+
+			<hr>
+
+			<p>Se listan una serie de elementos en listas no ordenadas, con los diferentes valores que puede aplicar css a las listas</p>
+
+			<div class="row">
+				<div class="col-sm-4 borde">
+
+					<h4>Lista vacia: </h4>
+					<ul class="vacio">
+						<li>México</li>
+						<li>Brasil</li>
+						<li>Argentina</li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h4>Lista disco: </h4>
+					<ul class="disco">
+						<li>México</li>
+						<li>Brasil</li>
+						<li>Argentina</li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h4>Lista circulo: </h4>
+					<ul class="circulo">
+						<li>México</li>
+						<li>Brasil</li>
+						<li>Argentina</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4">
+					<h4>Lista cuadrado: </h4>
+					<ul class="cuadrado">
+						<li>México</li>
+						<li>Brasil</li>
+						<li>Argentina</li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h4>Lista decimal: </h4>
+					<ul class="decimal">
+						<li>México</li>
+						<li>Brasil</li>
+						<li>Argentina</li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h4>Lista decimal-leading-zero:</h4>
+					<ul class="decimal_2">
+						<li>México</li>
+						<li>Brasil</li>
+						<li>Argentina</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4">
+					<h4>Lista lower-roman:</h4>
+					<ul class="minus_roman">
+						<li>México</li>
+						<li>Brasil</li>
+						<li>Argentina</li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h4>Lista upper-roman:</h4>
+					<ul class="mayus_roman">
+						<li>México</li>
+						<li>Brasil</li>
+						<li>Argentina</li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h4>Lista lower-alpha:</h4>
+					<ul class="minus_alfa">
+						<li>México</li>
+						<li>Brasil</li>
+						<li>Argentina</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4">
+					<h4>Lista upper-alpha:</h4>
+					<ul class="mayus_alfa">
+						<li>México</li>
+						<li>Brasil</li>
+						<li>Argentina</li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h4>Lista imagen:</h4>
+					<ul class="imagen">
+						<li>México</li>
+						<li>Brasil</li>
+						<li>Argentina</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

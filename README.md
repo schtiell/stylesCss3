@@ -22,4 +22,5 @@
 19. Propiedades de fuentes Shorthand, metodo corto.
 20. Propiedades de bordes shorthand, metodo corto. 
 21. Propiedades del padding shorthand, metodo corto.
+22. Propiedades del fondo shorthand, metodoc corto.
 

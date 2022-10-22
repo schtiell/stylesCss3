@@ -1,13 +1,26 @@
-h1{
-	font: bold 2em times new roman;
-	text-align: center;
+.box{
+	display: flex;
+	align-content: center;
 }
 
 .fondo{
-  	background: #cccccc url(fondo.jpg) repeat;
-  	border: 3px dashed red;
-  	padding: 10px;
-  	width: 500px;
-  	height: 500px;
-  	margin: 20px auto;
+	padding: 10px;
+	width: 350px;
+	height: 350px;
+	margin: 20px auto;
+}
+
+.fondo1{
+	background:  url(https://www.superprof.mx/blog/wp-content/uploads/2020/03/historia-bajo-instrumento-1060x707.jpg) no-repeat fixed;
+	margin: 20px 10px;
+}
+
+.fondo2{
+	background: #F2F3F4;
+	margin: 20px 10px;
+}
+
+.fondo3{
+	background: top repeat-y scroll url(https://www.superprof.mx/blog/wp-content/uploads/2020/03/historia-bajo-instrumento-1060x707.jpg);
+	margin: 20px 10px;
 }

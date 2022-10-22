@@ -45,10 +45,12 @@ span{
 }
 
 pre{
-    margin: 0;
-    text-align: justify;
-    font-weight: bold;
-    font-style: italic;
+    display: block;
+    margin: 1em 3em;
+    font-family: monospace;
+    text-align: left;
+    white-space: pre-line;
+    font-style: oblique;
 }
 
 ul{

@@ -23,4 +23,6 @@
 20. Propiedades de bordes shorthand, metodo corto. 
 21. Propiedades del padding shorthand, metodo corto.
 22. Propiedades del fondo shorthand, metodoc corto.
+23. Selector universal *
+
 

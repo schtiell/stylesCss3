@@ -2,33 +2,73 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Pseudoclases</title>
+
+	<!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/24.estilos.css" type="text/css">
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<title>Manejo de pseudoclases</title>
 </head>
 <body>
-	<h1>Pseudoclases CSS</h1>
-	<p>Las pseudoclases son unas clases especiales, que se refieren a algunos estados del elemento HTML, las que se utilizan fundamentalmente son las que se aplican al elemento &lta&gt (enlaces).</p>
-
-	<p>La sintaxis varía con respecto al concepto de clase visto anteriormente ya que se tratan de pseudoclases predefinidas:</p>
-
-	<pre>
-	a:pseudoclase {
-  		propiedad: valor;
-	}
-	</pre>
-
-	<p>Es decir separamos el nombre del elemento HTML con dos puntos. Para el elemento HTML &lta&gt tenemos 4 pseudoclases fundamentales:</p>
-
-	<ul>
-		<li>link: enlace sin visitar</li>
-		<li>visited: enlace presionado</li>
-		<li>hover: enlace que tiene el apuntador del mouse encima</li>
-		<li>active: es la que tiene el foco en ese momento</li>
-	</ul>
 	<div class="container">
-		<a href="http://www.google.com.mx">google</a>
-		<a href="http://www.facebook.com">facebook</a>
-		<a href="http://www.youtube.com">youtube</a>
+		<h1>
+			CSS: Cascading Style Sheets
+			<small>Pseudoclases</small>
+		</h1>
+	
+		<hr>
+	
+		<p>Las <span>pseudoclases</span> son unas clases especiales, que se refieren a algunos estados del elemento HTML, las que se utilizan fundamentalmente son las que se aplican al elemento &lt;a&gt;, aunque pueden aplicarse a demas elementos.</p>
+	
+		<p>La sintaxis varía con respecto al concepto de clase visto anteriormente ya que se tratan de pseudoclases predefinidas:</p>
+	
+		<pre>
+			a:pseudoclase {
+				propiedad: valor;
+			}
+		</pre>
+	
+		<p>Es decir separamos el nombre del selector css con dos puntos seguido del nombre de la pseudoclase. Para el elemento HTML &lt;a&gt; se  tienen 4 pseudoclases fundamentales:</p>
+	
+		<ul>
+			<li><span>link: </span>enlace sin visitar</li>
+			<li><span>visited: </span>enlace presionado</li>
+			<li><span>hover: </span>enlace que tiene el apuntador del mouse encima</li>
+			<li><span>active: </span>tiene el foco en ese momento</li>
+		</ul>
+	
+		<div class="container ejercicio">
+
+			<h2>Ejemplo</h2>
+
+			<hr>
+
+			<div class="contenedor">
+				<a href="http://www.google.com.mx">google</a>
+				<a href="http://www.facebook.com">facebook</a>
+				<a href="http://www.youtube.com">youtube</a>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

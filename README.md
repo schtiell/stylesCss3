@@ -24,6 +24,7 @@
 21. Propiedades del padding shorthand, metodo corto.
 22. Propiedades del fondo shorthand, metodoc corto.
 23. Selector universal *
-24. psudoclases.
+24. Psudoclases.
+26. Menú vertical utilizando pseudoclases.
 
 

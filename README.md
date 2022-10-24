@@ -26,5 +26,6 @@
 23. Selector universal *
 24. Psudoclases.
 26. Menú vertical utilizando pseudoclases.
+27. Menú horizontal utilizando pseudoclases.
 
 

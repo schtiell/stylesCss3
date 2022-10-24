@@ -1,17 +1,21 @@
 .menu{
-	margin: 0px;
+	display: flex;
+	flex-flow: flex-end;
+	margin: 0px auto;
 	padding: 0px;
 	list-style-type: none;
 }
 
 .menu a{
-	background: silver;
-	border-right: 1px solid black;
-	text-align: center;
-	font: 20px tahoma;
-	color: blue;
 	display: block;
 	margin: 0px auto;
+	padding: 5px 15px;
+	background-color: #163973;
+	border-right: 1px solid #B9BDC2;
+	text-align: center;
+	font: 20px 'Courier New', Courier, monospace;
+	color: #fff;
+
 }
 
 .menu li{
@@ -24,6 +28,7 @@
 }
 
 .menu a:hover{
-	color: silver;
-	background: blue;
+	color: #163973;
+	border-bottom: 2px solid #163973;
+	background: #DFE3EB;
 }

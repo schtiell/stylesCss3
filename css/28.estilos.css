@@ -1,9 +1,19 @@
 .header{
+	display: block;
+	border: 2px solid black;
+	margin: 20px auto;
+	padding: 20px;
+	min-width: 400px;
+	max-width: 500px;
+	min-height: 100px;
+	max-height: 200px;
+	box-sizing: border-box;
+	overflow: scroll;
+}
+
+.header h3{
 	font: bold 40px Tahoma;
 	text-align: center;
-	background: silver;
-	color: blue;
-	border: 2px solid black;
-	padding: 30px;
+	color: #1D427E;
 }
 

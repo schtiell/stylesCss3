@@ -2,32 +2,87 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Propiedades relacionadas a la dimensión de un objeto en la página</title>
+
+	<!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/28.estilos.css" type="text/css">
+
+	<title>Propiedades de dimensión de elementos</title>
 </head>
 <body>
-	<h1>Propiedades relacionadas a la dimensión de un objeto en la página</h1>
+	<div class="container">
+		<h1>
+			CSS: Cascading Style Sheets
+			<small>Propiedades de dimensión de elementos</small>
+		</h1>
 	
-	<p>Disponemos de dos propiedades fundamentales que nos permiten fijar el ancho y el alto de un elemento HTML:</p>
+		<hr>
+		
+		<p>Se dispone de dos propiedades fundamentales que nos permiten fijar el ancho y el alto de un elemento HTML:</p>
+		
+		<ul>
+			<li>width</li>
+			<li>height</li>
+		</ul>
 	
-	<ul>
-		<li>width</li>
-		<li>height</li>
-	</ul>
-
-	<p>Cuando no se fija el ancho de un elemento HTML la propiedad toma el valor por defecto que es "auto" por lo que el navegador tiene que calcular el ancho teniendo en cuenta el contenido del elemento y el espacio disponible.</p>
-
-	<p>Por el momento hemos visto solo la medida en píxeles y porcentajes (luego veremos que podemos utilizar otras unidades de medida para fijar el ancho y el alto de un elemento). Otras cuatro propiedades relacionadas con el ancho y el alto de un elemento HTML son:</p>
-
-	<ul>
-		<li>min-width: Fija el ancho mínimo que puede tomar el elemento HTML (si reducimos el ancho del navegador a un valor menor a este veremos que aparece la barra de scroll en forma horizontal, es decir el elemento no puede tomar un valor menor a este)</li>
-		<li>max-width: Fija el ancho máximo que puede tomar el elemento HTML (es útil en los casos de aquellos elementos HTML que muestran texto y no queremos que tome una dimensión muy grande ya que esto hace complejo la lectura)</li>
-		<li>min-height: fija el alto minimo</li>
-		<li>max-height: fija el alto maximo</li>
-	</ul>
+		<p>Cuando no se fija el ancho de un elemento HTML la propiedad toma el valor por defecto que es <span>auto</span> por lo que el navegador tiene que calcular el ancho teniendo en cuenta el contenido del elemento y el espacio disponible.</p>
 	
-	<div class="header">
-		Ejemplo de las dimensiones de un objeto: width and height!!
+		<p>Otras propiedades relacionadas con el ancho y el alto de un elemento HTML son:</p>
+	
+		<ul>
+			<li><span>min-width:</span> Fija el ancho mínimo que puede tomar el elemento HTML es decir si se reduce el ancho del navegador a un valor menor a este, se podrá ver que aparece la barra de scroll en forma horizontal, lo que significa que el elemento no puede tomar un valor menor al especificado</li>
+
+			<li><span>max-width:</span> Fija el ancho máximo que puede tomar el elemento HTML que es útil en los casos de aquellos elementos HTML que muestran texto y no queremos que tome una dimensión muy grande ya que esto hace complejo la lectura</li>
+
+			<li><span>min-height:</span> fija el alto minimo</li>
+
+			<li><span>max-height:</span> fija el alto maximo</li>
+		</ul>
+		
+		<div class="container ejercicio">
+
+			<h2>Ejemplo</h2>
+
+			<hr>
+
+			<pre>
+				selector{
+					min-width: 400px;		//Ancho minimo
+					max-width: 500px;		//Ancho maximo
+					min-height: 100px;		//Alto minimo
+					max-height: 200px;		//Alto maximo
+					overflow: scroll;		//Adaptando el desbordamiento de contenido
+				}
+			</pre>
+
+			<div class="header">
+				<h3>Ejemplo de las dimensiones de un objeto: width and height!!</h3>
+
+				<hr>
+
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consectetur magnam autem assumenda iste aperiam perferendis harum, delectus numquam nisi architecto id sint, maxime quod sit deleniti voluptatem magni inventore.</p>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

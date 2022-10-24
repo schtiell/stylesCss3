@@ -27,5 +27,7 @@
 24. Psudoclases.
 26. Menú vertical utilizando pseudoclases.
 27. Menú horizontal utilizando pseudoclases.
+28. Dimensión de un elemento: min-wodth, max-width, min-height y max-heigth.
+
 
 

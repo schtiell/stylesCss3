@@ -32,43 +32,109 @@
 	<title>Estilos en formularios</title>
 </head>	
 <body>
-	<h1>
-		CSS: Cascading Style Sheets
-		<small>Estilos en formularios</small>
-	</h1>
-
-	<hr>
-	
-	<p>Un formulario es el elemento esencial para el envío de datos al servidor por parte del visitante del sitio.</p>
-
-	<span>
-		<p>Ejemplo:</p>
-	</span>
-
 	<div class="container">
-		<h2>Formulario de registro</h2>
-		<form action="#">
-			<label for="">Nombre:</label>
-			<input type="text" name="name" class="name">
-			<label for="">Email:</label>
-			<input type="email" name="email" class="email">
-			<label for="">Comentarios:</label>
-			<textarea name="coments" cols="30" rows="10" class="coments"></textarea>
-			<input type="submit" name="submit" value="Enviar" class="submit">
-		</form>
-	</div>
-</body>
-</html>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
+		<h1>
+			CSS: Cascading Style Sheets
+			<small>Estilos en formularios</small>
+		</h1>
 	
+		<hr>
+		
+		<p>Un formulario es el elemento esencial para el envío de datos al servidor por parte del visitante del sitio.</p>
+		
+		<div class="container ejericicio">
+
+			<h2>Ejemplo:</h2>
+
+			<hr>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="formulario">
+
+						<h3>Formulario de registro</h3>
+						
+						<form action="#" method="post">
+			
+							<div class="form-group">
+								<label for="name" class="col-form-label">Nombre:</label>
+								<input type="text" name="name" id="email" class="name form-control-sm">
+							</div>
+							<div class="form-group">
+								<label for="email" class="col-form-label">Email:</label>
+								<input type="email" name="email" id="email" class="email form-control-sm">
+							</div>
+							<div class="form-group">
+								<label for="coments" class="col-form-label">Comentarios:</label>
+								<textarea name="coments" cols="30" rows="10" id="coments"class="coments form-control"></textarea>
+							</div>
+							<button class="btn btn-primary" id="boton">Enviar</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<pre>
+						.formulario{
+							display: block;
+							background-color: #E4ECFA ;
+							border: 1px solid #3974D2 ;
+							width: 500px;
+							margin: 50px auto;
+							padding: 20px 40px;
+						}
+						
+						h3{
+							display: block;
+							font: bold 20px 'Courier New', Courier, monospace;
+							width: 80%;
+							margin: 20px auto;
+						}
+						
+						label{
+							display: block;
+							margin: 30px auto;
+							font: oblique 14px monospace;
+						}
+						
+						.name, .email{
+							display: block;
+							width: 400px;
+							background-color: #E4ECFA;
+							margin: 30px auto;
+							border: 0px;
+							border-bottom: 1px solid #000;
+							padding: 5px;
+							font: 12px monospace;
+						}
+						
+						.coments{
+							width: 80%;
+							display: block;
+							margin: 20px auto;
+						}
+						
+						#boton{
+							width: 40%;
+							display: block;
+							margin: 10px auto;
+							padding: 10px;
+						}
+						
+						.name:hover, .email:hover{
+							border-bottom: 2px solid #3974D2 ;
+							box-shadow: 43px 30px 85px -31px rgba(0,0,0,0.7);
+						}
+						
+						#boton:hover{
+							width: 45%;
+							border-radius: 10px;
+							box-shadow: 43px 30px 85px -31px rgba(0,0,0,0.7);
+						}
+					</pre>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

@@ -31,5 +31,6 @@
 29. Unidades de medida, relativas y absolitas para indicar tamaños.
 30. Formas de indicar colores para los elementos del DOM.
 31. Tipos de cursores
+32. Aplicando estilos css y algunas clases de bootstrap a los elementos de un formulario sencillo
 
 

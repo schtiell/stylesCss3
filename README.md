@@ -28,6 +28,7 @@
 26. Menú vertical utilizando pseudoclases.
 27. Menú horizontal utilizando pseudoclases.
 28. Dimensión de un elemento: min-wodth, max-width, min-height y max-heigth.
-
+29. Unidades de medida, relativas y absolitas para indicar tamaños.
+30. Formas de indicar colores para los elementos del DOM.
 
 

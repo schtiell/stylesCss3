@@ -2,49 +2,71 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Unidades de Medida CSS</title>
+
+	<!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/29.estilos.css" type="text/css">
+
+	<title>Unidades de Medidas</title>
 </head>
 <body>
-	<h1>Unidades de Medida CSS</h1>
-	<p>Css dispone de varios tipos de medidas</p>
-	<ul>
-		<li>px: pixeles</li>
-		<li>rem: tamaño de la fuente respecto al elemento raíz del documento</li>
-		<li>em: altura de la fuente por defecto</li>
-		<li>ex: altura de la letra por minuscula</li>
-		<li>in: pulgadas</li>
-		<li>cm: centimetros</li>
-		<li>mm: milimetros</li>
-		<li>pt: puntos, 1 punto es igual que 1/72 puladas</li>
-		<li>%: porcentaje</li>
-	</ul>
-	<p>Las unidades con longitudes relativas son: </p>
-	<ul>
-		<li>rem</li>
-		<li>em</li>
-		<li>%</li>
-	</ul>
-	<p>Estas unidades relativas escalan mejor en celulares, tablets y monitores</p>
-	<p>El framework de CSS Bootstrap 4 utiliza en forma masiva la unidad de medida "rem", si abrimos su código fuente veremos que se inicializan más de 600 propiedades utilizando esta medida.</p>
+	<div class="container">
+		<h1>
+			CSS: Cascading Style Sheets
+			<small>Unidades de Medida</small>
+		</h1>
 	
-	<div class="ejemplo">
-		<h1>Titulo nivel 1</h1>
-		<h2>Titulo nivel 2</h2>
-		<h3>Titulo nivel 3</h3>
-		<h4>Titulo nivel 4</h4>
-		<h5>Titulo nivel 5</h5>
-		<h6>Titulo nivel 6</h6>
-	</div>
+		<hr>
+	
+		<p>Al utilizar CSS te puedes encontrar con varios tipos de datos numéricos. Referente a las unidades de longitus se dispone de varios tipos de medidas. Asi mismo estas se clasifican en 2 tipos: <span>absolutas y relativas</span></p>
+	
+		<p>Las <span>unidades de longitud absoluta</span>, son aquellas que en las cuales su valor no va a cambiar en ningun caso. Este tipo de unidades son de mayor utilidad cuando se usan en salidas en formato impreso o en pantalla. El valor usado con más frecuencia son los pixeles px. Algunas medidas absolutas son: </p>
+	
+		<ul>
+			<li><span>cm: </span>centimetros</li>
+			<li><span>mm: </span>milimetros</li>
+			<li><span>Q: </span>cuarto de milimetro</li>
+			<li><span>in: </span>pulgadas</li>
+			<li><span>pc: </span>picas</li>
+			<li><span>pt: </span>puntos</li>
+			<li><span>px: </span>píxeles</li>
+		</ul>
 
-	<div class="ejemplo1">
-		<h1>Titulo nivel 1</h1>
-		<h2>Titulo nivel 2</h2>
-		<h3>Titulo nivel 3</h3>
-		<h4>Titulo nivel 4</h4>
-		<h5>Titulo nivel 5</h5>
-		<h6>Titulo nivel 6</h6>
-	</div>
+		<p>Las <span>unidades de longitudes relativas</span> son aquellas que permiten escalar el tamaño de un elemento con respecto del tamaño de la página o del elemento padre que los contiene, estas unidades son:</p>
 
+		<ul>
+			<li><span>rem: </span>Tamaño de la fuente respecto al elemento raíz del documento</li>
+			<li><span>em: </span>Altura de la fuente por defecto. Su tamaño dependerá de propiedades como font-size  y el ancho estipulado</li>
+			<li><span>ex: </span>Altura de la letra por minuscula</li>
+			<li><span>lh: </span>Altura de la linea del elemento</li>
+			<li><span>vw: </span>1% del ancho de la ventana gráfica</li>
+			<li><span>vh: </span>1% del alto de la ventana gráfica</li>
+			<li><span>vmin: </span>1% de la dimensión más pequeña de la ventana gráfica</li>
+			<li><span>vmax:</span>1% de la dimensión más grande de la ventana gráfica</li>
+			<li><span>%: </span>Porcentaje</li>
+		</ul>
+		
+		<p>Estas unidades relativas escalan mejor en celulares, tablets y monitores. El framework de CSS Bootstrap 4 utiliza en forma masiva la unidad de medida "rem", si se analiza su código fuente se puede ver que se inicializan más de 600 propiedades utilizando esta medida.</p>
+	</div>
 </body>
 </html>

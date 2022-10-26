@@ -2,60 +2,121 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Formas para indicar el color</title>
+	
+	<!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/30.estilos.css" type="text/css">
+
+	<title>Formas para indicar el color</title>
 </head>
 <body>
-
-	<h1>Formas para indicar el color</h1>
-
-	<p>Hasta ahora hemos visto que para asignar el color utilizamos tres valores hexadecimales (rojo,verde,azul) precedido por el caracter #</p>
-
-	<pre>
-	background-color:#ff0000;
-	</pre>
-
-	<p>Ahora veremos otras sintaxis para indicar el color:</p>
-
-	<pre>
-	background-color:rgb(255,0,0);
-	</pre>
-
-	<p>Utilizando la función rgb pasando como parámetro la cantidad de rojo, verde y azul en formato decimal (un valor entre 0 y 255).</p>
-	
-	<p>También con la función rgb podemos indicar un porcentaje entre 0% y 100% para cada componente:</p>
-	
-	<pre>
-	background-color:rgb(100%,0%,0%)
-	</pre>
-	
-	<p>Por último en algunas situaciones podemos utilizar una sintaxis reducida para ciertos valores:</p>
-
-	<pre>
-	background-color:#ffaaff;
-	</pre>
-
-	<p>Lo podemos indicar con esta otra sintaxis resumida:</p>
-
-	<pre>
-	background-color:#faf;
-	</pre>
-
-	<p>Es decir si cada valor hexadecimal está formado por el mismo caracter o número podemos utilizar esta sintaxis simplificada indicando un caracter o número solamente. Es decir a este color no lo podemos representar con la sintaxis indicada:</p>
-
-	<pre>
-	background-color:#ffaafa
-	</pre>
-
-	<p>Ya que los últimos 2 caracteres, fa, son distintos.</p>
-
 	<div class="container">
-		<p class="color1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolores, ducimus. Aliquid cumque repellat, ducimus inventore obcaecati earum in at nihil accusamus quas, vel dignissimos quia, incidunt ex, quod fuga!</p>
+		<h1>
+			CSS: Cascading Style Sheets
+			<small>Formas para indicar el color</small>
+		</h1>
+	
+		<hr>
+	
+		<p>Para asignar el color <span>hexadecimal</span> se indican los valores correspondientes al rojo,verde y azul precedido por el caracter <span>#</span></p>
+	
+		<pre>
+			selector{
+				background-color:#ff0000;
+			}
+		</pre>
+	
+		<p>Otras sintaxis para indicar el color:</p>
+	
+		<pre>
+			selector{
+				background-color:rgb(255,0,0);
+			}
+		</pre>
+	
+		<p>Utilizando la función <span>rgb</span> pasando como parámetro la cantidad de rojo, verde y azul en formato decimal (un valor entre 0 y 255).</p>
+		
+		<p>También con la función rgb podemos indicar un porcentaje entre 0% y 100% para cada componente:</p>
+		
+		<pre>
+			selector{
+				background-color:rgb(100%,0%,0%)
+			}
+		</pre>
+		
+		<p>Por último en algunas situaciones se puede utilizar una sintaxis reducida para ciertos valores:</p>
+	
+		<pre>
+			selector{
+				background-color:#ffaaff;
+			}
 
-		<p class="color2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore recusandae qui nemo soluta, optio dignissimos aut deserunt, vero esse mollitia molestiae modi magni nihil, a illum adipisci perspiciatis eligendi porro!</p>
+			selector{
+				background-color:#faf;
+			}
+		</pre>
+	
+		<p>Es decir si cada valor hexadecimal está formado por el mismo caracter o número, se puede utilizar esta sintaxis simplificada indicando un caracter o número solamente.</p>
+		
+		<p>Para el siguiente ejemplo no se puede usar ya que los últimos 2 caracteres, fa, son distintos.</p>
 
-		<p class="color3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto tempore, officia, quos dolorum animi assumenda corporis illum. Blanditiis temporibus, explicabo nulla ipsa suscipit fuga delectus. Repellendus expedita itaque maiores.</p>
+		<pre>
+			selector{
+				background-color:#ffaafa
+			}
+		</pre>
+	
+		<div class="container ejercicio">
+
+			<h2>Ejemplo:</h2>
+
+			<hr>
+
+			<pre>
+				.color1{
+					background-color: #faa;
+					color: rgb(44,14,63);
+					border: 1px solid hsl(217, 77%, 30%);
+				}
+				
+				.color2{
+					color: white;
+					background: rgb(44,14,63);
+				}
+				
+				.color3{
+					background-color: rgba(76,155,244,.6);
+					color: fff;
+					border: 1px solid #0B49AD;
+				}
+			</pre>
+
+			<p class="color1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolores, ducimus. Aliquid cumque repellat, ducimus inventore obcaecati earum in at nihil accusamus quas, vel dignissimos quia, incidunt ex, quod fuga!</p>
+	
+			<p class="color2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore recusandae qui nemo soluta, optio dignissimos aut deserunt, vero esse mollitia molestiae modi magni nihil, a illum adipisci perspiciatis eligendi porro!</p>
+	
+			<p class="color3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto tempore, officia, quos dolorum animi assumenda corporis illum. Blanditiis temporibus, explicabo nulla ipsa suscipit fuga delectus. Repellendus expedita itaque maiores.</p>
+		</div>
 	</div>
-
 </body>
 </html>	

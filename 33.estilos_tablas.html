@@ -2,70 +2,163 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Definiendo reglas de estilo a una tabla</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/33.estilos.css" type="text/css">
+
+	<title>Estilos css para tablas</title>
 </head>
 <body>
-	<h1>Definiendo reglas de estilo a una tabla</h1>
-	
-	<p>Otro elemento muy común en un sitio web son las tablas. A este elemento HTML podemos aplicarle varias de las propiedades vistas tanto a la tabla en sí, como sus filas y celdas. El elemento table podemos definir la propiedad border-collapse que puede tomar dos valores:</p>
-	
-	<pre>
-	collapse
-	separate
-	</pre>
-	
-	<p>Si le asignamos el valor collapse une las líneas de los border de las celdas (con esto queda en muchas situaciones mejor estéticamente)</p>
-
 	<div class="container">
-		<table>
-			<caption><!-- Establece un título de la tabla, independientemente de su posición -->
-				Cantidad de lluvia en Milimetros
-			</caption>
-			<thead> <!--Etiqueta contenedora de la cabecera de la tabla. Parte superior de la tabla. -->
-				<tr><!-- Table Row. Etiqueta contenedora de cada fila de la tabla -->
-					<th><!-- Table Header. Cada una de las celdas de cabecera de la tabla -->
-						Provincia
-					</th>
-					<th>
-						Enero
-					</th>
-					<th>
-						Febrero
-					</th>
-					<th>
-						Marzo
-					</th>
-				</tr>
-			</thead>
-			<tbody><!-- Etiqueta contenedora del cuerpo de la tabla. Parte central de la tabla. -->
-				<tr>
-					<th>
-						Xalapa
-					</th>
-					<td>300</td><td>350</td><td>260</td><!-- Table Data. Cada una de las celdas de la tabla -->
-				</tr>
-				<tr>
-					<th>
-						Pánuco
-					</th>
-					<td>300</td><td>250</td><td>220</td>
-				</tr>
-				<tr>
-					<th>
-						Coatzacoalcos
-					</th>
-					<td>270</td><td>230</td><td>190</td>
-				</tr>
-			</tbody>
-			<tfoot><!-- -Etiqueta contenedora del pie de la tabla. Parte inferior de la tabla.->
-				<tr>
-					<td colspan="4">	
-						<a href="https://lenguajehtml.com/p/html/semantica/etiquetas-html-de-tablas">Mas información sobre tablas en HTML 5</a>
-					</td>
-				</tr>
-			</tfoot>
-		</table>
+		<h1>
+			CSS: Cascading Style Sheets
+			<small>Estilos css para tablas</small>
+		</h1>
+	
+		<hr>
+		
+		<p>Otro elemento muy común en un sitio web son las tablas. A este elemento HTML podemos aplicarle varias de las propiedades vistas tanto a la tabla en sí, como sus filas y celdas. El elemento table podemos definir la propiedad <span>border-collapse</span> que puede tomar dos valores:</p>
+		
+		<pre>
+			selector{
+				border-collapse: collapse;
+			}
+
+			selector{
+				border-collapse: separate;
+			}
+		</pre>
+		
+		<p>Si le asignamos el valor collapse une las líneas de los border de las celdas (con esto queda en muchas situaciones mejor estéticamente)</p>
+
+		<p>Los siguientes estilos css serán aplicados a la tabla que se presenta al final del sitio</p>
+
+		<div class="row">
+			<div class="col-m-4">
+				<pre>
+					caption{
+						text-align: center;
+						padding: 10px;
+						border: 1px solid #F4F6F6;
+					}
+				</pre>
+			</div>
+			<div class="col-m-4">
+				<pre>
+					table{
+						font: bold 15px Arial;
+						border-collapse: collapse;
+						border: 1px solid #F4F6F6 ;
+						width: 100%;
+					}
+				</pre>
+			</div>
+			<div class="col-m-4">
+				<pre>
+					th{
+						background: #AED6F1;
+						border-right: 1px solid #FEF9E7;
+						border-bottom: 1px solid #FEF9E7;
+						width: 25%;
+					}
+
+					thead th{
+						padding: 15px;
+					}
+				</pre>
+			</div>
+			<div class="col-m-3">
+				<pre>
+					td{
+						border: 1px solid #F4F6F6;
+						padding: 1em;
+						background: #FEF9E7;
+						font-weight: lighter;
+						text-align: center;
+					}
+				</pre>
+			</div>
+			<div class="col-m-3">
+				<pre>
+					tfoot td{
+						font: bold 13px Arial;
+						text-align: center;
+						background: #E0FFFF;
+					}
+				</pre>
+			</div>
+		</div>
+	
+		<div class="container ejercicio">
+
+			<h2>Ejercicio</h2>
+
+			<hr>
+
+			<div class="row">
+				<table class="table">
+					<caption>Cantidad de lluvia en Milimetros</caption>
+					<thead>
+						<tr>
+							<th>Provincia</th>
+							<th>Enero</th>
+							<th>Febrero</th>
+							<th>Marzo</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Xalapa</th>
+							<td>300</td>
+							<td>350</td>
+							<td>260</td>
+						</tr>
+						<tr>
+							<th>Pánuco</th>
+							<td>300</td>
+							<td>250</td>
+							<td>220</td>
+						</tr>
+						<tr>
+							<th>Coatzacoalcos</th>
+							<td>270</td>
+							<td>230</td>
+							<td>190</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="4">	
+								<a href="https://lenguajehtml.com/p/html/semantica/etiquetas-html-de-tablas">Mas información sobre tablas en HTML 5</a>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

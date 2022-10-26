@@ -1,34 +1,18 @@
-h1{
-	font: 25px verdana;
-	text-align: center;
-	margin: 40px;
-}
-
-p{
-	margin: 20px 30px;
-}
-
-.container{
-	width: 50%;
-	margin: 0px auto;
-	background: #E0FFFF;
-}
-
 caption{
-	font: bold 15px Arial;
 	text-align: center;
 	padding: 10px;
 	border: 1px solid #F4F6F6;
+	
 }
 
 table{
+	font: bold 15px Arial;
 	border-collapse: collapse;
 	border: 1px solid #F4F6F6 ;
 	width: 100%;
 }
 
 th{
-	font: bold 15px Arial;
 	background: #AED6F1;
 	border-right: 1px solid #FEF9E7;
 	border-bottom: 1px solid #FEF9E7;
@@ -42,12 +26,12 @@ td{
 	border: 1px solid #F4F6F6;
 	padding: 1em;
 	background: #FEF9E7;
-	font: lighter 15px Arial;
+	font-weight: lighter;
 	text-align: center;
 }
 
 tfoot td{
-	font: bold 10px Arial;
+	font: bold 13px Arial;
 	text-align: center;
 	background: #E0FFFF;
 }

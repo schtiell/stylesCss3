@@ -1,15 +1,17 @@
-.container{
-
+.areas{
+	display: flex;
+	align-content: center;
 }
 
-.lista li{
-	list-style: none;
-	margin-bottom: 10px;
+.col-sm-3{
+
+	border: 1px solid #000;
+	margin: 20px auto;
+	padding: 10px;
 }
-		
+
 .cursor1{
 	cursor: crosshair;
-	
 }
 
 .cursor2{
@@ -42,7 +44,7 @@
 }
 
 .cursor9{
-	cursor: se-resize;-resize;
+	cursor: se-resize;
 }
 
 .cursor10{

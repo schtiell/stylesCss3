@@ -2,50 +2,104 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Definir un cursor para un elemento HTML</title>
+
+	<!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/31.estilos.css" type="text/css">
+
+	<title>Definir tipos de cursor</title>
 </head>
 <body>
-	<p>Disponemos de una propiedad llamada cursor que tiene por objetivo definir el cursor a mostrar cuando la flecha del mouse se encuentra sobre el elemento HTML. Los valores que podemos asignarle a esta propiedad cursor son:</p>
-
-	<ul>
-		<li>crosshair</li>
-		<li>default</li>
-		<li>pointer</li>
-		<li>move</li>
-		<li>e-resize</li>
-		<li>ne-resize</li>
-		<li>nw-resize</li>
-		<li>n-resize</li>
-		<li>se-resize</li>
-		<li>sw-resize</li>
-		<li>s-resize</li>
-		<li>w-resize</li>
-		<li>text</li>
-		<li>wait</li>
-		<li>help</li>
-		<li>auto</li>
-	</ul>
-
 	<div class="container">
-		<ul class="lista">
-			<li><a href="http://google.com" class="cursor1">www.google.com</a></li>
-			<li><a href="http://google.com" class="cursor2">www.google.com</a></li>
-			<li><a href="http://google.com" class="cursor3">www.google.com</a></li>
-			<li><a href="http://google.com" class="cursor4">www.google.com</a></li>
-			<li><a href="http://google.com" class="cursor5">www.google.com</a></li>
-			<li><a href="http://google.com" class="cursor6">www.google.com</a></li>
-			<li><a href="http://google.com" class="cursor7">www.google.com</a></li>
-			<li><a href="http://google.com" class="cursor8">www.google.com</a></li>
-			<li><a href="http://google.com" class="cursor9">www.google.com</a></li>
-			<li><a href="http://google.com" class="cursor10">www.google.com</a></li>
-			<li><a href="http://google.com" class="cursor11">www.google.com</a></li>
-			<li><a href="http://google.com" class="cursor12">www.google.com</a></li>
-			<li><a href="http://google.com" class="cursor13">www.google.com</a></li>
-			<li><a href="http://google.com" class="cursor14">www.google.com</a></li>
-			<li><a href="http://google.com" class="cursor15">www.google.com</a></li>
-			<li><a href="http://google.com" class="cursor16">www.google.com</a></li>
-		</ul16
-	</div16
-</body16
-</html16
+
+		<h1>
+			CSS: Cascading Style Sheets
+			<small>Definir tipos de cursor</small>
+		</h1>
+
+		<hr>
+
+		<p>Disponemos de una propiedad llamada cursor que tiene por objetivo definir el cursor a mostrar cuando la flecha del mouse se encuentra sobre el elemento HTML. Los valores que podemos asignarle a esta propiedad cursor son:</p>
+	
+		<ul>
+			<li><span>crosshair: </span>cursor cruzado, a menudo utilizado para indicar la selección en un mapa de bits</li>
+			<li><span>default: </span>Cursor predeterminado (típicamente una flecha)</li>
+			<li><span>pointer: </span>Cursor usado sobre enlaces (típicamente una mano)</li>
+			<li><span>move: </span>El objeto suspendido puede moverse</li>
+			<li><span>e-resize: </span>Cursor para cambiar el tamaño del borde derecho de un cuadro</li>
+			<li><span>ne-resize: </span>Cursor para cambiar el tamaño de la esquina superior derecha de un cuadro</li>
+			<li><span>nw-resize: </span>Cursor para cambiar el tamaño de la esquina superior izquierda de un cuadro</li>
+			<li><span>n-resize: </span>Cursor para cambiar el tamaño del borde superior de un cuadro</li>
+			<li><span>se-resize: </span>Cursor para cambiar el tamaño de la esquina inferior derecha de un cuadro</li>
+			<li><span>sw-resize: </span>Cursor para cambiar el tamaño de la esquina inferior izquierda de un cuadro</li>
+			<li><span>s-resize:</span>Cursor para cambiar el tamaño del borde inferior de un cuadro</li>
+			<li><span>w-resize: </span>Cursor para cambiar el tamaño del borde izquierdo de un cuadro</li>
+			<li><span>text: </span>Se puede seleccionar el texto que indica el cursor (típicamente un I-beam)</li>
+			<li><span>wait:</span>Cursor que indica que el programa está ocupado (a veces un reloj de arena o un reloj)</li>
+			<li><span>help: </span>Cursor que indica que hay ayuda disponible</li>
+			<li><span>auto: </span>El browser (user agent) determina el cursor que mostrara basado en el contenido presente.</li>
+		</ul>
+	
+		<div class="container ejericicio">
+
+			<h2>Ejemplo</h2>
+
+			<hr>
+
+			<p>Tipos de cursores aplicados a la siguiente lista de anclas:</p>
+			
+			<div class="row areas">
+			
+				<div class="col-sm-3">
+					<ul class="lista">
+						<li><a href="#" class="cursor1">crosshair</a></li>
+						<li><a href="#" class="cursor2">defualt</a></li>
+						<li><a href="#" class="cursor3">pointer</li>
+						<li><a href="#" class="cursor4">move</a></li>
+						<li><a href="#" class="cursor5">e-resize</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<ul class="lista">
+						<li><a href="#" class="cursor6">ne-resize</a></li>
+						<li><a href="#" class="cursor7">nw-resize</a></li>
+						<li><a href="#" class="cursor8">n-resize</a></li>
+						<li><a href="#" class="cursor9">se-resize</a></li>
+						<li><a href="#" class="cursor10">sw-resize</a></li>
+						<li><a href="#" class="cursor11">s-resize</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<ul class="lista">
+						<li><a href="#" class="cursor12">w-resize</a></li>
+						<li><a href="#" class="cursor13">text</a></li>
+						<li><a href="#" class="cursor14">wait</a></li>
+						<li><a href="#" class="cursor15">help</a></li>
+						<li><a href="#" class="cursor16">auto</a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+	</div>
+</body>
+</html>

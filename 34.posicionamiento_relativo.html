@@ -57,86 +57,122 @@
 		<a href="https://aprende-web.net/css/css7_3.php">Más sobre position: relative</a>
 
 		<div class="contenedor container1">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quis, reprehenderit exercitationem odit velit labore similique ducimus porro hic et at, voluptatum reiciendis cumque! Unde a eum, est dolor quis.</p>
-			<span><p>SE DESPLAZA: 90PX HACIA ABAJO</p></span>
+			<pre>
+				.contenedor{
+					position: relative;
+					top: 90px;
+				}
+			</pre>
 		</div>
 
 		<div class="contenedor container2">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eveniet quis laboriosam praesentium excepturi vero placeat reprehenderit cum ducimus sapiente, non odit quos odio perferendis suscipit quia in, veniam quod.</p>
-			<span><p>SE DESPLAZA: 30PX A LA DERECHA Y 40PX HACIA ABAJO</p></span>
+			<pre>
+				.container2{
+					position: relative;
+					left: 100px;
+					top: 1px;
+				}			
+			</pre>
 		</div>
 
-		<div class="contenedor container3">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga eius quo commodi voluptates non, nulla provident rem, at nam, ea, neque natus. Beatae ab nisi accusamus nam quibusdam assumenda ad.</p>
-			<span><p>NO SE DESPLAZA</p></span>
+		<div class="contenedor">
+			<p>No se define un posicionamiento, por que su valor por default es static</p>
+			
+			<pre>
+				selector{
+					position: static
+				}
+			</pre>
+			
+			<p>Se posiciona en el DOM justo donde debería estar colocado si los elementos anteriores tambien fueran con posicionamiento static</p>
 		</div>
 
-		<div class="square1">
-			<p>SQUARE 1</p>
+		<p>Los siguientes contenedores cuadrados reciben los mismo estilos css para la apariencia, con un <span>display block</span> y <span>la propiedad float con valor left</span> para que el cuadro 2 se coloque justo a la izquierda del cuadro 1, y el 3 junto al 2 y asi sucesivamente.</p>
+
+		<p>Pero el cuadro 1 y 4 reciben la propiedad <span>position: relative</span>, por lo que su posicionamiento en el DOM se ve afectado.</p>
+
+
+		<div class="square square1">
+
+			<h3>square: 1</h3>
+			<pre>
+				selector{
+					position: relative;
+					top: 100px;
+					left: 180px;
+				}
+			</pre>
+		</div>
+
+		
+		<div class="square">
+			<h3>square: 2</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 		</div>
 
-		<div class="square2">
-			<p>SQUARE 2</p>
+		<div class="square">
+			<h3>square: 3</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 		</div>
 
-		<div class="square3">
-			<p>SQUARE 3</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		<div class="square square4">
+			<h3>square: 4</h3>
+			<pre>
+				selector{
+					position: relative;
+					top: 100px;
+					right: 180px;
+				}
+			</pre>
 		</div>
 
-		<div class="square4">
-			<p>SQUARE 4</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		<div class="circle circle1">
+			<h3>Circle: 1</h3>
+			<pre>
+				.circle1{
+					position: relative;
+					top: 200px;
+					left: 80px;
+				}
+			</pre>
 		</div>
 
-		<div class="square11">
-			<p>SQUARE 11</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		<div class="circle circle2">
+			<h3>Circle: 2</h3>
+			<pre>
+				.circle2{
+					position: relative;
+					left: -40px;
+				}
+			</pre>
 		</div>
 
-		<div class="square12">
-			<p>SQUARE 12</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		<div class="circle circle3">
+			<h3>Circle: 3</h3>
+			<pre>
+				.circle3{
+					position: relative;
+					left: -50px;
+				}
+			</pre>
 		</div>
 
-		<div class="square13">
-			<p>SQUARE 13</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		<div class="circle circle4">
+			<h3>Circle: 4</h3>
+			<pre>
+				.circle4{
+					position: relative;
+					top: -250px;
+					left: 750px;
+				}
+			</pre>
 		</div>
 
-		<div class="square14">
-			<p>SQUARE 14</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		</div>
-
-		<div class="square15">
-			<h2>Position: Relative</h2>
+		<div class="circle circle5">
+			<h3>Position: relative</h3>
 			<p>En la posición relativa, el desplazamiento se realiza a partir de la posición original de la caja, con lo que a partir de ahí la caja se mueve la medida indicada con las propiedades left, top, right, bottom. Estas propiedades también admiten medidas negativas, en este caso la medida negativa desplaza la caja en sentido contrario al positivo, con lo que las propiedades left: npx y right: -npx dan identico resultado, lo mismo ocurre con las propiedades top: npx y bottom: -npx</p>
 		</div>
-
-		<div class="square21">
-			<p>SQUARE 21</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		</div>
-
-		<div class="square22">
-			<p>SQUARE 22</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		</div>
-
-		<div class="square23">
-			<p>SQUARE 23</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		</div>
-
-		<div class="square24">
-			<p>SQUARE 24</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		</div>
 	</div>
-
 </body>
 </html>
 

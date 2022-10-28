@@ -34,6 +34,7 @@
 32. Aplicando estilos css y algunas clases de bootstrap a los elementos de un formulario sencillo
 33. Estilos css para tablas.
 34. Posicionamiento static y relative
+35. Posicionamiento absolute
 
 
 

@@ -2,42 +2,130 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Posicionamiento absoluto (position: absolute)</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Importando la libreria jQuery -->
+	<script src="./js/jquery-3.6.0.min.js"></script>
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 5 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/35.estilos.css" type="text/css">
+
+	<title>Posicionamiento absoluto</title>
 </head>
 <body>
-	<h1>Posicionamiento absoluto <br>(position: absolute)</h1>
+	<div class="container">
+		<h1>
+			CSS: Cascading Style Sheets
+			<small>Posicionamiento absoluto</small>
+		</h1>
+
+		<hr>
 	
-	<p>El posicionamiento absoluto dispone un elemento HTML completamente fuera del flujo de la página. El valor que debemos asignar a la propiedad position es absolute.</p>
+		<p>El posicionamiento absoluto dispone un elemento HTML completamente fuera del flujo de la página. El valor que debemos asignar a la propiedad <span>position es absolute</span>.</p>
 
-	<p>Hay que tener en cuenta que no se reserva espacio en el flujo del documento como pasaba con el posicionamiento relativo (recordemos que con este posicionamiento podemos desplazar el elemento a cuarquier parte de la página, pero el espacio por defecto para dicho elemento queda vacío).</p>
+		<p>Hay que tener en cuenta que no se reserva espacio en el flujo del documento como pasaba con el posicionamiento relativo <span>recordar que con este posicionamiento podemos desplazar el elemento a cuarquier parte de la página, pero el espacio por defecto para dicho elemento queda vacío</span></p>
 	
-	<p>El posicionamiento es siempre con respecto a la página.</p>
+		<p>El posicionamiento es siempre con respecto a la página.</p>
 
-	<p>Normalmente cuando utilizamos el posicionamiento absoluto inicializamos las propiedades top y left.</p>
+		<p>Normalmente cuando se utiliza el posicionamiento absoluto se inicializan las propiedades <span>top y left</span>, aunque al tambien pueden usarse las propiedades <span>bottom y right</span></p>
 
-	<span><p>Ejemplo:</p></span>
+		<a href="https://aprende-web.net/css/css7_3.php">Más sobre posicionamiento CSS</a>
 
-	<a href="https://aprende-web.net/css/css7_3.php">Más sobre posicionamiento CSS</a>
+		<div class="container ejercicio">
 
-	<div class="container1">
-		<h2>Cabecera de la Página <br> HEADER</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati impedit harum cupiditate nemo ducimus molestias sapiente magni</p>
-	</div>
+			<h2>Ejemplo:</h2>
 
-	<div class="container2">
-		<h2>Barra lateral <br>ASIDE</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim repellendus suscipit dolore animi ullam cumque cum eos, expedita illum, in impedit voluptatibus totam consequatur mollitia! Sed quibusdam, eos temporibus. Rem!</p>
-	</div>
+			<hr>
+			
+			<p>El siguiente contenedor <span>div</span> simula la página completa de un sitio, la cual está distribuida bajo las recomendaciones de html5: con las secciones header, aside, article y un footer.</p>
 
-	<div class="container3">
-		<h2>Articulos <br>ARTICLES</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sit reprehenderit consequatur quia culpa optio eaque soluta, dolores totam minus doloremque. Sit, minus, amet. Dolorem error asperiores quis sapiente sit!</p>
-	</div>
+			<div class="container posicionamiento">
 
-	<div class="container4">
-		<h2>Pie de página <br>FOOTER</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sit reprehenderit consequatur quia culpa optio eaque soluta, dolores totam minus doloremque. Sit, minus, amet. Dolorem error asperiores quis sapiente sit!</p>
+				<div class="cabecera">
+					<h3>Header / Cabecera</h3>
+					<pre>
+						.cabecera{
+							position: absolute;
+							top: 0;
+							left: 0;
+							box-sizing: border-box;							
+						}
+					</pre>
+				</div>
+
+				<div>
+					<h3>Nav bar</h3>
+					<a href="https://google.com" class="navbar">google</a>
+					<a href="https://youtube.com" class="navbar">youtube</a>
+					<a href="https://facebook.com" class="navbar">facebook</a>
+					<a href="https://twitter.com" class="navbar">twitter</a>
+				</div>
+			
+				<div class="barraLateral">
+					<h3>Aside / Barra Lateral</h3>
+					<hr>
+					<pre>
+						.barraLateral{
+							position: absolute;
+							left: 0px;
+							top: 200px;
+							
+							width: 30%;
+							height: 446px;
+							
+							box-sizing: border-box;
+						}
+					</pre>
+				</div>
+			
+				<div class="article">
+					<h3>Article / Articulo</h3>
+					<hr>
+					<pre>
+						.article{
+							position: absolute;
+							top: 200px;
+							left: 200px;
+						
+							width: auto;
+							height: 446px;
+						
+							box-sizing: border-box;
+						}
+					</pre>
+				</div>
+			
+				<div class="footer">
+					<h3>Footer / Pie de página</h3>
+					<pre>
+						.footer{
+							position: absolute;
+							bottom: 0;
+							left: 0;
+						}
+					</pre>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

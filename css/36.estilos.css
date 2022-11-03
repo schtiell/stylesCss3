@@ -1,32 +1,75 @@
 
-div{
-	margin: 20px;
-	width: 50%;
+.padre{
+	position: relative;
+	border: 2px solid #000;
+	width: 100%;
+	height: 400px;
+	min-width: 600px;
+}
+
+.general{
+	width: 500px;
+	height: 150px;
+	margin: 0;
+	padding: 0;
 }
 
 .container1{
-	border: 2px solid #F4511E;
-	background: #FFF59D;
 	position: absolute;
-	top: 300px;
-	left:120px;
+	top: 100px;
+	left: 140px;
+
+	border: 2px solid #F4511E;
+	background: rgba(245, 172, 65, .6);
+
 	z-index: 2;
 }
 
 .container2{
-	border: 2px solid #7B1FA2;
-	background: #CCFF33;
 	position: absolute;
-	top: 350px;
-	left:150px;
+	top: 150px;
+	left: 190px;
+
+	border: 2px solid #7B1FA2;
+	background: rgba(99, 218, 11, .4);
+
 	z-index: 3;
 }
 
 .container3{
+	position: absolute;
+	top: 50px;
+	left: 70px;
+
 	border: 2px solid #0033FF;
 	background: #FF99CC ;
-	position: absolute;
-	top: 390px;
-	left: 50px;
+
 	z-index: 1;
+}
+
+.num{
+	width: 100px;
+	height: 40px;
+	border: 2px solid #000;
+	margin: 0;
+	padding: 10px;
+}
+
+.num1{
+	position: absolute;
+	top: 50px;
+	left: 580px;
+
+}
+
+.num2{
+	position: absolute;
+	top: 100px;
+	left: 650px;
+}
+
+.num3{
+	position: absolute;
+	top: 150px;
+	left: 700px;
 }

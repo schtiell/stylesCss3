@@ -2,29 +2,95 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Posicionamiento fijo (position: fixed)</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="./css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/37.estilos.css" type="text/css">
+
+	<title>Posicionamiento fixed</title>
 </head>
 <body>
 
-	<div class="barrasuperior">
-		<p>BARRA DE NAVEGACION</p>
+	<div class="barraNav">
+		<span>Barra de Navegación</span>
 	</div>
 	
-	<div class="barralateral">
-		<p>BARRA LATERAL</p>	
+	<div class="barraLat">
+		<span>Barra Lateral</span>	
 	</div>
 	
-	<div class="contenido">
-		<h1>Posicionamiento fijo <br>(position: fixed)</h1>
+	<div class="container contenido">
 
-		<p>Esta es otra forma de disponer un elemento dentro de la página. La posición fija (fixed) ajusta el elemento en una coordenada fija con respecto a la ventana del navegador. Es una variante del posicionamiento absoluto.</p>
+		<h1>
+			CSS: Cascading Style Sheets
+			<small>Position: fixed</small>	
+		</h1>
 
-		<p>Recordemos que con el posicionamiento absoluto se dispone un elemento en una coordenada exacta con respecto a la página, pero con el posicionamiento fijo la posición es con respecto a la ventana del navegador. </p>
+		<hr>
 
-		<p>En pocas palabras con el posicionamiento fijo si hacemos scroll de la página el elemento con el valor fixed en la propiedad position permanece siempre en el mismo lugar.</p>
+		<p>Esta es otra forma de disponer un elemento dentro de la página. La posición <span>fixed</span> ajusta el elemento en una coordenada fija con respecto a la ventana del navegador. Es una variante del posicionamiento absoluto.</p>
 
-		<span><p>Ejemplo: </p></span>
+		<p>Se debe recordar que con el posicionamiento <span>absoluto</span> se dispone un elemento en una coordenada exacta con respecto a la página, pero con el posicionamiento <span>fixed</span> la posición es con respecto a la ventana del navegador. </p>
+
+		<p>En pocas palabras con el posicionamiento fixed si se hace scroll de la página el elemento con dicho valor permanece siempre en el mismo lugar.</p>
+		
+		<div class="container ejercicio">
+
+			<h2>Ejemplo:</h2>
+
+			<hr>
+
+			<p>Este ejemplo despliega 2 barras, una lateral y una barra de navegación superior, ambas con la propiedad position: fixed</p>
+
+			<pre>
+
+				.barraNav{
+					position: fixed;
+					left: 0px;
+				
+					width: 100%;
+					height: 50px;
+				
+					background: #000;
+					color: #C3C1BF;
+				}
+				
+				.barraLat{
+					position: fixed;
+					top: 50px;
+					left: 0;
+				
+					width: 200px;
+					height: 100%;
+				
+					background: #F9C77D;
+				}
+			</pre>
+
+			<p>Este ejemplo muestra como aunque se haga scroll al sitio ambas barras con propiedad position: fixed se mantienen en su misma ubicación utilizando todo el navegador.</p>
+
+			<p>A diferencia de la position: absolute, la position: fixed, no respeta el tener un contenedor padre, por lo que toma como referencia el navegador. Mientras que la position: absolute toma los valores asignados de top, left, right y bottom a partir del contenedor padre.</p>
+			
+		</div>
 	</div>
 </body>
 </html>

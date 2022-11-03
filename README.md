@@ -36,6 +36,7 @@
 34. Posicionamiento static y relative.
 35. Posicionamiento absolute.
 36. Propiedad z-index.
+37. Posicion fixed.
 
 
 

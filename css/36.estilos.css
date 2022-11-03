@@ -1,17 +1,3 @@
-h1{
-	font: bold 30px Tahoma;
-	text-align: center;
-	margin: 40px 30px 50px 30px;
-}
-
-p{
-	font: 15px verdana;
-	margin: 20px 30px;
-}
-
-span p{
-	font-weight: bold;
-}
 
 div{
 	margin: 20px;

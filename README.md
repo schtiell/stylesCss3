@@ -39,6 +39,7 @@
 37. Posicion fixed.
 38. Position: absolute a 2 columnas.
 39. Position: absolute a 2 columnas generando un menú con anclas.
+40. Propiedad float.
 
 
 

@@ -1,28 +1,6 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-
-h1{
-	font: bold 30px verdana;
-	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 30px;
-}
-
-h2{
-	font: bold 20px verdana;
-	text-align: center;
-	margin: 20px;
-}
-
-p{
-	font: 15px verdana;
-	margin: 20px 30px;
-}
-
 .barra{
 	position: absolute;
+	/*position: fixed;*/
 	top: 0;
 	left: 0;
 	width: 200px;
@@ -35,32 +13,44 @@ p{
 	margin-top:10px;
 	margin-left: 220px;
 	margin-right: 20px;
-	background: #F4F6F6;
 	padding-top: 10px;
 }
 
 .menu{
 	display: block;
-	font: 20px verdana;
-	margin: 20px;
 	width: 80%;
+
+	margin: 20px;
+	padding: 0;
+
+	font: 20px verdana;
 	text-align: center;
-	background: #FADBD8;
 }
 
 
 .menu li{
-	padding: 5px;
-	text-decoration: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+
+	width: 100%;
+
 	list-style: none;
-	border-bottom: 1px solid #5499C7;
+	border-bottom: 1px solid #fff;	
 }
 
 .menu a{
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
 	text-decoration: none;
-	color: #000;
+	background-color: #000;
+	color: #D1D1DE;
 }
 
-.menu li:hover{
-	background: #D5F5E3;
+.menu a:hover{
+	width: 100%;
+	background: #6C6EF6 ;
+	color: #fff;
 }
+

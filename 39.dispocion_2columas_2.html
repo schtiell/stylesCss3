@@ -2,8 +2,31 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Disposición de 2 columnas</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="./css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/39.estilos.css" type="text/css">
+
+	<title>Disposición de 2 columnas</title>
 </head>
 <body>
 	<div class="barra">
@@ -17,14 +40,97 @@
 			<li><a href="http://www.twitter.com">Twitter</a></li>
 		</ul>
 	</div>
-	<div class="contenido">
-		<h1>Disposición de 2 columnas<br>(position: absolute)</h1>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos obcaecati, voluptate, cupiditate ullam ipsam quisquam corporis qui mollitia blanditiis harum repellendus quis, quidem odio? Quidem, iusto voluptatum qui quisquam error?</p>
+	<div class="container contenido">
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam totam nobis at harum inventore quam porro aliquam, cum? Non tempora, similique ex exercitationem iusto reiciendis facere fuga necessitatibus soluta quis?</p>
+		<h1>
+			CSS: Cascading Style Sheets
+			<small>Disposición de 2 columnas position: absolute</small>
+		</h1>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nihil eligendi animi esse non dicta asperiores ratione expedita, debitis cum quos dolore, reiciendis quisquam eaque quod incidunt facere excepturi. Nemo.</p>
+		<hr>
+
+		<p>La finalidad de este ejercicio es crear una barra sidebar, la cual muestra un menu con 4 links a diferentes sitios, aplicando la pseudoclase hover a los elementos del menú para aplicar diferentes estilos al pisicionar el puntero del mouse sobre ellos.</p>
+
+		<p>Nuevamente el tamaño de alto del sidebar no ocupa todo el navegador ya que su position está declarada como absolute y no fixed, que permitiría utilizar el scroll y la sidebar se mantendría fija durante todo el recorrido del scroll en el sitio</p>
+
+		<div class="container">
+			
+			<h2>Ejemplo</h2>
+
+			<hr>
+
+			<p>A la barra sidebar se aplicaron los siguientes estilos</p>
+
+			<pre>
+				sidebar{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 200px;
+					height: 100%;
+					margin-top:10px;
+				}
+			</pre>
+
+			<p>Para la sección del contenido del ejemplo los estilos declarados unicamente corresponden a margenes y padding</p>
+
+			<pre>
+				.contenido{
+					margin-top:10px;
+					margin-left: 220px;
+					margin-right: 20px;
+					padding-top: 10px;
+				}
+			</pre>
+			
+			<p>Para la lista no ordenada que funcionará para mostrar las opciones del menú: </p>
+
+			<pre>
+				ul{
+					display: block;
+					width: 80%;
+					margin: 20px;
+					padding: 0;
+				}
+			</pre>
+
+			<p>Para los elementos de la lista no ordenada, es decir para los list items: </p>
+
+			<pre>
+				ul li{
+					display: block;
+					margin: 0;
+					padding: 0;
+					width: 100%;				
+					list-style: none;
+					border-bottom: 1px solid #fff;	
+				}
+			</pre>
+
+			<p>Para las anclar o hipervinculos, los siguientes estilos:</p>
+
+			<pre>
+				ul a{
+					display: block;
+					margin: 0 auto;
+					padding: 10px;
+					text-decoration: none;
+					background-color: #000;
+					color: #D1D1DE;
+				}
+			</pre>
+
+			<p>Por ultimo se aplica una pseudoclase ::hover sobre las anclas del menú para dar la sencación de interaccion al usuario con el menú</p>
+
+			<pre>
+				ul a:hover{
+					width: 100%;
+					background: #6C6EF6 ;
+					color: #fff;
+				}
+			</pre>
+		</div>
 	</div>
 </body>
 </html>

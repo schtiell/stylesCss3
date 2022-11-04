@@ -2,26 +2,92 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Disposición de 2 columnas</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="./css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/38.estilos.css" type="text/css">
+
+	<title>Disposición de 2 columnas</title>
 </head>
 <body>
-	<div class="barra">
-		<h2>ASIDE</h2>
+	<aside class="barra">
+		<h2>Barra Lateral</h2>
+
+		<hr>
+
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae saepe ipsam adipisci dolores aliquid, nesciunt, commodi minus inventore sequi quasi, rerum totam vitae iste hic error tenetur sunt possimus ea.</p>
 		
-	</div>
-	<div class="contenido">
+	</aside>
 
-		<h1>Disposición de 2 columnas<br>(position: absolute)</h1>
+	<div class="container contenido">
 
-		<p>Empezaremos a ver como componer una página sin utilizar las tablas HTML (un medio muy utilizado hasta hace muy poco, ya que es ampliamente soportado por navegadores antiguos)</p>
+		<h1>
+			CSS: Cascading Style Sheets
+			<small>Disposición de 2 columnas: position: absolute</small>
+		</h1>
+
+		<hr>
+
+		<p>Este ejemplo muestra como componer una página sin utilizar las <span>tablas HTML </span> un medio muy utilizado al principio para realizar el maquetado de los sitios web, ya que es ampliamente soportado por navegadores antiguos</p>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam repudiandae quo, accusantium repellat totam aspernatur magnam sint nihil! Commodi, quibusdam. Iure consequatur ut est voluptatem saepe provident deleniti aspernatur blanditiis!</p>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt debitis, dolorum laborum incidunt vero culpa reprehenderit nihil, magnam rem, accusamus ut! Hic molestias delectus eligendi aut odio inventore aperiam ratione?</p>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, eligendi veritatis dignissimos corporis! Modi ut, distinctio debitis corporis excepturi perferendis, optio numquam nesciunt fugit, nostrum itaque molestiae, ea odit dolores.</p>
+
+		<div class="container ejercicio">
+			
+			<h2>Ejemplo:</h2>
+
+			<hr>
+
+			<p>Este maquetado muestra 2 secciones, la primera un aside la cual declara una clase llamada barra, con los siguientes estilos css:</p>
+
+			<pre>
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 200px;
+				height: 100%;
+				margin-top:10px;
+				background: #E2DED9;
+			</pre>
+
+			<p>Es es un claro ejemplo de la diferencia con la position: fixed, ya que se puede notar que la seccion aside alcanza su tamaño declarado en css y como su definición es position: absolute y aunque se le indica con height: 100% no hace el scroll al continuar hacia abajo del sitio.</p>
+
+			<p>La segunda sección declara las propiedades css siguientes:</p>
+
+			<pre>
+				.contenido{
+					margin-top: 10px;
+					margin-left: 220px;
+					margin-right: 20px;
+					height: 100%;
+				}
+			</pre>
+
+			<p>Donde se puede notar que unicamente se le indican margenes top, left y right para posicionar el elemento, el cual al no indicarle una propiedad position, su valor es static</p>
+		</div>
 	</div>
 </body>
 </html>

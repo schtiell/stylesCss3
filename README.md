@@ -37,6 +37,7 @@
 35. Posicionamiento absolute.
 36. Propiedad z-index.
 37. Posicion fixed.
+38. Position: absolute a 2 columnas.
 
 
 

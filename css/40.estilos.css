@@ -1,8 +1,10 @@
 img{
+	float: left;
+	width: 70%;
+	height: 250px;
+
 	background-image: url("https://lh4.googleusercontent.com/-P-MsEKlMZi4/UkLJQdWErkI/AAAAAAAAAYA/F93J7DKS0UQ/s642/CU01034D_1.png");
 	background-repeat: no-repeat;
-	float: right;
-	width: 60%;
-	height: 250px;
-	margin: auto 40px;
+
+	margin: auto 10px;
 }

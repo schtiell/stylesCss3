@@ -28,7 +28,7 @@
 
 	<title>Propiedad float</title>
 </head>
-<body>
+<div>
 	<div class="container">
 		<h1>
 			CSS: Cascading Style Sheets
@@ -68,13 +68,27 @@
 		</ul>
 
 		<p>Los demas elementos en principio ignoran a la propiedad float y ocupan el sitio dejado por ésta (por lo que puede haber solapamiento) tal como pasa con el posicionamiento absoluto. Sin embargo al contrario que en éste, los elementos que hay dentro de las cajas sí que respetan el espacio ocupado por la caja flotante, adaptándose al espacio visible que ésta deja.</p>
-		</div>
 
 		<div class="container ejercicio">
 
 			<h2>Ejemplo</h2>
 
 			<hr>
+
+			<p>La imagen que se inserta en el sitio a continuación tiene la propiedad float con un valor right, es decir la imagen flotará a la derecha. Se le aplican los siguientes estilos css</p>
+
+			<pre>
+				img{
+					float: left;
+					width: 70%;
+					height: 250px;
+					
+					background-image: url("https://imagen.png");
+					background-repeat: no-repeat;
+				
+					margin: auto 10px;
+				}
+			</pre>
 			
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis ratione vitae atque impedit, quo neque similique animi alias voluptate eaque dignissimos dolorem iure? Quasi, laboriosam voluptates iusto atque recusandae voluptatibus.</p>
 			
@@ -84,8 +98,8 @@
 
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur saepe fugit nostrum natus impedit eius atque commodi quo voluptates, laboriosam deleniti earum facere excepturi minus a aut repellat illo itaque.</p>
 
-			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil aspernatur quidem pariatur, fugiat ex molestias laborum quasi incidunt, quas cum laudantium? Eos officiis nostrum error, animi reiciendis distinctio harum ducimus!</p>
-			
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur alias, exercitationem reprehenderit, animi labore amet aliquid voluptate praesentium quo suscipit quas minus earum repellendus temporibus dolores aliquam nisi doloribus voluptatum?</p>
 		</div>
+	</div>	
 </body>
 </html>

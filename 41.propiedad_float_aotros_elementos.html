@@ -2,17 +2,65 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Propiedad float aplicada a otros elementos HTML</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="./css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/41.estilos.css" type="text/css">
+
+	<title>Propiedad float</title>
+	
 </head>
 <body>
-	<h1>Propiedad float aplicada a otros elementos HTML</h1>
+	<div class="container">
+		<h1>
+			CSS: Cascading Style Sheets
+			<small>Propiedad float</small>
+		</h1>
 
-	<p><span class="letraCapital">L</span>a propiedad float permite como hemos <br>visto con las imágenes tomar un elemento HTML<br> y colocarlo lo más a la izquierda o derecha. Luego los otros <br>elementos siguen el flujo alrededor del elemento que está flotante. <br> Podemos flotar cualquier elemento HTML</p>
+		<hr>
 
-	<p><span class="letraCapital">N</span>ormalmente cuando se utiliza la propiedad float, <br>también debe inicializar la propiedad width para <br>fijar el ancho del elemento.</p>
+		<img>
 
-	<p><span class="letraCapital">C</span>uando se define un elemento <br>que flote el alto del mismo afecta como se disponen los demás <br>elementos de la página, será distinto si es un texto que envolverá al <br>elemento flotante o si se trata de una imagen o div.</p>
-	
+		<h2>¿Qué significa flotar?</h2>
+		
+		<p>Para comprender el propósito y el origen de float, podemos mirar el diseño de impresión. En un diseño de impresión, las imágenes se pueden configurar en la página de modo que el texto las envuelva según sea necesario. Esto se denomina comúnmente y apropiadamente "ajuste de texto". Aquí hay un ejemplo de eso.</p>
+
+		<p>En los programas de diseño de página, se puede indicar a los cuadros que contienen el texto que respeten el ajuste de texto o que lo ignoren. Ignorar el ajuste de texto permitirá que las palabras fluyan directamente sobre la imagen como si ni siquiera estuviera allí. Esta es la diferencia entre que esa imagen sea parte del flujo de la página (o no). El diseño web es muy similar.</p>
+
+		<p>En el diseño web, los elementos de página con la propiedad CSS float aplicada son como las imágenes en el diseño de impresión, donde el texto fluye a su alrededor. Los elementos flotantes siguen siendo parte del flujo de la página web. Esto es claramente diferente a los elementos de página que usan posicionamiento absolute.</p>
+
+		<div class="container ejercicio">
+
+			<h2>Ejemplo</h2>
+
+			<hr>
+
+			<p class="parrafo"><span class="letraCapital">L</span>a propiedad float permite como hemos visto con las imágenes tomar un elemento HTML y colocarlo lo más a la izquierda o derecha. Luego los otros elementos siguen el flujo alrededor del elemento que está flotante. Podemos flotar cualquier elemento HTML</p>
+
+			<p class="parrafo"><span class="letraCapital">N</span>ormalmente cuando se utiliza la propiedad float, también debe inicializar la propiedad width para fijar el ancho del elemento.</p>
+
+			<p class="parrafo"><span class="letraCapital">C</span>uando se define un elemento que flote el alto del mismo afecta como se disponen los demás elementos de la página, será distinto si es un texto que envolverá al elemento flotante o si se trata de una imagen o div.</p>
+			
+		</div>
+	</div>
 </body>
 </html>	

@@ -1,17 +1,27 @@
-h1{
-	font: bold 30px verdana;
-	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 20px;
-
+*{
+	margin: 0;
+	padding: 0;
 }
 
-p{
-	font: 15px verdana;
+img{
+	float: right;
+	background-image: url("https://www.1keydata.com/css-tutorial/example-float-right-float-left.jpg");
+	background-repeat: no-repeat;
+	width: 350px;
+	height: 450px;
+	margin: 20px 0 50px 30px;
+}
+
+.ejercicio{
+	margin-top: 100px;
 }
 
 .letraCapital{
 	float: left;
-	font-size: 2em;
-	margin: 2px 7px;
+	font-size: 50px;
+	margin-right: 20px ;
+}
+
+.parrafo{
+	margin-top: 40px;
 }

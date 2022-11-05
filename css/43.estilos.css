@@ -3,24 +3,16 @@
 	padding: 0;
 }
 
-h1{
-	font: bold 30px verdana;
-	text-align: center;
-	margin: 10px 20px;
-}
-
-p{
-	margin: 10px;
-}
-
-.container{
+.sidebar{
 	float: left;
 	width: 200px;
 	height: 100%;
-	background: #FADBD8;
+
+	background-color: #E6E6F0;
+	text-align: center;
 }
 
-.container2, .principal{
+.contenedor2, .principal{
 	margin: 10px 20px 10px 220px;
 	background: #FADBD8;
 }

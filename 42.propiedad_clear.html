@@ -2,54 +2,101 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Propiedad clear</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="./css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/42.estilos.css" type="text/css">
+
+	<title>Propiedad clear</title>
 </head>
 <body>
-	<h1>Propiedad clear</h1>
-
-	<p>La propiedad clear se emplea combinándola con otros elementos que se hayan definido la propiedad float. La propiedad clear define que un elemento HTML no permita que flote en el caso que el elemento anterior se haya definido con dicha propiedad.</p>
-	
-	<p>También se puede definir que no flote a izquierda o derecha únicamente.</p>
-
-	<p>Los valores posibles que podemos asignarle a la propiedad clear son:</p>
-
-	<ul>
-		<li>both</li>
-		<li>left</li>
-		<li>right</li>
-		<li>none</li>
-	</ul>	
-
-	<p>Implementaremos un problema para mostrar los resultados empleando la propiedad float únicamente y el resultado que se logra empleando la propiedad clear luego.</p>
-
-	<p><span>Ejemplo:</span></p>
-
-	<p>Mostrar cuatro div flotando a izquierda de 250 píxeles. Hacer que los div de la izquierda tengan más texto que los de la derecha.</p>
-
 	<div class="container">
-		<h2>Contenedor 1</h2>
-		<p class="box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum tempora tenetur perferendis nisi a saepe esse molestias commodi iste, ut veritatis sint obcaecati reiciendis soluta eveniet? Illum voluptates, modi! Quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod voluptatibus laborum deserunt labore dolorum, distinctio culpa. Doloremque sequi incidunt laudantium, ipsam, voluptate odit culpa et libero minima iste nesciunt ullam.</p>
+
+		<h1>
+			CSS: Cascading Style Sheets
+			<small>Propiedad clear</small>
+		</h1>
+
+		<hr>
+	
+		<p>La <span>propiedad clear</span> se emplea combinándola con otros elementos que se hayan definido la <span>propiedad float</span>. La propiedad clear define que un elemento HTML no permita que flote en el caso que el elemento anterior se haya definido con dicha propiedad.</p>
 		
-		<p class="box2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum adipisci laborum non autem atque ratione provident id cumque aliquid distinctio nostrum accusamus, corporis libero eveniet officiis pariatur, eius modi in?</p>
+		<p>También se puede definir que no flote a izquierda o derecha únicamente.</p>
+	
+		<p>Los valores posibles que podemos asignarle a la propiedad clear son:</p>
+	
+		<ul>
+			<li>both</li>
+			<li>left</li>
+			<li>right</li>
+			<li>none</li>
+		</ul>	
+	
+		<p>Implementaremos un problema para mostrar los resultados empleando la propiedad float únicamente y el resultado que se logra empleando la propiedad clear luego.</p>
+	
+		<p><span>Ejemplo:</span></p>
+	
+		<p>Mostrar cuatro div flotando a izquierda de 250 píxeles. Hacer que los div de la izquierda tengan más texto que los de la derecha.</p>
+	
+		<div class="container ejercicio">
+
+			<div class="contenedor">
+			
+				<h2>Contenedor 1</h2>
+	
+				<hr>
+				
+				<div class="box"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum tempora tenetur perferendis nisi a saepe esse molestias commodi iste, ut veritatis sint obcaecati reiciendis soluta eveniet? Illum voluptates, modi! Quidem. Lorem ipsum dolor sit amet.</p></div>
+				
+				<div class="box">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum tempora tenetur perferendis nisi a saepe esse molestias commodi iste, ut veritatis sint obcaecati reiciendis soluta eveniet? Illum voluptates, modi! Quidem. Lorem ipsum dolor sit amet.</p>
+				</div>
+
+				<div class="box">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum tempora tenetur perferendis nisi a saepe esse molestias </p>
+				</div>
+				
+				<div class="box">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum tempora tenetur perferendis nisi a saepe esse molestias commodi iste</p>
+				</div>
+			</div>
 		
-		<p class="box3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem odio rem, velit quos necessitatibus saepe repellendus ex dicta sequi error </p>
+			<p class="parrafo">Supongamos que queremos mostrarlo lo más a la izquierda posible, es decir que comience una nueva fila en pantalla. Para ello cuando definimos el estilo para el nuevo elemento aparece la propiedad clear:</p>
 		
-		<p class="box4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+			<div class="contenedor">
+
+				<h2>Contenedor 2</h2>
+				
+				<hr>
+
+				<p class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum tempora tenetur perferendis nisi a saepe esse molestias commodi iste, ut veritatis sint obcaecati reiciendis soluta eveniet? Illum voluptates, modi! Quidem.</p>
+				
+				<p class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum adipisci laborum non autem atque ratione provident id cumque aliquid distinctio nostrum accusamus, corporis libero eveniet officiis pariatur, eius modi in?</p>
+				
+				<p class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem odio rem, velit quos necessitatibus saepe repellendus ex dicta sequi error </p>
+				
+				<p class="box boxClear">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+			</div>	
+		</div>
 	</div>
-
-	<p>Supongamos que queremos mostrarlo lo más a la izquierda posible, es decir que comience una nueva fila en pantalla. Para ello cuando definimos el estilo para la box14 aparece la propiedad clear:</p>
-
-	<div class="container2">
-		<h2>Contenedor 2</h2>
-		<p class="box11">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum tempora tenetur perferendis nisi a saepe esse molestias commodi iste, ut veritatis sint obcaecati reiciendis soluta eveniet? Illum voluptates, modi! Quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod voluptatibus laborum deserunt labore dolorum, distinctio culpa. Doloremque sequi incidunt laudantium, ipsam, voluptate odit culpa et libero minima iste nesciunt ullam.</p>
-		
-		<p class="box12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum adipisci laborum non autem atque ratione provident id cumque aliquid distinctio nostrum accusamus, corporis libero eveniet officiis pariatur, eius modi in?</p>
-		
-		<p class="box13">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem odio rem, velit quos necessitatibus saepe repellendus ex dicta sequi error </p>
-		
-		<p class="box14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-	</div>
-
 </body>
 </html>

@@ -1,72 +1,34 @@
-h1{
 
-	font: bold 30px verdana;
-	text-align: center;
-	margin: 15px;
-}
+.contenedor{
+	display: block;
+	width: 100%;
+	height: 900px;
 
-p{
-	font: 15px verdana;
-}
-
-h2{
-	font: bold 25px verdana;
-	text-align: center;
-}
-
-.container, .container2{
-	border: 2px solid #000;
-	width: 95%;
-	height: 550px;
-	margin: 20px auto;
+	margin: 10px auto;
 	padding: 10px;
+
+	border: 1px solid #D1D1DE;
 }
 
-.box1, .box11{
+.box{
 	float: left;
-	width: 250px;
-	background: #FADBD8;
-	border: 2px solid #E73F1C;
-	padding: 20px 25px;
-	margin: 10px;
+	width: 20%;
+	background: #E6E6F0;
+	border: 3px solid #5656AD;
+	padding: 10px;
+	margin: 30px 15px;
 }
 
-.box2, .box12{
-	float: left;
-	width: 250px;
-	background: #FADBD8;
-	border: 2px solid #E73F1C;
-	padding: 20px 25px;
-	margin: 10px;
-
-}
-
-.box3, .box13{
-	float: left;
-	width: 250px;
-	background: #FADBD8;
-	border: 2px solid #E73F1C;
-	padding: 20px 25px;
-	margin: 10px;
-}
-
-.box4{
-	float: left;
-	width: 250px;
-	background: #FADBD8;
-	border: 2px solid #E73F1C;
-	padding: 20px 25px;
-	margin: 10px;
-}
-
-.box14{
-	float: left;
+.boxClear, .parrafo{
 	clear: left;
-	width: 250px;
-	background: #FADBD8;
-	border: 2px solid #E73F1C;
-	padding: 20px 25px;
-	margin: 10px;
+	margin-top: 50px auto;
 }
 
-
+.box1{
+	display: block;
+	width: 20%;
+	background: #FADBD8;
+	border: 2px solid #E73F1C;
+	padding: 10px;
+	margin: 30px 15px;
+}

@@ -1,18 +1,36 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-
 .sidebar{
+	/*position: fixed;*/
 	float: left;
-	width: 200px;
+	width: 300px;
 	height: 100%;
 
 	background-color: #E6E6F0;
+	border: 1px solid #979B9F;
+
 	text-align: center;
+	padding: 20px;
+
+	border-radius: 10px;
 }
 
-.contenedor2, .principal{
-	margin: 10px 20px 10px 220px;
-	background: #FADBD8;
+.container{
+	margin-left: 305px;
+	width: 75%;
 }
+
+.article{
+	width: 80%;
+
+	margin: 30px auto;
+	padding: 30px 40px;
+
+	background: #DAECFD;
+	border: 1px solid #979B9F;
+}
+
+h3{
+	text-align: center;
+	margin-top: 30px;
+}
+
+

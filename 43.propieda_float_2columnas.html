@@ -23,7 +23,7 @@
 	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
 
 	<!-- Importando el css3 -->
-	<link rel="stylesheet" href="./css/14.template2.css" type="text/css">
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/43.estilos.css" type="text/css">
 
 	<title>Propiedad float</title>
@@ -35,28 +35,43 @@
 
 		<hr>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa eaque dolorum ipsum qui, minima aperiam excepturi voluptatem, accusantium, quasi nisi pariatur, molestias maiores earum corrupti odio cumque error reiciendis dolor. </p>
+		<p>Use float cuando desee arrastrar un elemento al lado de un elemento contenedor mientras permite que otro contenido fluya libremente a su alrededor. No hay ningún otro método CSS para lograr esto</p>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere modi voluptatem ipsam error repellendus expedita beatae minus optio cum debitis, saepe exercitationem dolorem ipsum, distinctio corrupti autem quae tenetur blanditiis.</p>
+		<p><span>¡así que no tengas miedo de usarlo!</span></p>
+
+		<p>Aparte de los valores left, right y none la propiedad float incorpora dos relativamente nuevos <span>inline-start e inline-end</span>, que son llamados valores lógicos. Los cuales deben ser muy considerados a favorecer su uso ahora. El soporte del navegador es bueno y estos valores lógicos crean diseños más inclusivos</p>
 	</div>
 
 	<div class="container">
+		
 		<h1>
 			CSS: Cascading Style Sheets
 			<small>Propiedad float. Generando 2 columnas</small>
 		</h1>
 
 		<hr>
+
+		<p>La propiedad de posicionamiento <span>float</span> coloca un elemento en el lado izquierdo o derecho de su contenedor y permite que los elementos en línea lo envuelvan.</p>
+
+		<p>En el pasado, float se ganó una mala reputación porque se usaba mal para los diseños de página. ¡Esto ha llevado a algunos desarrolladores a cuestionar si está obsoleto ahora o si debería evitarse por completo!</p>
 		
-		<div class="contenedor2">
-	
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia vitae officiis dolor nulla reiciendis tempora, saepe, hic similique iste. Esse saepe dolorem maiores asperiores enim excepturi repellendus alias pariatur error. </p>
-	
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi inventore expedita commodi dolorum, voluptatum, quis officiis. Maiores, animi. Quos repudiandae nobis aut voluptates incidunt laudantium earum debitis aperiam accusamus modi.</p>
-	
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis maiores itaque corrupti, sit mollitia sequi rerum vel reiciendis, harum dolorem ipsum rem! Unde nulla reiciendis odio tempora nostrum placeat, sequi.</p>
-	
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dignissimos non magni et nemo distinctio doloremque repellat odio similique, officiis iste dolore vel modi quisquam veritatis quasi! At, aspernatur quisquam!</p>
+		<p><span>¿Debería seguirse usando?</span></p>
+
+		<div class="article">
+
+
+			
+			<h3>Una breve hisoria de la propiedad float</h3>
+		
+			<hr>
+
+			<p>La propiedad float se introdujo en CSS para permitir a los desarrolladores web crear diseños de estilo de revista, como colocar una imagen dentro de una columna de texto con el texto envolviéndola, similar al diseño de revistas, historietas, periodicos, etc.</p>
+
+			<p>La propiedad float se introdujo cuando CSS era un bebé. Es difícil saber cuándo exactamente, ¡pero seguro que float estuvo en los navegadores en 2001! ¡En ese momento, CSS era muy limitado! Cuando las personas querían hacer diseños de página completa, a menudo buscaban float. ¡Era el salvaje oeste en aquel entonces!</p>
+
+			<p>De alguna manera, usar float para diseños funcionó. Sin embargo, las lágrimas solían seguir porque esto significaba usar float más allá de su propósito previsto, lo que generaba problemas complicados de código y diseño que eran difíciles de manejar a medida que el sitio web evolucionaba.</p>
+
+			<p>¡Hoy en día, simplemente no lo use float para diseños de página! Debe considerar el uso de flotadores de esta manera como una técnica heredada. <span> Flexbox y CSS Grid</span> son opciones muy superiores para crear diseños de página complejos .</p>
 		</div>
 	</div>
 </body>

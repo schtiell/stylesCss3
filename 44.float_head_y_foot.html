@@ -2,33 +2,111 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Disposición de 2 columnas, cabecera y pie</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/44.estilos.css" type="text/css">
+	<title>Disposición de 2 columnas, cabecera y pie</title>
 </head>
 <body>
 	<div class="container">
-		<div class="header">
-			<h1>Disposición de 2 columnas: <br>Cabecera y Pie</h1>
-		</div>
-		<div class="columna1">
-			<h2>Contenido del la columna 1</h2>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod reiciendis quisquam omnis architecto, consequuntur iusto quidem distinctio aut, ab quam obcaecati, hic maxime accusamus vitae temporibus. Consequatur, expedita ea!</p>
+		<div class="header">
+			<h3>Header del sitio web!!!</h3>
 		</div>
-		<div class="columna2">
+
+		<div class="sidebar">
+
+			<h3>Más sobre los valores lógicos</h3>
+
+			<hr>
+
+			<p>Los valores lógicos nos permiten crear el diseño correcto para idiomas con diferentes direcciones de escritura con un solo valor. </p>
+
+			<p>Los valores lógicos más utilizados son lefty right. Los ejemplos que siguen presentan valores lógicos que se usan con menos frecuencia para ilustrar cómo se pueden usar en diferentes casos de uso.</p>
+
+			<pre>
+				.header{
+					width: 100%;
+				}
+			</pre>
+
+			<pre>
+				.sidebar{
+					float: left;
+					width: 250px;
+				}
+			</pre>
+
+			<pre>
+				.article{
+					margin-left: 320px;
+				}
+			</pre>
+
+			<pre>
+				.footer{
+					clear: left;
+				}
+			</pre>
+		</div>
+
+		<div class="article">
+
+			<h1>
+				CSS: Cascading Style Sheets
+				<small>Propiedad float y clear: header, 2 columnas y footer</small>
+			</h1>
+
+			<hr>
 
 			<p>Una estructura muy común en la web es la disposición de una cabecera de página, seguida de dos columnas y un pie de página.</p>
 
-			<p>Implementaremos un ancho fluido, es decir que el tamamo del contenido se adapta al tamaño de la ventana del navegador. Esto lo logramos iniciando la propiedad:</p>
+			<p>Se implementará un ancho fluido, es decir que el tamamo del contenido se adapta al tamaño de la ventana del navegador. Esto se consigue iniciando la propiedad width: 100%</p>
 	
-			<ul>
-				<li>width:100%;</li>
-			</ul>
-
 			<p>La implementación de esta estructura de página es la siguiente:</p>
+
+			<div class="container ejercicio">
+				
+				<h2>Ejemplo
+					<small>Explicación de la distribución actual</small>
+				</h2>
+
+				<hr>
+
+				<p>La primera sección de este sitio corresponde a un encabezado o header. El cual unicamente se le indica un ancho del 100%, para que ocupe por completo el espacio interno de su contenedor padre. Para ello, el padding del padre debe ser 0</p>
+
+				<p>La barra lateral utiliza la propiedad float para indicarle que debe flotar con un ancho de 250px</p>
+
+				<p>La seccion del articulo inicia con un margen mayor al ancho del siderbar</p>
+
+				<p>Por ultimo la seccion de footer inicializa la propiedad clear: left para iniciar en una nueva linea y no a continuación de los nuevos elemetos</p>
+
+				
+			</div>
 		</div>
+
 		<div class="footer">
-			<p>Contenido del footer o pie de la página</p>
+			<p>Footer del sitio web</p>
 		</div>
 	</div>
 </body>

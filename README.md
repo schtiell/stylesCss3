@@ -42,6 +42,8 @@
 40. Propiedad float.
 41. Propiedad float para imagenes y letra capital en parrafos.
 42. Propiedad clear.
+43. Propiedad float para crear un sitio a 2 columnas.
+44. Propiedad float y clear para crear un sitio web a 2 columnas con un header y un footer.
 
 
 

@@ -2,56 +2,110 @@
 <html lang="en">
 <head>	
 	<meta charset="UTF-8">
-	<title>Diseño ancho fijo</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/46.estilos.css" type="text/css">
+	
+	<title>Diseño ancho fijo</title>
+
 </head>
 <body>
-	<h1>Diseño de ancho fijo</h1>
-	<p>El diseño de una página de ancho fijo no cambia la disposición de los elementos HTML a medida que el visitante modifica la ventana del navegador (agranda o achica) Cuando el espacio asignado no entra en la ventana aparece la barra de scroll.</p>
-	<p>Las medidas normalmente se indican en píxeles.</p>
-	<p><span>Problema</span></p>
-	<p>Implementar una página con un diseño de ancho fijo de 960 píxeles que se muestre centrado en la página. Disponer una cabecera con un menú, el cuerpo principal con tres columnas y finalmente un pie de página.</p>
+	<div class="container">
 
-	<div class="header">
-		<ul>
-			<li><a href="http://www.google.com">Google</a></li>
-			<li><a href="http://www.facebook.com">Facebook</a></li>
-			<li><a href="http://www.youtube.com">Youtube</a></li>
-		</ul>
-	</div>
+		<h1>CSS: Cascading Style Sheets
+			<small>Diseño de ancho fijo</small>
+		</h1>
 
-	<div class="container1">
-		<h2>Columna 1</h2>
+		<hr>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae amet error soluta corporis omnis, labore accusantium architecto numquam velit ea quasi magni voluptates quidem nihil aliquam consequatur, provident voluptatem adipisci.</p>
+		<p>El diseño de una página de ancho fijo no cambia la disposición de los elementos HTML a medida que el visitante modifica la ventana del navegador (agranda o achica) Cuando el espacio asignado no entra en la ventana aparece la barra de scroll.</p>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea vel et, blanditiis numquam sint distinctio ipsam, ad inventore omnis culpa sed fuga adipisci modi. Minima nemo ullam molestias tempora beatae?</p>
+		<p>Las medidas normalmente se indican en píxeles.</p>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis quos magni ut nam, totam doloremque eos. Facilis expedita illo, itaque facere ab nulla incidunt quibusdam dolore nesciunt totam rerum.</p>
-	</div>
+		<p><span>Problema:</span></p>
 
-	<div class="container2">
-		<h2>Columna 2</h2>
+		<p>Implementar una página con un diseño de ancho fijo de 960 píxeles que se muestre centrado en la página. Disponer una cabecera con un menú, el cuerpo principal con tres columnas y finalmente un pie de página.</p>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae amet error soluta corporis omnis, labore accusantium architecto numquam velit ea quasi magni voluptates quidem nihil aliquam consequatur, provident voluptatem adipisci.</p>
+		<div class="navbar">
+			<ul>
+				<li><a href="http://www.google.com">Google</a></li>
+				<li><a href="http://www.facebook.com">Facebook</a></li>
+				<li><a href="http://www.youtube.com">Youtube</a></li>
+			</ul>
+		</div>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea vel et, blanditiis numquam sint distinctio ipsam, ad inventore omnis culpa sed fuga adipisci modi. Minima nemo ullam molestias tempora beatae?</p>
+		<div class="container1">
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis quos magni ut nam, totam doloremque eos. Facilis expedita illo, itaque facere ab nulla incidunt quibusdam dolore nesciunt totam rerum.</p>
-	</div>
+			<h2>Columna 1</h2>
 
-	<div class="container3">
-		<h2>Columna 3</h2>
+			<hr>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae amet error soluta corporis omnis, labore accusantium architecto numquam velit ea quasi magni voluptates quidem nihil aliquam consequatur, provident voluptatem adipisci.</p>
+			<p>Este ejercicio implementa los diseños css para el manejo de las columnas, como se muestra, inicializa todoso los contenedores con la propiedad float. </p>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea vel et, blanditiis numquam sint distinctio ipsam, ad inventore omnis culpa sed fuga adipisci modi. Minima nemo ullam molestias tempora beatae?</p>
+			<p>Posteriormente para que la seccción de footer tome una nueva linea del DOM, inicia la propiedad float: both para indicar que inicie en una nueva linea y limpie tanto elementos float, left y right</p>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil blanditiis quos magni ut nam, totam doloremque eos. Facilis expedita illo, itaque facere ab nulla incidunt quibusdam dolore nesciunt totam rerum.</p>
-	</div>
+		</div>
 
-	<div class="footer">
-		<p>Todos los derechos reservados</p>
+		<div class="container2">
+			<h2>Columna 2</h2>
+
+			<hr>
+
+			<pre>
+				.container1, 
+				.container2, 
+				.container3{
+					display: block;
+					float: left;
+					width: 260px;
+						
+					margin: 20px 30px;
+					padding: 10px;
+
+					background-color: #eee;
+					border-radius: 15px;
+				}
+			</pre>
+
+		</div>
+
+		<div class="container3">
+			<h2>Columna 3</h2>
+
+			<hr>
+
+			<pre>
+				.footer{
+					clear: both;
+					width: 100%;
+					margin-top: 50px;
+				}
+			</pre>
+		</div>
+
+		<div class="footer">
+			<p>Todos los derechos reservados</p>
+		</div>
 	</div>
 </body>
 </html>	

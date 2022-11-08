@@ -44,6 +44,7 @@
 42. Propiedad clear.
 43. Propiedad float para crear un sitio a 2 columnas.
 44. Propiedad float y clear para crear un sitio web a 2 columnas con un header y un footer.
+45. Propiedad float y clear para crear un sitio web a 3 columnas con un header y un footer.
 
 
 

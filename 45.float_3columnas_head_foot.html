@@ -1,47 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Disposición de 3 columnas, cabecera y pie.</title>
+	<meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/45.estilos.css" type="text/css">
+
+	<title>Propiedad float</title>
 </head>
 <body>
 	<div class="container">
 
 		<div class="header">
-			<h1>Disposición de 3 columnas <br>cabecera y pie</h1>
+			<h1>
+				CSS: Cascading Style Sheets
+				<small>Propiedad float y clear</small>
+			</h1>
 		</div>
 
+		<hr>
+
 		<div class="columna1">
-			<h2>Contenido del la columna 1</h2>
+			<h3>
+				Columna: 1
+				<small>Estilos css aplicados</small>
+			</h3>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod reiciendis quisquam omnis architecto, consequuntur iusto quidem distinctio aut, ab quam obcaecati, hic maxime accusamus vitae temporibus. Consequatur, expedita ea!</p>
+			<hr>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod reiciendis quisquam omnis architecto, consequuntur iusto quidem distinctio aut, ab quam obcaecati, hic maxime accusamus vitae temporibus. Consequatur, expedita ea!</p>
+			<p>A continuación se muestran los estilos aplicados para este diseño de header, footer y 3 columnas, aunque solo se muestran los estilos necesarios para la distribución, los estilos referentes a colores, bordes, redondedos etc son omitidos</p>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod reiciendis quisquam omnis architecto, consequuntur iusto quidem distinctio aut, ab quam obcaecati, hic maxime accusamus vitae temporibus. Consequatur, expedita ea!</p>
+			<pre>
+				.header{
+					width: 100%;
+
+				}
+
+				.columna1{
+					float: left;
+				}
+				
+				.columna3{
+					float: right;
+				}
+				
+				.columna2{
+					margin: 0 auto;				
+					width: 500px;
+				}
+				
+				.footer{
+					clear: left;
+					width: 100%;
+					
+				}
+			</pre>
+			
 		</div>
 
 		<div class="columna3">
-			<h2>Contenido del la columna 3</h2>
+			<h3>
+				Columna: 3
+				<small>Explicación estilos css</small>
+			</h3>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod reiciendis quisquam omnis architecto, consequuntur iusto quidem distinctio aut, ab quam obcaecati, hic maxime accusamus vitae temporibus. Consequatur, expedita ea!</p>
+			<hr>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod reiciendis quisquam omnis architecto, consequuntur iusto quidem distinctio aut, ab quam obcaecati, hic maxime accusamus vitae temporibus. Consequatur, expedita ea!</p>
+			<p>El primer contenedor en sitio web es el header, al cual se le aplica una clase css header. Donde unicamente se le dice que toma el ancho del 100% con la propiedad width: 100%</p>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod reiciendis quisquam omnis architecto, consequuntur iusto quidem distinctio aut, ab quam obcaecati, hic maxime accusamus vitae temporibus. Consequatur, expedita ea!</p>
+			<p>El siguiente contenedor es la columna 1, con el mismo nombre de clase css, para el cual se define la propiedad float: left para que flote a la izquierda</p>
+
+			<p>Para el contenedor identificado como columna3, se aplica la misma propiedad float pero alineado a la derecha</p>
+
+			<p>Para la columna 2, que solo se le indica un margen y un ancho, tomando el cuanta el ancho predefinido para las columnas 1 y 3</p>
+
+			<p>Por último el footer, inicia la propiedad clear: left, con la finalidad de iniciar en una nueva linea del DOM, es decir ya no debe de flotar</p>
+
+
 		</div>
 
 		<div class="columna2">
-			<h2>Contenido del la columna 2</h2>	
+			<h2>
+				Columna: 2
+				<small>Distribución: Header, 3 columnas y footer</small>
+			</h2>	
+
+			<hr>
 
 			<p>	Una modificación al concepto anterior nos permite agregar una tercera columna flotando a derecha, lo único que hay que tener cuidado es que dentro del HTML debemos disponer los div de la columna 1 y 3 en primer lugar, ya que son los que se flotan, y por último, la columna 2, que es la central:</p>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, beatae provident. Nihil cupiditate, temporibus corporis quaerat porro, iusto, odio, officia alias ut delectus sed unde. Ad inventore amet eum, odit.</p>
+			<p>Como se indica en el párrafo anterior los elementos HTML que van a utilizar la propiedad float, deben estar antes que los elementos que van a seguir el flujo normal del sitio.</p>
+
 		</div>
 
 		<div class="footer">
-			<p>Contenido del footer<br>pie de la página</p>
+			<p>Footer</p>
 		</div>
 
 	</div>

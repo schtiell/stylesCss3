@@ -46,6 +46,7 @@
 44. Propiedad float y clear para crear un sitio web a 2 columnas con un header y un footer.
 45. Propiedad float y clear para crear un sitio web a 3 columnas con un header y un footer.
 46. Diseño fijo para el sitio, utilizando propiedad float y clear para colocar las partes del sitio.
+47. Diseño fluido, que consiste en utilizar porcentajes para indicar los tamaños en lugar de medidas absolutas
 
 
 

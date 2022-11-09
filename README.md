@@ -51,3 +51,4 @@
 49. Child selector y descendant selectors.
 50. Adjancent y general sibling selectors.
 51. Adjancent y general sibling selectors.
+52. Selectores de atributos.

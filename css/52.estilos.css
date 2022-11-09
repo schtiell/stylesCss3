@@ -1,53 +1,49 @@
-*{
-	margin: 0;
-	padding: 0;
-}
 
-h1{
-	font: bold 30px tahoma;
-	text-align: center;
-	margin: 20px;
-}
-
-p{
-	margin: 10px 30px;
-}
-
-pre{
-	font: italic 15px verdana;
-	font-weight: bold;
-}
 
 ol{
-	margin: 10px 50px;
+	display: block;
+	margin-top: 40px;
+	text-align: justify;
 }
 
-div{
-	border: 1px solid #000;
-	margin: 20px auto;
+.contenedor{
+	display: block;
+
+	margin: 30px auto;
 	padding: 20px;
-	width: 50%
+
+	background-color: #FFF;
+
+	border: 1px solid #F3A670;
+	border-radius: 15px;
+
+	box-shadow: 21px -13px 56px -28px rgba(0,0,0,0.54);
 }
 
 /*Selector para el atributo target del elemento html a*/
-a[target]{
+a[target] {
 	color: red;
 	text-decoration: none;
 }
 
 /*Selector para el atributo target definido como #*/
-a[target='#']{
-	text-decoration: line-through;
+a[href='#']{
+	font: oblique lighter 20px tahoma;
+	text-decoration: underline;
+	color: #00f;
 }
 
 a[href^="https"]{
+	font: oblique lighter 20px tahoma;
 	color: #f00;
 }
 
-a[href$=".net"]{
+a[href$=".mx"]{
+	font: oblique lighter 20px tahoma;
 	color: #0f0;
 }
 
-a[href*="xbox"]{
-	color: #00f;
+a[href*="yahoo"]{
+	font: oblique lighter 20px tahoma;
+	color: #F06D0C;
 }

@@ -2,93 +2,255 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Selector de atrubuto CSS</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/52.estilos.css" type="text/css">
+	
+	<title>Selector de atrubuto CSS</title>
 </head>
 <body>
-	<h1>Selector de Atributo CSS</h1>
-
-	<p>Ahora veremos otra forma de seleccionar elementos HTML mediante el acceso de sus atributos.</p>
-
-	<p>Recordemos que un elemento HTML está normalmente constituido por una marca de comienzo, un valor, la marca de cierre y sus atributos:</p>
-
-	<pre>
-	&lt;a href="http://www.google.com.ar" target="_blank"&gt;Titulo Principal&lt;/a&gt;
-	</pre>
-
-	<p>En este ejemplo el elemento "a" tiene definido dos atributos: href y target.</p>
-
-	<p>Hay una serie de posibilidades de utilizar el selector de atributo que pasaremos a ver:</p>
-
-	<ol>
-		<li>Con el selector de atributo podemos verificar si un elemento HTML tiene definida un atributo determinado para así poder aplicar un estilo. Por ejemplo apliquemos estilos distintos a los elementos "a" que tienen definido el atributo target:</li>
-	</ol>
-
 	<div class="container">
-		<h2>Selector para un atributo html</h2>
-		<ol>
-			<li><a href="http://www.google.com">Google</a></li>
-			<li><a href="http://www.facebook.com">Facebook</a></li>
-			<li><a href="http://www.youtube.com" target="blank">Youtube</a></li>
-		</ol>
-	</div>
+		<h1>
+			CSS: Cascading Style Sheets
+			<small>Attribute selectors</small>
+		</h1>
+
+		<hr>
 	
-	<p>Esta regla se aplica a todos los elementos de tipo "a" que tienen definida la propiedad llamada "target". Es decir el tercer enlace de la página aparece de color rojo ya que tiene definida dicha propiedad. Los dos primeros enlaces no se le aplica esta regla de CSS porque no tienen definida la propiedad target.</p>
+		<p>Otra forma de seleccionar elementos HTML es a traves de sus atributos.</p>
+	
+		<p>Se debe recordar que un elemento HTML está normalmente constituido por una marca de comienzo, un valor,sus atributos y la marca de cierre</p>
+	
+		<pre>
+			&lt;a href="http://www.google.com.ar" target="_blank"&gt;Titulo Principal&lt;/a&gt;
+		</pre>
+	
+		<p>En este ejemplo el elemento "a" tiene definido dos atributos: <span>href y target</span>.</p>
+	
+		<p>Dada la etiqueta de ancla anterior existe una serie de posibilidades para aplicar selectores css a esta: </p>
+	
+		<div class="container ejercicio">
+
+			<h2>Ejemplo</h2>
+
+			<hr>
+
+			<ol>
+				<li>Con el selector de atributo podemos verificar si un elemento HTML tiene definida un atributo determinado para así poder aplicar un estilo. Por ejemplo apliquemos estilos distintos a los elementos "a" que tienen definido el atributo target:</li>
+			</ol>
 		
-	<ol>	
-		<li value="2">Una segunda posibilidad es no solo verificar si un elemento HTML define una determinada propiedad sino controlar si su contenido almacena un determinado valor.</li>		
-	</ol>
-
-	<p>Confeccionemos una página que muestre todos los enlaces "a" de la página que tengan inicializado el atributo href con el valor # con una línea tachada (que represente que no tenemos acceso a dicho hipervínculo):</p>
+			<div class="contenedor">
+				<div class="row">
+					<div class="col-sm-4">
+						<h3>Selector de atributo específico</h3>
+					
+						<hr>
+			
+						<ol>
+							<li><a href="http://www.google.com">Google</a></li>
+							<li><a href="http://www.facebook.com">Facebook</a></li>
+							<li><a href="http://www.youtube.com" target="blank">Youtube</a></li>
+						</ol>
+					</div>
+					<div class="col-sm-8">
+						<h3>Definición del selector</h3>
 	
-	<div class="container2">
-		<h2>Selector para un atributo html</h2>
-		<ol>
-			<li><a href="http://www.google.com" target="#">Google</a></li>
-			<li><a href="http://www.facebook.com" target="blank">Facebook</a></li>
-			<li><a href="http://www.youtube.com" target="#">Youtube</a></li>
-		</ol>
+						<hr>
+	
+						<pre>
+							&lt;ol&gt;
+								&lt;li&gt;&lt;a href="www.google.com"&gt;Google&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="www.facebook.com"&gt;Facebook&lt;/a>&lt;/li&gt;
+								&lt;li&gt;&lt;a href="www.youtube.com" target="blank"&gt;Youtube&lt;/a&gt;&lt;/li&gt;
+							&lt;/ol&gt;
+
+							a[target]{
+								color: red;
+								text-decoration: none;
+							}
+						</pre>
+					</div>
+				</div>
+			</div>
+			
+			<p>Esta regla se aplica a todos los elementos de tipo <span>"a"</span> que tienen definida la propiedad llamada <span>"target"</span>. Es decir el tercer enlace de la página aparece de color rojo ya que tiene definida dicha propiedad. Los dos primeros enlaces no se le aplica esta regla de CSS porque no tienen definida el atributo target.</p>
+				
+			<ol>	
+				<li value="2">Una segunda posibilidad es no solo verificar si un elemento HTML define una determinada propiedad sino controlar si su contenido almacena un determinado valor.</li>		
+			</ol>
+		
+			<p>Confeccionemos una página que muestre todos los enlaces "a" de la página que tengan inicializado el atributo href con el valor # con una línea tachada (que represente que no tenemos acceso a dicho hipervínculo):</p>
+			
+			<div class="contenedor">
+				<div class="row">
+					<div class="col-sm-3">
+						<h3>Selector de [atributo="valor"]</h3>
+					
+						<hr>
+
+						<ol>
+							<li><a href="#">Google</a></li>
+							<li><a href="http://www.facebook.com">Facebook</a></li>
+							<li><a href="#">Youtube</a></li>
+						</ol>
+					</div>
+					<div class="col-sm-9">
+
+						<h3>Definición del selector</h3>
+					
+						<hr>
+
+						<pre>
+							&lt;ol&gt;
+								&lt;li&gt;&lt;a href="#"&gt;Google&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="www.facebook.com"&gt;Facebook&lt;/a>&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;Youtube&lt;/a&gt;&lt;/li&gt;
+							&lt;/ol&gt;
+
+							a[href='#']{
+								font: oblique lighter 18px tahoma;
+								text-decoration: underline;
+								color: #00f;
+							}
+						</pre>
+					</div>
+				</div>
+			</div>
+			
+			<p>Como se puede ver entre los corchetes no solo hacemos referencia al nombre de la propiedad sino que se dispone el caracter = y la cadena con la que estamos comparando el contenido del atributo.</p>
+		
+			<p>En este ejemplo se tienen dos enlaces que tienen almacenados en la propiedad href la cadena "#" por lo que dichos enlaces al cumplir la regla del selector se aplica a text-decoration el valor line-trough.</p>
+		
+			<ol>
+				<li value="3">También se puede controlar si el valor de la propiedad comienza, finaliza o tiene en su interior una determinada cadena de caracteres. La sintaxis para este tipo de selectores es:</li>
+			</ol>
+		
+			<div class="contenedor">
+				<div class="row">
+					<div class="col-sm-4">
+						<h3>Selector de [atributo^="valor"]</h3>
+
+						<hr>
+
+						<ol>
+							<li><a href="https://beta.music.apple.com/">AppleMusic</a></li>
+							<li><a href="http://www.karmany.com">Karmany</a></li>
+							<li><a href="http://www.livemail.com">live mail</a></li>
+						</ol>
+					</div>
+					<div class="col-sm-8">
+						<h3>Definición del selector</h3>
+
+						<hr>
+
+						<pre>
+							&lt;ol&gt;
+								&lt;li&gt;&lt;a href="https://beta.music.apple.com/"&gt;Apple music&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="http://www.karmany.com"&gt;karmany&lt;/a>&lt;/li&gt;
+								&lt;li&gt;&lt;a href="http://www.xbox.com""&gt;xbox&lt;/a&gt;&lt;/li&gt;
+							&lt;/ol&gt;
+
+							a[href^="https"] {
+								color:#f00;
+							}
+							</pre>
+					</div>
+				</div>
+			</div>	
+			
+			<p>Hay que tener en cuenta que utilizamos la sintaxis <span>^=</span> para controlar si el atributo comienza con la cadena que le indicamos entre comillas, es decir el primer enlace cumple la regla ya que la propiedad href comienza con esos cinco caracteres <span>https</span></p>
+	
+		
+			<p>La sintaxis <span>$=</span> sirve para controlar si el valor del atributo finaliza con la cadena de caracteres indicada.</p>
+
+			<div class="contenedor">
+				<div class="row">
+					<div class="col-sm-4">
+						<h3>Selector de [atributo$="valor"]</h3>
+
+						<hr>
+
+						<ol>
+							<li><a href="http://apple.com/">Apple</a></li>
+							<li><a href="http://www.mercadito.com.mx">Mercadito</a></li>
+							<li><a href="http://www.livemail.com">live mail</a></li>
+						</ol>
+					</div>
+					<div class="col-sm-8">
+						<h3>Definición del selector</h3>
+
+						<hr>
+
+						<pre>
+							&lt;ol&gt;
+								&lt;li&gt;&lt;a href="http://apple.com/"&gt;Apple&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="http://www.mercadito.com.mx"&gt;Mercadito&lt;/a>&lt;/li&gt;
+								&lt;li&gt;&lt;a href="http://www.xbox.com""&gt;xbox&lt;/a&gt;&lt;/li&gt;
+							&lt;/ol&gt;
+							
+							a[href$=".mx"] {
+								color:#0f0;
+							}
+						</pre>
+					</div>
+				</div>
+			</div>	
+		
+			<p>Por último con la sintaxis <span>*=</span> controlamos si el atributo contiene en alguna parte la cadena indicada (en nuestro ejemplo el tercer enlace contiene en su interior la cadena "yahoo"):</p>
+
+			<div class="contenedor">
+				<div class="row">
+					<div class="col-sm-4">
+						<h3>Selector de [atributo*="valor"]</h3>
+
+						<hr>
+
+						<ol>
+							<li><a href="http://apple.com/">Apple</a></li>
+							<li><a href="http://www.mercadito.com">Mercadito</a></li>
+							<li><a href="http://www.yahoo.com">Yahoo</a></li>
+						</ol>
+					</div>
+					<div class="col-sm-8">
+						<h3>Definición del selector</h3>
+
+						<hr>
+
+						<pre>
+							&lt;ol&gt;
+								&lt;li&gt;&lt;a href="http://apple.com/"&gt;Apple&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="http://www.mercadito.com"&gt;Mercadito&lt;/a>&lt;/li&gt;
+								&lt;li&gt;&lt;a href="http://www.yahoo.com""&gt;yahoo&lt;/a&gt;&lt;/li&gt;
+							&lt;/ol&gt;
+							
+							a[href*="yahoo"] {
+								color: #F06D0C;
+							}
+						</pre>
+					</div>
+				</div>
+			</div>	
+		</div>
 	</div>
-	
-	<p>Como podemos ver entre los corchetes no solo hacemos referencia al nombre de la propiedad sino que disponemos el caracter = y la cadena con la que estamos comparando el contenido del atributo.</p>
-
-	<p>En nuestro ejemplo tenemos dos enlaces que tienen almacenados en la propiedad href la cadena "#" por lo que dichos enlaces al cumplir la regla del selector se aplica a text-decoration el valor line-trough.</p>
-
-	<ol>
-		<li value="3">Podemos también controlar si el valor de la propiedad comienza, finaliza o tiene en su interior una determinada cadena de caracteres. Veamos la sintaxis con un ejemplo:</li>
-	</ol>
-
-	<div class="container3">
-		<h2>Selector para un atributo html</h2>
-		<ol>
-			<li><a href="https://beta.music.apple.com/">AppleMusic</a></li>
-			<li><a href="http://www.karmany.net">Karmany</a></li>
-			<li><a href="http://www.xbox.com">xbox</a></li>
-		</ol>
-	</div>	
-	
-	<p>Hay que tener en cuenta que utilizamos la sintaxis ^= para controlar si el atributo comienza con la cadena que le indicamos entre comillas (es decir el primer enlace cumple la regla ya que la propiedad href comienza con esos cuatro caracteres):</p>
-
-	<pre>
-	a[href^="https"] {
-  		color:#f00;
-	}
-	</pre>
-
-	<p>La sintaxis $= sirve para controlar si el valor del atributo finaliza con la cadena de caracteres indicada (el segundo enlace cumple esta regla de estilo):</p>
-
-	<pre>
-	a[href$=".ar"] {
- 		color:#0f0;
-	}
-	</pre>
-
-	<p>Por último con la sintaxis *= controlamos si el atributo contiene en alguna parte la cadena indicada (en nuestro ejemplo el tercer enlace contiene en su interior la cadena "yahoo"):</p>
-
-	<pre>
-	a[href*="xbox"] {
-  		color:#00f;
-	}
-	</pre>
 </body>
 </html>

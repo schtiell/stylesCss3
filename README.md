@@ -48,6 +48,4 @@
 46. Diseño fijo para el sitio, utilizando propiedad float y clear para colocar las partes del sitio.
 47. Diseño fluido, que consiste en utilizar porcentajes para indicar los tamaños en lugar de medidas absolutas.
 48. Child selector.
-
-
-
+49. Child selector y descendant selector.

@@ -1,34 +1,71 @@
-*{
-	margin: 0;
-	padding: 0;
+.imgn1{
+	float: right;
+
+	background-image: url("../images/child_selector.png");
+	background-repeat: no-repeat;
+
+	width: 740px;
+	height: 150px;
+
+	margin-left: 15px;
+	margin-bottom: 10px;
 }
 
-h1{
-	font: bold 25px tahoma;
+h3{
+	text-align: left;
+	margin-top: 50px;
+	margin-left: 20px;
+}
+
+/* descendant selector */
+.ejemplo span {
+	display: inline-block;
+	width: 150px;
+
+	margin: 10px 20px;
+	padding: 5px;
+	
+	background-color: blue;
+	color: white;
+
+	border-radius: 10px;
+}
+
+/* child selector */
+.ejemplo > span {
+	display: inline-block;
+	width: 200px;
+
+	margin: 10px 20px;
+	padding: 10px;
+
+	background-color: yellow;
+	color: black;
+
+	border-radius: 15px;
+}
+
+.contenedor{
+	display: block;
+
+	margin: 20px 10px;
+	padding: 10px;
+
+	border: 1px solid #C0C3C8;
+	border-radius: 15px;
+}
+
+.contenedor > h3 {
 	text-align: center;
-	margin: 20px auto;
 }
 
-span{
-	font: bold 20px verdana;
-}
-
-p{
-	margin: 20px;
-}
-
-.container{
-	border: 1px solid #000;
-	margin: 20px;
-	padding: 20px;
-}
-
-ol>li{
+ol > li{
+	text-align: left;
 	color: red;
 	margin: 10px;
 }
 
-ul>li{
+ul > li{
 	color: blue;
 	margin: 5px 40px;
 }

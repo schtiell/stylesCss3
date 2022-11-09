@@ -2,30 +2,144 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Selectores hijos CSS</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/49.estilos.css" type="text/css">
+
+	<title>Selectores hijos CSS</title>
 </head>
 <body>
-	<h1>Ejercicio con selectores hijos</h1>
-
-	<p><span>Problema:</span></p>
-
-	<p>Crear una lista ordenada "ol" con tres item. En uno de esos tres item definir en forma anidada otra lista pero no ordenada "ul". Crear dos reglas de estilo distintas para los item que descienden de la lista ordenada y los que descienden de la lista no ordenada.</p>
-
 	<div class="container">
-		<ol>
-			<li>Opcion 1: Mazda</li>
-			<li>Opcion 2: Volkswagen</li>
-			<li>Opcion 3: Ford</li>
-			<li>Opcion 4:
-				<ul>
-					<li>Honda</li>
-					<li>Subaru</li>
-					<li>BMW</li>
-					<li>Mercedez</li>
-				</ul>
-			</li>
-		</ol>
+
+		<h1>
+			CSS: Cascading Style Sheets
+			<small>Child selectors & Descendant selector</small>
+		</h1>
+
+		<hr>
+
+		<p>El child selector o selector de hijo permite dar estilos a los hijos directos del primer selector que se defina. Es decir, que no va más profundo al selector definido.</p>
+
+		<p>Se coloca entre dos selectores y se define con el símbolo "mayor que" (>).</p>
+
+		<h3>child selector vs descendant selector</h3>
+
+		<hr>
+
+		<img class="imgn1">
+
+		<p> El selector de descendientes se utiliza para seleccionar todos los elementos que son secundarios del elemento (ningun elemento en especifico). Selecciona los elementos dentro de los elementos, es decir, combina dos selectores de manera que los elementos que coinciden con el segundo selector se seleccionan si tienen un elemento antepasado que coincide con el primer selector.</p>
+
+		<p>Los selectores descendientes son separados por un espacio entre ellos, mientras que los selectores hijos son separados por el simbolo ">", como se muestra en la imagen.</p>
+
+		<p>A diferencia del descendant selector (selector descendiente), el selector de hijo es más estricto respecto a los elementos que van a coincidir, puesto que este no coincide con todos los elementos que hay dentro.</p>
+
+		<p>Para explicar mejor la diferencia, se analiza el siguiente ejemplo:</p>
+
+		<img class="imgn2">
+
+		<div class="row">
+			<div class="col-sm-4 contenedor">
+
+				<h3>Resultado</h3>
+
+				<hr>
+
+				<div class="ejemplo">
+					<span>Elemento 01</span>
+					<span>Elemento 02</span>
+					<div>
+						<span>Elemento 03</span>
+						<span>Elemento 04</span>
+					</div>
+					<span>Elemento 05</span>
+					<span>Elemento 06</span>
+				</div>
+			</div>
+
+			<div class="col-ms-4 contenedor">
+				<h3>Descendant selector</h3>
+
+				<hr>
+
+				<pre>
+					div span {
+						display: inline-block;
+						width: 150px;
+					
+						margin: 10px 20px;
+						padding: 5px;
+
+						background-color: blue;
+						color: white;
+					}
+				</pre>
+			</div>
+
+			<div class="col-sm-4 contenedor">
+				<h3>Child selector</h3>
+
+				<hr>
+				<pre>
+					div > span {
+						display: inline-block;
+						width: 200px;
+					
+						margin: 10px 20px;
+						padding: 10px;
+					
+						background-color: yellow;
+						color: black;
+					}
+				</pre>
+			</div>
+		</div>
+
+		<div class="container ejercicio">
+
+			<h2>Ejemplo</h2>
+
+			<hr>
+
+			<p>Crear una lista ordenada "ol" con tres item. En uno de esos tres item definir en forma anidada otra lista pero no ordenada "ul". Crear dos reglas de estilo distintas para los item que descienden de la lista ordenada y los que descienden de la lista no ordenada.</p>
+
+			<div class="contenedor">
+				<ol>
+					<li>Opcion 1: Mazda</li>
+					<li>Opcion 2: Volkswagen</li>
+					<li>Opcion 3: Ford</li>
+					<li>Opcion 4:
+						<ul>
+							<li>Honda</li>
+							<li>Subaru</li>
+							<li>BMW</li>
+							<li>Mercedez</li>
+						</ul>
+					</li>
+				</ol>
+			</div>
+			
+		</div>
 	</div>
 </body>
 </html>

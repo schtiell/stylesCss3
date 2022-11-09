@@ -2,63 +2,135 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Pseudo-clases: first-child y last-child de CSS</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/54.estilos.css" type="text/css">
+
+	<title>Pseudoclases: first-child y last-child</title>
 </head>
 <body>
 	
-	<h1>Pseudo-clases: first-child y last-child de CSS</h1>
-
-	<p>En los próximos conceptos veremos otras formas de seleccionar elementos HTML de una página para aplicarle estilos.</p>
-
-	<p>La pseudoclase fist-child nos permite seleccionar el primer elemento hijo de otro elemento padre y de manera similar la pseudoclase last-child selecciona el último elemento hijo.</p>
-
-	<p><span>Ejemplo:</span></p>
-
-	<p>Disponer una lista ordenada de 4 elementos, fijar con color verde el primer elemento y color rojo el último elemento de la lista.</p>
-
 	<div class="container">
-		<ol>
-			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tempore vero, nesciunt, similique error inventore, fugit, porro possimus ad autem debitis odit ea magni animi suscipit nostrum! Cupiditate, dolores, dicta. </li>
+		<h1>
+			CSS: Cascading Style Sheets
+			<small>Pseudoclases: first-child y last-child</small>
+		</h1>
 
-			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tempore vero, nesciunt, similique error inventore, fugit, porro possimus ad autem debitis odit ea magni animi suscipit nostrum! Cupiditate, dolores, dicta. </li>
+		<hr>
 
-			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tempore vero, nesciunt, similique error inventore, fugit, porro possimus ad autem debitis odit ea magni animi suscipit nostrum! Cupiditate, dolores, dicta. </li>
+		<p>Otras formas de seleccionar elementos HTML de una página para aplicarle estilos es mediante el uso de las pseudoclases aplicadas a los selectores.</p>
 
-			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tempore vero, nesciunt, similique error inventore, fugit, porro possimus ad autem debitis odit ea magni animi suscipit nostrum! Cupiditate, dolores, dicta. </li>
-		</ol>
+		<p>Una <span>pseudoclase</span> CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado.</p>
+
+		<p>Las pseudoclases, junto con los pseudoelementos, permiten aplicar un estilo a un elemento no sólo en relación con el contenido del árbol de documento DOM, sino también en relación a factores externos como el historial del navegador (:visited, por ejemplo), el estado de su contenido (como :checked en algunos elementos de formulario), o la posición del ratón (como :hover que permite saber si el ratón está encima de un elemento o no).</p>
+
+		<p>Su sintaxis:</p>
+
+		<pre>
+			selector : pseudoclase { 
+				propiedad: valor; 
+			}
+		</pre>
+
+		<h2>Pseudoclases: first-child & last-child</h2>
+
+		<p>La <span>pseudoclase fist-child</span> nos permite seleccionar el primer elemento hijo de un elemento padre y de manera similar la <span>pseudoclase last-child</span> selecciona el último elemento hijo.</p>
+
+		<p>A las pseudoclases les antecede el caracter <span>:</span> y en forma seguida indicamos el nombre de la pseudoclase, previo a los dos puntos indicamos el nombre del elemento a seleccionar:</p>
+
+		<pre>
+			ol li : first-child {
+				color: green;
+			}
+		</pre>
+
+		<p>Se puede también expresarlo sin anteceder el selector del elemento &lt;ol&gt;, es decir sin indicar "selector descendiente":</p>
+
+		<pre>
+			li : first-child {
+				color: green;
+			}
+		</pre>
+
+		<p>De forma similar para aplicar un estilo al último item de la lista ordenada utilizamos la pseudoclase last-child:</p>
+
+		<pre>
+			ol li : last-child {
+				color: red;
+			}
+		</pre>
+
+		<p>De forma similar para aplicar un estilo al último item de la lista ordenada utilizamos la pseudoclase last-child:</p>
+
+		<pre>
+			ol li : last-child {
+				color: red;
+			}
+		</pre>
+
+		
+		<div class="container ejercicio">
+
+			<h2>Ejemplo:</h2>
+
+			<hr>
+
+			<p>Disponer una lista ordenada de 4 elementos, fijar con color verde el primer elemento y color rojo el último elemento de la lista.</p>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<ol>
+						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tempore vero, nesciunt, similique error inventore, fugit.</li>
+	
+						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tempore vero, nesciunt, similique error inventore, fugit. </li>
+	
+						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tempore vero, nesciunt, similique error inventore, fugit.</li>
+	
+						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tempore vero, nesciunt, similique error inventore, fugit, porro possimus ad autem debitis odit ea magni animi suscipit nostrum! Cupiditate, dolores, dicta. </li>
+					</ol>
+				</div>
+				<div class="col-sm-6">
+
+					<h4>Pseudoclases aplicadas a selectores</h3>
+
+					<hr>
+
+					<pre>
+						ol > li:first-child{
+							color: #EA2919 ;
+						}
+	
+						ol > li:last-child{
+							color: #14D407;
+						}
+					</pre>
+
+					<p>El primer selector utiliza la pseudoclase first-child para dar un color rojo al primer hijo de la lista no ordenada.</p>
+
+					<p>El segundo selector mediante la pseudoclase last-child aplica el color verde al texto al ultimo elemento hijo de la lista no ordenada</p>
+				</div>
+			</div>
+		</div>
 	</div>
-
-	<p>Recordemos que a las pseudoclases se les antecede el caracter : y en forma seguida indicamos el nombre de la pseudoclase previo a los dos puntos indicamos el nombre del elemento a seleccionar:</p>
-
-	<pre>
-	ol li:first-child {
-  		color:green;
-	}
-	</pre>
-
-	<p>Podemos también expresarlo sin anteceder el elemento ol, es decir sin indicar "selector descendiente":</p>
-
-	<pre>
-	li:first-child {
-  		color:green;
-	}
-	</pre>
-
-	<p>De forma similar para aplicar un estilo al último item de la lista ordenada utilizamos la pseudoclase last-child:</p>
-
-	<pre>
-	ol li:last-child {
-  		color:red;
-	}
-	</pre>
-
-	<p>De forma similar para aplicar un estilo al último item de la lista ordenada utilizamos la pseudoclase last-child:</p>
-
-	<pre>
-	ol li:last-child {
-  		color:red;
-	}
-	</pre>
 </body>
 </html>

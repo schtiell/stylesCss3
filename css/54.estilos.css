@@ -1,0 +1,12 @@
+ol > li{
+    text-align: justify;
+    margin: 10px 20px;
+}
+
+ol > li:first-child{
+    color: #EA2919 ;
+}
+
+ol > li:last-child{
+    color: #14D407;
+}

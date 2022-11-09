@@ -2,38 +2,116 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Selector hermano adyacente y hermano general</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/51.estilos.css" type="text/css">
+
+	<title>Adjacent & General Sibling Selectors</title>
 </head>
 <body>
-	<h1>Selector de hermano adyacente y hermano general</h1>
-
-	<p><span>Problema: </span></p>
-
-	<p>Confeccionar una página que muestre un título y un conjunto de párrafos. Mediante un selector de hermano adyacente proceder a definir la propiedad text-indent para el primer párrafo.</p>
-
 	<div class="container">
+		<h1>CSS: Cascading Style Sheets
+			<small>Adjacent & General Sibling Selectors</small>
+		</h1>
+	
+		<hr>
+	
+		<p>Confeccionar una página que muestre un título y un conjunto de párrafos. Mediante un selector de hermano adyacente proceder a definir la propiedad text-indent para el primer párrafo.</p>
+	
+		<div class="container ejericicio">
+
+			<h2>Ejemplo</h2>
+	
+			<hr>
+
+			<div class="contenedor row">
+
+				<div class="col-sm-6">
+					<h3>Adjancent selector ( + )</h3>
+
+					<hr>
+			
+					<p>En CSS los selectores se utilizan para delimitar los elementos HTML de nuestra página web a los que queremos aplicar estilo. Hay una amplia variedad de selectores CSS, lo que permite una gran precisión a la hora de seleccionar elementos a los que aplicar estilo.</p>
+			
+					<p>Un selector CSS es la primera parte de una regla CSS. Es un patrón de elementos y otros términos que indican al navegador qué elementos HTML se seleccionan para aplicarles una regla que incluye los valores de las propiedades CSS. El elemento o los elementos seleccionados por el selector se denominan sujeto del selector.</p>
+			
+					<p>En CSS, los selectores se definen en la especificación de selectores de CSS correspondiente; al igual que cualquier otro elemento de CSS, es necesario que los navegadores los admitan para que funcionen.</p>
+				</div>
+
+				<div class="col-sm-6">
+					
+					<h3>Selector CSS aplicado</h3>
+					
+					<hr>
+
+					<pre>
+						h3 + hr + p {
+							text-indent: 2cm;
+							font: oblique lighter 18px verdana;
+						}
+					</pre>
+
+					<p>Aplica el estilo de identación y formato de fuente al parrafo adyacente, es decir proximo a una etiqueta tipo titulo h3 seguido de un linea horizontal</p>
+
+				</div>
+
+				
+			</div>
 		
-		<h2>Ejercicio de selector adyacente y general</h2>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nobis voluptatum id incidunt magni nemo quas doloribus soluta quasi! Natus nulla, praesentium corporis dolores excepturi assumenda, ex. Saepe, nemo, excepturi!</p>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nobis voluptatum id incidunt magni nemo quas doloribus soluta quasi! Natus nulla, praesentium corporis dolores excepturi assumenda, ex. Saepe, nemo, excepturi!</p>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nobis voluptatum id incidunt magni nemo quas doloribus soluta quasi! Natus nulla, praesentium corporis dolores excepturi assumenda, ex. Saepe, nemo, excepturi!</p>
-	</div>
-
-
-	<div class="container2">
 		
-		<h3>Ejercicio de selector adyacente y general</h3>
+			<div class="contenedor row">
+				
+				<div class="col-sm-6">
+					
+					<h4>General selector ( ~ )</h4>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nobis voluptatum id incidunt magni nemo quas doloribus soluta quasi! Natus nulla, praesentium corporis dolores excepturi assumenda, ex. Saepe, nemo, excepturi!</p>
+					<hr>
+			
+					<p>Hay diferentes agrupaciones de selectores, y conocer qué tipo de selector necesitas te ayudará a encontrar la herramienta adecuada para tu trabajo.</p>
+			
+					<p>Los selectores básicos son de tipo, de clase y id</p>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nobis voluptatum id incidunt magni nemo quas doloribus soluta quasi! Natus nulla, praesentium corporis dolores excepturi assumenda, ex. Saepe, nemo, excepturi!</p>
+					<p>Tambien existen los selectores de combinadores, los cuales como su nombre lo indican combinan otros selectores con la finalidad de delimitar los elementos del DOM. Ejemplos de estos selectores son los selectores decendentes (" "), selectores de hijos (" > "), selectores adyacentes (" + "), selectores generales (" ~ ")</p>
+				</div>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nobis voluptatum id incidunt magni nemo quas doloribus soluta quasi! Natus nulla, praesentium corporis dolores excepturi assumenda, ex. Saepe, nemo, excepturi!</p>
+				<div class="col-sm-6">
+					
+					<h4>Selector CSS aplicado</h4>
+					
+					<hr>
+					
+					<pre>
+						h4 ~ p {
+							text-decoration: underline;
+						}
+					</pre>
+
+					<div>
+						<p>Aplica el subrayado a los parrafos que son precedidos de un titulo tipo h4, con el cual son hermanos, es decir comparten el mismo contenedor padre</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-
 </body>
 </html>	

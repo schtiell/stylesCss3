@@ -1,0 +1,17 @@
+
+p{
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+p:first-child {
+    font: oblique lighter 20px 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-top: 3px solid #14D407;
+    border-radius: 15px;
+}
+
+p:last-child{
+    font: oblique lighter 16px Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom: 4px solid #14D407;
+    border-radius: 15px;
+}

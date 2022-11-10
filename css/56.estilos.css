@@ -1,0 +1,37 @@
+
+.ejemplo{
+    margin-top: 50px;
+}
+
+.table{
+    width: 70%;
+    margin: 40px auto;
+}
+
+.tabla1 tr:nth-child(odd){
+    background-color: #FBB8A7;
+}
+
+.tabla1 tr:nth-child(even){
+    background-color: #B3F7AF;
+}
+
+h3{
+    margin-top: 40px;
+}
+
+.tabla2 tr:nth-child(3){
+    background-color: #F5F238;
+}
+
+.tabla3 tr:nth-child(3n){
+    background-color: #F5A238;
+}
+
+.tabla4 tr:nth-child(3n+1){
+    background-color: #E2B1FA;
+}
+
+.tabla5 tr:nth-last-child(3n+1){
+    background-color: #B1FAF5;
+}

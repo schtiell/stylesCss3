@@ -1,40 +1,63 @@
-*{
-	margin: 0;
-	padding: 0;
-}
 
-h1{
-	font: bold 25px verdana;
-	text-align: center;
-	margin: 30px;
-}
+.contenedor, 
+.contenedor2,
+.ejemplo{
+	display: block;
+	width: 90%;
 
-p{
-	margin: 20px;
-}
-
-pre{
-	font: italic 15px tahoma;
-	font-weight: bold;
-}
-
-.container, .container2, .ejercicio{
-	border: 1px solid #000;
-	width: 80%;
-	margin: 25px auto;
+	margin: 45px auto;
 	padding: 25px;
+
+	border: 1px solid #BDC6C6;
+	border-radius: 15px;
+
 }
 
-.container p:nth-child(2){
-	color: red;
+.contenedor p, 
+.contenedor2 p,
+.ejemplo p{
+	text-align: justify;
+
 }
 
-.container2 p:nth-of-type(1){
-	color: #f00;
+.contenedor p:nth-child(3){
+	color: #E73408;
 }
 
-.ejercicio strong:first-of-type{
-	font: italic 20px tahoma;
+.contenedor2 p:nth-of-type(1){
+	color: #45E708 ;
+}
+
+.ejemplo{
+	width: 100%;
+
+	margin: 20;
+	padding: 20px 15px;
+}
+.ejemplo>p{
+	margin-top: 40px;
+}
+
+.ejemplo strong:first-of-type{
+	font: italic bolder 20px tahoma;
+	color: #0852E7;
 	text-decoration: underline;
-	margin: 0 10px;
+}
+
+.ejemplo strong:last-of-type{
+	display: inline-block;
+	margin: 2px;
+	padding: 2px;
+
+	color: #E78C08;
+	border: 1px solid #E708AE;
+
+}
+
+.ejemplo em:first-of-type{
+	color: #8808E7;
+}
+
+.ejemplo em:last-of-type{
+	color:aquamarine;
 }

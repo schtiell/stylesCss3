@@ -1,39 +1,21 @@
-*{
-	margin: 0;
-	padding: 0;
-}
 
-h1{
-	font: bold 20px verdana;
-	text-align: center;
-	margin: 20px;
-}
-
-span{
-	font-size: 20px;
-	font-weight: bold;
-}
-
-div{
-	border: 1px solid #000;
-	width: 30%;
-	margin: 25px 25px;
+.contenedor{
+	display: block;
 	float: left;
-	
+	width: 40%;
+
+	margin: 30px 40px;
+	padding: 20px 30px;
+
+	border: 1px solid #BDC6C6;
+	border-radius: 15px;
 
 }
 
-p{
-	margin: 20px;
+ol li{
+	text-align: left;
 }
 
-ol{
-	margin: 40px;
-}
-
-li{
-	font: italic 20px tahoma;
-}
 
 .nombres li:nth-child(odd){
 	text-decoration: line-through;

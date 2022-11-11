@@ -1,37 +1,13 @@
-*{
-	margin: 0;
-	padding: 0;
-}
 
-h1{
-	font: bold 25px verdana;
-	margin: 25px;
-	text-align: center;
-}
-
-p{
-	margin: 20px;
-}
-
-span, pre{
-	font: italic 13px tahoma;
-	font-weight: bold;
-}
-
-.container{
-	border: 1px solid #000;
-	width: 30%;
+.contenedor{
+	display: block;
+	width: 80%;
+	
 	margin: 20px auto;
-}
+	padding: 20px 10px;
 
-h2{
-	font: bold 18px verdana;
-	margin: 25px;
-}
-
-ul li{
-	font: 15px verdana;
-	margin: 20px 40px; 
+	border: 1px solid #000;
+	border-radius: 15px;
 }
 
 #fechainicio li:only-child{

@@ -2,101 +2,178 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Pseudo-clases: only-child y only-of-type</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/59.estilos.css" type="text/css">
+
+	<title>Pseudoclases: only-child y only-of-type</title>
 </head>
 <body>
-	
-	<h1>Pseudo-clases: only-child y only-of-type de CSS</h1>
-
-	<p>La pseudo-clase <span>only-child</span> se aplica cuando en dicho nivel hay un solo elemento. Por ejemplo:</p>
-
-	<pre>
-	&lt;ul id="fechainicio"&gt;
-    		&lt;li&gt;10/10/2015&lt;/li&gt;
-  	&lt;/ul&gt;
-	</pre>
-
-	<p>Luego si especificamos la siguiente regla:</p>
-
-	<pre>
-	#fechainicio li:only-child {
-  		color:blue;
-	}
-	</pre>
-
-	<p>El li se pinta de rojo ya que hay un solo elemento en ese nivel.</p>
-
-	<p>Si tenemos por ejemplo:</p>
-
-	<pre>
-	&lt;div id="equipo1"&gt;
-    		&lt;h1>Participantes&lt;/h1&gt;
-    		&lt;p>Pablo Martinez.&lt;/p&gt;  
-	&lt;/div&gt;
-	</pre>
-
-	<p>Y aplicamos el estilo:</p>
-
-	<pre>
-	#equipo1 p:only-child {
-  		color:red;
-	}
-	</pre>
-
-	<p>No se selecciona el párrafo ya que no es el único elemento en dicho nivel (hay un h1 y un párrafo)</p>
-
-	<p>Ahora la pseudo-clase <span>only-of-type</span> se aplica cuando en dicho nivel hay un solo elemento de ese tipo (no importa cuantos otros elementos hay de otro tipo en el mismo nivel)</p>
-
-	<p>Si tenemos ahora:</p>
-
-	<pre>
-	&lt;div id="equipo1"&gt;
-    		&lt;h1>Participantes&lt;/h1&gt;
-    		&lt;p>Pablo Martinez.&lt;/p&gt;  
-	&lt;/div&gt;
-	</pre>
-
-	<p>con la regla:</p>
-
-	<pre>
-	#equipo1 p:only-of-type{
-  		color:red;
-	}
-	</pre>
-
-	<p>Si se pinta de rojo el párrafo ya que en ese nivel hay solo un elemento de tipo párrafo.</p>
-
-	<p><span>Ejemplo: </span></p>
-
-	<p>Veamos una página y una hoja de estilo que prueban estas dos pseudo-clases:</p>
-
 	<div class="container">
+		<h1>
+			Pseudoclases:
+			<small>only-child & only-of-type</small>
+		</h1>
 	
-		<h2>Fecha de inicio.</h2>
-  		
-  		<ul id="fechainicio">
-    		<li>10/10/2015</li>
-  		</ul>
-  
-  		<h2>Fechas finales.</h2>
-  		
-  		<ul id="fechafin">
-    		<li>10/12/2015</li>
-    		<li>24/12/2015</li>
-  		</ul>
-  		
-  		<div id="equipo1">
-    		<h2>Participantes</h2>
-    		<p>Pablo Martinez.</p>  
-  		</div>
-  		
-  		<div id="equipo2">
-    		<h2>Participantes</h2>
-    		<p>Ana Luz.</p>  
-    		<p>Pedro Rodriguez.</p>  
-  		</div>
+		<hr>
+	
+		<p>La pseudoclase <span>only-child</span> se aplica cuando en dicho nivel hay un solo elemento, representa un elemento sin hermanos, esto es lo mismo que utilizar las pseudoclases <span>first-child, last-child o nth-child ( 1 ), nth-last-child ( 1 )</span>, pero con una especificidad menor.</p>
+
+		<p>Su sintaxis:</p>
+
+		<pre>
+			selector : only-child {
+				color : lime;
+			}
+		</pre>
+		
+		<p>Por ejemplo: Se cuenta con una lista no ordenada con un unico list item ( li ): </p>
+
+		<pre>
+			&lt;ul id = "fechainicio"&gt;
+				&lt;li&gt; 10/10/2015 &lt;/li&gt;
+			&lt;/ul&gt;
+		</pre>
+	
+		<p>Luego si especificamos la siguiente regla:</p>
+	
+		<pre>
+			li : only-child {
+				color : blue;
+			}
+		</pre>
+	
+		<p>El elemento list item ( li ) se pintará de azul, ya que hay un solo elemento en ese nivel, es decir no cuenta con más hermanos (elementos li que están al mismo nivel jerarquico). Por lo cual el estilo se aplica sin ningun problema.</p>
+	
+		<p>Si tenemos por ejemplo se cuenta con un contenedor tipo ( div ), el cual tiene definida una propiedad id llamara equipo 1, con 2 hijos, el primero un titulo tipo h1 y el segundo un párrafo:</p>
+	
+		<pre>
+			&lt;div id = "equipo1"&gt;
+				&lt;h1> Participantes &lt;/h1&gt;
+				&lt;p> Pablo Martinez &lt;/p&gt;  
+			&lt;/div&gt;
+		</pre>
+	
+		<p>Y se intenta aplicar la pseudoclase only-child al elemento parrafo ( p ), definiendo un color de texto rojo para este elemento, el resultado será?:</p>
+	
+		<pre>
+			#equipo1 p:only-child {
+				color:red;
+			}
+		</pre>
+	
+		<p>Pues el resultado es que no se aplicará el color de texto rojo al párrafo, ya que no es el único elemento en dicho nivel, cuenta con un hermano tipo h1. Por lo tanto no es un unico hijo y por ello la pseudoclase <span>only-child</span> no funciona.</p>
+	
+		<p>Ahora la pseudoclase <span>only-of-type</span> representa un elemento que no tiene hermanos del mismo tipo. Se aplica cuando en dicho nivel hay un solo elemento de ese tipo, no importa cuantos otros elementos hay de otro tipo en el mismo nivel</p>
+	
+		<p>Retomando el ejemplo anterior:</p>
+	
+		<pre>
+			&lt;div id = "equipo1"&gt;
+				&lt;h1> Participantes &lt;/h1&gt;
+				&lt;p> Pablo Martinez &lt;/p&gt;  
+			&lt;/div&gt;
+		</pre>
+	
+		<p>Utilizando la misma regla css definida, con la unica diferencia que está vez se utilizará la pseudoclase only-of-type, cual será el resultado?:</p>
+	
+		<pre>
+			#equipo1 p : only-of-type{
+				color : red;
+			}
+		</pre>
+	
+		<p>Pues el resultado es que ahora si se aplica el color rojo el párrafo, ya que en ese nivel hay solo un elemento de tipo párrafo, sin importar que tenga hermanos de otro tipo, si la regla es para un elemento que es unico a ese nivel jerárquico, el estilo se aplicará.</p>
+		
+		<div class="container ejercicio">
+
+			<h2>Ejemplo:</h2>
+
+			<hr>
+
+			<p>Veamos una página y una hoja de estilo que prueban estas dos pseudo-clases:</p>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="contenedor">
+
+						<h2>Elementos HTML</h2>
+
+						<hr>
+
+						<h3>Fecha de inicio.</h3>
+		
+						<ul id="fechainicio">
+							<li>10/10/2015</li>
+						</ul>
+		
+						<h3>Fechas finales.</h3>
+		
+						<ul id="fechafin">
+							<li>10/12/2015</li>
+							<li>24/12/2015</li>
+						</ul>
+		
+						<div id="equipo1">
+							<h3>Equipo: 1</h3>
+							<p>Pablo Martinez.</p>  
+						</div>
+		
+						<div id="equipo2">
+							<h3>Equipo: 2</h3>
+							<p>Ana Luz.</p>  
+							<p>Pedro Rodriguez.</p>  
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="contenedor">
+
+						<h2>Pseudoclases css aplicadas</h2>
+
+						<hr>
+
+						<pre>
+							#fechainicio li:only-child{
+								color: blue;
+							}
+
+							#fechafin li:nth-child(2){
+								color: orange;
+							}
+							
+							#equipo1 p:only-of-type{
+								color: #f00;
+							}
+							
+							#equipo2 p:nth-of-type(2){
+								color: green;
+							}
+						</pre>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	
 </body>
 </html>

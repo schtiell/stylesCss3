@@ -1,48 +1,15 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-
-h1{
-	font: bold 25px verdana;
-	text-align: center;
-	margin: 25px;
-}
-
-p{
-	margin: 20px;
-}
-
-span{
-	font: bold 15px verdana; 
-}
-
-.container, .container2{
-	border: 1px solid #000;
-	width: 60%;
-	margin: 30px auto;
-}
-
-h2{
-	font: bold 15px verdana;
-	text-align: center;
-	margin: 25px;
-}
 
 table{
-	width: 80%;
-	border-collapse: collapse;
-	border: 1px solid #000;
+	width: 100%;
+
 	margin: 20px auto;
 	padding: 10px
 }
 
-td{
-	border: 1px solid #000;
-	text-align: center;
-	padding: 5px;
+.row{
+	margin-top: 100px;
+}
+.contenedor tr:only-child{
+	background: #FCCAEF;
 }
 
-tr:only-child{
-	background: yellow;
-}

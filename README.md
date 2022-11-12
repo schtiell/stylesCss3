@@ -59,3 +59,4 @@
 57. Pseudoclases nth-child & nth-last-child.
 58. Pseudoclases nth-of-type, nth-last-of-type, first-of-type, last-of-type.
 59. Pseudoclases only-child & only-of-type.
+60. Pseudoclases only-child & only-of-type.

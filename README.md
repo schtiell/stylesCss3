@@ -61,3 +61,4 @@
 59. Pseudoclases only-child & only-of-type.
 60. Pseudoclases only-child & only-of-type.
 61. Pseudoclase empty.
+62. Pseudoclase empty.

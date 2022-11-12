@@ -1,51 +1,8 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-
-h1{
-	font: bold 30px verdana;
-	text-align: center;
-	margin: 25px;
-}
-
-h2{
-	font: bold 20px verdana;
-	text-align: center;
-	margin: 25px;
-}
-
-p{
-	margin: 25px 20px;
-}
-
-span{
-	font-weight: bold;
-}
-
-.container{
-	border: 1px solid #000;
-	width: 80%;
-	margin: 25px auto;
-}
-
-table{
-	border-collapse: collapse;
+.table{
 	width: 50%;
-	margin: 25px auto;
-}
-
-.header{
-	font: bold 18px tahoma;
-	text-align: center;
-}
-
-td{
-	border: 1px solid silver;
-	padding: 5px;
-	margin: 5px;
+	margin: 50px auto;
 }
 
 td:empty{
-	background-color: gray;
+	background-color: #E7D11E;
 }

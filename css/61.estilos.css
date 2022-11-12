@@ -1,28 +1,13 @@
-*{
-	margin: 0;
-	padding: 0;
-
-}
-
-h1{
-	font: bold 30px verdana;
-	text-align: center;
-	margin: 20px;
-}
-
-p{
-	margin: 20px;
-}
-
-pre, span{
-	font: italic 18px verdana;
-	font-weight: bold;
-}
-
-div:empty{
-	border: 1px solid #000;
+.contenedor:empty{
+	display: block;
 	width: 25%;
 	height: 200px;
+
+
 	margin: 25px auto;
-	background-color: yellow;
+	padding: 0;
+
+	background-color: #7CC3EE;
+	border: 2px solid #868E92;
+	border-radius: 15px;
 }

@@ -2,51 +2,87 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Pseudo-elementos: first-letter y first-line</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/63.estilos.css" type="text/css">
+	
+	<title>Pseudoelementos: first-letter & first-line</title>
 </head>
 <body>
-	
-	<h1>Pseudo-elementos: first-letter y first-line</h1>
+	<div class="container">
+		<h1>
+			CSS: Cascading Style Sheets
+			<small>Pseudoelementos: first-letter & first-line</small>
+		</h1>
 
-	<p>Los pseudo-elementos a diferencia de las pseudo-clases afectan a parte de un elemento HTML y no al elemento completo.</p>
+		<hr>
 
-	<p>Los primeros dos pseudo-elementos que veremos son first-letter y first-line.</p>
-	
-	<h2>First-letter</h2>
+		<p>Al igual que las pseudoclases, <span>los pseudoelementos</span> se añaden a los selectores, pero en cambio, no describen un estado especial sino que, permiten añadir estilos a una parte concreta del documento. Es decir los pseudoelementos a diferencia de las pseudoclases afectan a parte de un elemento HTML y no al elemento completo.</p>
 
-	<p>El pseudo-elemento first-letter permite seleccionar la primer letra del contenido de un elemento HTML y aplicarle un estilo. Veamos por ejemplo si queremos que la primer letra de un párrafo aparezca con un tamaño de fuente mayor y otro color:</p>
+		<p>Su sintaxis:</p>
 
-	<pre>
-		&lt;p&gt;Esto es la prueba del pseudo-elemento first-letter.&lt;/p&gt;
-	</pre>
+		<pre>
+			selector :: pseudo-elemento { 
+				propiedad: valor; 
+			}
+		</pre>
 
-	<p>Definimos:</p>
+		<p>Los primeros dos pseudoelementos a analizar en esta explicación son <span>first-letter y first-line</span>.</p>
+		
+		<h2>First-letter</h2>
 
-	<pre>
-	p::first-letter {
-  		font-size:1.5rem;
-  		color:red;
-	}
-	</pre>
-	
-	<div class="primera_letra">
-		<p>El pseudo-elemento first-line permite aplicar un estilo a la primer linea del contenido de un elemento HTML. Tengamos en cuenta que la cantidad de datos a mostrar en la primer línea depende del ancho de la ventana del navegador</p>
+		<p>El <span>pseudoelemento first-letter</span> permite seleccionar la primer letra del contenido de un elemento HTML y aplicarle un estilo. Veamos por ejemplo si queremos que la primer letra de un párrafo aparezca con un tamaño de fuente mayor y otro color:</p>
+
+		<pre>
+			&lt;p&gt;Esto es la prueba del pseudo-elemento first-letter.&lt;/p&gt;
+		</pre>
+
+		<p>Definimos:</p>
+
+		<pre>
+			p :: first-letter {
+				font-size : 1.5rem;
+				color : red;
+			}
+		</pre>
+		
+		<div class="primera_letra">
+			<p>El <span>pseudoelemento first-line</span> permite aplicar un estilo a la primer linea del contenido de un elemento HTML. Tengamos en cuenta que la cantidad de datos a mostrar en la primer línea depende del ancho de la ventana del navegador</p>
+		</div>
+
+		<p>La sintaxis para definir un pseudoelemento es distinta a las pseudoclases ya que le antecedemos dos caracteres <span>::</span> en lugar de uno.</p>
+
+		<p>Si no tuvieramos los pseudoelementos este problema lo debemos resolver encerrando el primer caracter de un párrafo con el elemento HTML "span" y asignarle un estilo a dicho elemento. Luego gracias a esto tenemos un contenido del archivo HTML mucho más limpio.</p>
+
+		<h2>First-line</h2>
+
+		<p>El pseudo-elemento first-line permite seleccionar la primer línea de texto de un elemento HTML para aplicar un estilo. Si tenemos la siguiente página:</p>
+
+		<div class="primera_linea">
+			<p>El pseudo-elemento first-line permite aplicar un estilo a la primer linea del contenido de un elemento HTML. Tengamos en cuenta que la cantidad de datos a mostrar en la primer línea depende del ancho de la ventana del navegador</p>
+		</div>
+		
+		<p>Tengamos en cuenta que si redimensionamos el navegador solo los caracteres de la primer línea aparecen subrayados</p>
 	</div>
-
-	<p>La sintaxis para definir un pseudo-elemento es distinta a las pseudo-clases ya que le antecedemos dos caracteres :: en lugar de uno.</p>
-
-	<p>Si no tuvieramos los pseudo-elementos este problema lo debemos resolver encerrando el primer caracter de un párrafo con el elemento HTML "span" y asignarle un estilo a dicho elemento. Luego gracias a esto tenemos un contenido del archivo HTML mucho más limpio.</p>
-
-	<h2>First-line</h2>
-
-	<p>El pseudo-elemento first-line permite seleccionar la primer línea de texto de un elemento HTML para aplicar un estilo. Si tenemos la siguiente página:</p>
-
-	<div class="primera_linea">
-		<p>El pseudo-elemento first-line permite aplicar un estilo a la primer linea del contenido de un elemento HTML. Tengamos en cuenta que la cantidad de datos a mostrar en la primer línea depende del ancho de la ventana del navegador</p>
-	</div>
-	
-	<p>Tengamos en cuenta que si redimensionamos el navegador solo los caracteres de la primer línea aparecen subrayados</p>
-
 </body>
 </html>

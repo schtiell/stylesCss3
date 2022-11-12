@@ -1,41 +1,8 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-
-h1{
-	font: bold 30px verdana;
-	text-align: center;
-	margin: 25px;
-}
-
-h2{
-	font: bold 25px verdana;
-	text-align: left;
-	margin: 40px 20px 25px 20px;
-}
-
-
-p{
-	text-align: justify;
-	margin: 25px;
-}
-
-pre{
-	font: italic 18px tahoma;
-	font-weight: bold;
-}
-
-div{
-	border: 1px solid #000;
-	width: 80%;
-	margin: 25px auto;
-}
 
 .primera_letra p::first-letter{
-	font: italic 25px verdana;
-	color:red;
-	text-decoration: underline;
+	font: oblique bolder 2.5rem 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+	color: lime;
+	margin-right: 5px;
 }
 
 .primera_linea p::first-line{

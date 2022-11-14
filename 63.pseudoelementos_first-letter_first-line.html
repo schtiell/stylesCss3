@@ -42,7 +42,7 @@
 		<p>Su sintaxis:</p>
 
 		<pre>
-			selector :: pseudo-elemento { 
+			selector :: pseudoelemento { 
 				propiedad: valor; 
 			}
 		</pre>
@@ -51,38 +51,98 @@
 		
 		<h2>First-letter</h2>
 
-		<p>El <span>pseudoelemento first-letter</span> permite seleccionar la primer letra del contenido de un elemento HTML y aplicarle un estilo. Veamos por ejemplo si queremos que la primer letra de un párrafo aparezca con un tamaño de fuente mayor y otro color:</p>
+		<p>El <span>pseudoelemento first-letter</span> permite seleccionar la primer letra del contenido de un elemento HTML y aplicarle un estilo.</p>
 
+		<p>Su sintaxis:</p>
+		
 		<pre>
-			&lt;p&gt;Esto es la prueba del pseudo-elemento first-letter.&lt;/p&gt;
-		</pre>
-
-		<p>Definimos:</p>
-
-		<pre>
-			p :: first-letter {
-				font-size : 1.5rem;
-				color : red;
+			selector :: first-letter { 
+				propiedad: valor; 
 			}
 		</pre>
-		
-		<div class="primera_letra">
-			<p>El <span>pseudoelemento first-line</span> permite aplicar un estilo a la primer linea del contenido de un elemento HTML. Tengamos en cuenta que la cantidad de datos a mostrar en la primer línea depende del ancho de la ventana del navegador</p>
-		</div>
 
-		<p>La sintaxis para definir un pseudoelemento es distinta a las pseudoclases ya que le antecedemos dos caracteres <span>::</span> en lugar de uno.</p>
+		<p>La sintaxis para definir un pseudoelemento es distinta a las pseudoclases ya que le antecedemos dos caracteres <span>: :</span> en lugar de uno.</p>
 
-		<p>Si no tuvieramos los pseudoelementos este problema lo debemos resolver encerrando el primer caracter de un párrafo con el elemento HTML "span" y asignarle un estilo a dicho elemento. Luego gracias a esto tenemos un contenido del archivo HTML mucho más limpio.</p>
+		<p>Si no se tuviera los pseudoelementos este problema se debe resolver encerrando el primer caracter de un párrafo con el elemento HTML "span" y asignarle un estilo a dicho elemento. Luego gracias a esto se tiene un contenido del archivo HTML mucho más limpio.</p>
 
 		<h2>First-line</h2>
 
-		<p>El pseudo-elemento first-line permite seleccionar la primer línea de texto de un elemento HTML para aplicar un estilo. Si tenemos la siguiente página:</p>
+		<p>El <span>pseudoelemento first-line</span> permite seleccionar la primer línea de texto de un elemento HTML para aplicar un estilo. Si tenemos la siguiente página:</p>
 
-		<div class="primera_linea">
-			<p>El pseudo-elemento first-line permite aplicar un estilo a la primer linea del contenido de un elemento HTML. Tengamos en cuenta que la cantidad de datos a mostrar en la primer línea depende del ancho de la ventana del navegador</p>
-		</div>
+		<p>El pseudoelemento first-line permite aplicar un estilo a la primer linea del contenido de un elemento HTML. Tengamos en cuenta que la cantidad de datos a mostrar en la primer línea depende del ancho de la ventana del navegador</p>
 		
-		<p>Tengamos en cuenta que si redimensionamos el navegador solo los caracteres de la primer línea aparecen subrayados</p>
+		<p>Tengamos en cuenta que si redimensionamos el navegador solo los caracteres de la primer línea aparecen los estilos aplicados al pseudoelemento</p>
+
+		<div class="container ejercicio">
+
+			<h2>Ejemplo:</h2>
+
+			<hr>
+
+			<div class="fila">
+				<div class="row">
+
+					<div class="col-sm-5">
+	
+						<h3>
+							Pseudoelemento: 
+							<small>first-letter</small>
+						</h3>
+	
+	
+						<hr>
+	
+						<p class="primeraLetra">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae exercitationem, illo, culpa hic molestiae rerum possimus unde vitae nam dolorum incidunt excepturi obcaecati. Commodi ad quasi possimus temporibus aliquam molestiae?</p>
+					</div>
+	
+					<div class="col-sm-7">
+	
+						<h3>
+							Pseudoelemento: 
+							<small>first-letter</small>
+						</h3>
+	
+						<hr>
+	
+						<pre>
+							.primeraLetra::first-letter{
+								font: oblique bolder 2.5rem 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+								color: lime;
+								margin-right: 5px;
+							}
+						</pre>
+					</div>
+				</div>
+			</div>
+
+			<div class="fila">
+				<div class="row">
+					<div class="col-sm-5">
+						<h3>
+							Pseudoelemento:
+							<small>first-line</small>
+						</h3>
+	
+						<hr>
+	
+						<p class="primeraLinea">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo quaerat rerum eius rem consequatur quidem veritatis facilis, sit non vitae aliquam debitis sunt, nam deserunt voluptatibus veniam consequuntur illo sint!</p>
+					</div>
+					<div class="col-sm-7">
+						<h3>
+							Pseudoelemento:
+							<small>first-line</small>
+						</h3>
+						<hr>
+						<pre>
+							.primeraLinea p::first-line{
+								font: italic bolder 18px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+								color:red;
+							}
+						</pre>
+					</div>
+				</div>
+			</div>
+		</div>	
 	</div>
 </body>
 </html>

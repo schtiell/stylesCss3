@@ -1,12 +1,15 @@
 
-.primera_letra p::first-letter{
+.fila{
+	margin-bottom: 100px;
+}
+
+.primeraLetra::first-letter{
 	font: oblique bolder 2.5rem 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
 	color: lime;
 	margin-right: 5px;
 }
 
-.primera_linea p::first-line{
-	font: italic 18px verdana;
+.primeraLinea::first-line{
+	font: italic bolder 18px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	color:red;
-	text-decoration: underline;
 }

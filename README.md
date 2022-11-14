@@ -64,4 +64,4 @@
 62. Pseudoclase empty.
 63. Pseudoelementos ::first-letter & ::first-line.
 64. Pseudoelementos ::first-letter & ::first-line.
-65. Pseudoelemento ::before & ::after.
+65. Pseudoelemento ::before & ::after, propiedad content.

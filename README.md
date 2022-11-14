@@ -62,5 +62,6 @@
 60. Pseudoclases only-child & only-of-type.
 61. Pseudoclase empty.
 62. Pseudoclase empty.
-63. Pseudoelementos first-letter & first-line.
-64. Pseudoelementos first-letter & first-line.
+63. Pseudoelementos ::first-letter & ::first-line.
+64. Pseudoelementos ::first-letter & ::first-line.
+65. Pseudoelemento ::before & ::after.

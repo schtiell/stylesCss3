@@ -1,29 +1,3 @@
-*{
-	margin: *;
-	padding: *;
-}
-
-h1{
-	font: bold 30px verdana;
-	text-align: center;
-	margin: 30px;
-}
-
-p{
-	margin: 25px;
-	text-align: justify;
-}
-
-span{
-	font-weight: bold;
-}
-
-.container{
-	border: 1px solid #000;
-	width: 80%;
-	margin: 25px auto;
-}
-
-.container p::before{
+.ejercicio p::before{
 	content: " - ";
 }

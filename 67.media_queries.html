@@ -44,7 +44,7 @@
 
 		<p>Actualmente donde más se los emplean es para implementar sitios adaptables al dispositivo donde se ejecutan: celular, tablet, pc etc.</p>
 
-		<p>Para ver su funcionamiento implementaremos una página que se adapte el "div" principal dependiendo del ancho del dispositivo.</p>
+		<p>Para ver su funcionamiento se implementará un contenedor "div" principal dependiendo del ancho del dispositivo.</p>
 
 		<div class="contenedor">
 
@@ -98,21 +98,24 @@
 	<p>Ahora comencemos a aumentar el tamaño del ancho del navegador y podemos comprobar que cuando alcanza o supera el valor de 576 píxeles el ancho máximo se define con el valor 540px, esto debido a que se actualiza el estilo para la clase container por ser verdadero el media query dedefinido (min-width: 576px):</p>
 
 	<pre>
-	.container {
-    	max-width: 540px;
-    	background-color:#ddd;
-  	}
+		.container {
+			max-width: 540px;
+			background-color:#ddd;
+		}
 	</pre>
 	
 	<p>Si seguimos aumentando el tamaño del ancho y alcanzamos o superamos los 768px luego también se verifica verdadera la segunda media query:</p>
 
 	<pre>
-	@media (min-width: 768px) {
-  		.container {
-    		max-width: 720px;
-    		background-color:#ccc;	
-  		}
-	}
+		@media (min-width: 768px){
+			.contenedor{
+				max-width: 720px;
+				height: 450px;
+		
+				border: 1px solid #1244EC;
+				background-color: #D0DAFA;
+			}
+		
 	</pre>
 
 	<p>Esto hace que el valor final para la propiedad max-width y background-color queden definidas con estos valores:</p>
@@ -120,56 +123,69 @@
 	<p>También definimos para tamaños mayores o iguales a 992px y 1200px:</p>
 
 	<pre>
-	@media (min-width: 992px) {
-  		.container {
-    		max-width: 960px;
-    		background-color:#bbb;	
-  		}
-	}
-
-	@media (min-width: 1200px) {
-  		.container {
-    		max-width: 1140px;
-    		background-color:#ccc;		
-  		}
-  	}
+		@media (min-width: 992px){
+			.contenedor{
+				max-width: 960px;
+				height: 400px;
+		
+				border: 1px solid #F0B116;
+				background-color: #FCE5AC;
+			}
+		}
+		
+		@media (min-width: 1200px){
+			.contenedor{
+				max-width: 1140px;
+				height: 350px;
+		
+				border: 1px solid #31EF82 ;
+				background-color: #D8FFE9;
+			}
+		}
 	</pre>
 
-	<p>Es importante el orden que definimos las media queries para este problema ya que por ejemplo si el dispositivo tiene un ancho de 1920 píxeles todas las condiciones se verifican verdaderas pero las propiedades max-width y background-color quedan definidas por la última asignación:</p>
+	<p><span>Es importante</span> el orden en que son definidas las media queries para este problema ya que por ejemplo si el dispositivo tiene un ancho de 1920 píxeles todas las condiciones se verifican verdaderas pero las propiedades max-width y background-color quedan definidas por la última asignación:</p>
 
 	<pre>
-	@media (min-width: 1200px) {
-  		.container {
-    		max-width: 1140px;
-    		background-color:#ccc;		
-  		}
-	}
+		@media (min-width: 1200px){
+			.contenedor{
+				max-width: 1140px;
+				height: 350px;
+		
+				border: 1px solid #31EF82 ;
+				background-color: #D8FFE9;
+			}
+		}
 	</pre>
 
 	<h2>Acotaciones</h2>
 
-	<p>Podemos definir un media query para un determinado dispositivo, por ejemplo para una impresora:</p>
+	<p>Se puede definir un media query para un determinado dispositivo, por ejemplo para una impresora:</p>
 
 	<pre>
-	@media print and (min-width:1000px) {
-  		...
-	}
+		@media print and (min-width:1000px) {
+			...
+		}
 	</pre>
 
-	<p>Cuando no disponemos el medio por defecto es para todos, el ejercicio anterior podíamos haberlo codificado como:</p>
+	<p>Cuando no se dispone el medio por defecto es para todos, el ejercicio anterior podíamos haberlo codificado como:</p>
 
 	<pre>
-	@media all and (min-width: 576px) {
-  		.container {
-    		max-width: 540px;
-    		background-color:#ddd;
-  		}
-	}
+		@media all and (min-width: 576px){
+			.contenedor{
+				
+				max-width: 540px;
+				height: 550px;
+				
+				border: 1px solid #E40F2C;
+				background-color: #F7A2AE;
+			}
+		}
 	</pre>
 
-	<p>Es decir que si el media query se aplica a todos los medios podemos obviar la parte "all and".</p>
+	<p>Es decir que si el media query se aplica a todos los medios se pouede obviar la parte <span>"all and"</span>.</p>
 
-	<p>Si analizamos el código fuente del framework Bootstrap veremos que hace un uso muy importante de los media queries para implementar el concepto de las páginas adaptables.</p>
+	<p>Si se analiza el código fuente del framework Bootstrap puede notarse que hace un uso muy importante de los media queries para implementar el concepto de las páginas adaptables.</p>
 	</div>	
 </body>
 </html>

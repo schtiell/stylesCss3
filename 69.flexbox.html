@@ -2,55 +2,106 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Flexbox</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/69.estilos.css" type="text/css">
+
+	<title>Flexbox</title>
 </head>
 <body>
-	
-	<h1>Flexbox</h1>
-
-	<p>Flexbox nos permite implementar interfaces de usuario y maquetación de páginas web en forma más sencilla de como las veníamos haciendo del 2000 al 2014.</p>
-
-	<p>La mayoría de los navegadores ya implementan la funcionalidad de Flexbox o en castellano "Cajas flexibles".</p>
-
-	<p>Si queremos conocer su especificación técnica podemos hacerla en el sitio del World Wide Web Consortium (W3C), de todos modos no es un buen lugar para aprender de su funcionamiento.</p>
-
-	<p>Gran cantidad de diseñadores están empleando la funcionalidad de Flexbox y las nuevas versiones de framework de CSS como Bootstrap 4 también lo incorporan para su funcionamiento.</p>
-
-	<p>Flexbox nos facilita la maquetación del sitio web y todos sus componentes. También facilita la adaptación de la página a distintos tamaños de pantalla</p>
-
-	<p>Un Flexbox o caja flexible consiste en un elemento contenedor y en su interior una serie de items:</p>
-
-	<div class="image">
-		<img src="images/flexbox.jpg" alt="imagen de flexbox y sus elementos hijo">
-	</div>
-	
-	<p>Para definir un elemento como contenedor de cajas flexibles debemos definir la propiedad display con el valor "flex", con esto ya tenemos un caja flexible.</p>
-
-	<p><span>Ejemplo:</span></p>
-
-	<h2>Ejemplo de div flex</h2>
-
 	<div class="container">
-	
-		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, numquam incidunt provident nesciunt non veritatis quis nisi velit sapiente, illum, praesentium. Reiciendis nulla deleniti, nam excepturi a optio eveniet odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, numquam incidunt provident nesciunt non veritatis quis nisi velit sapiente, illum, praesentium. Reiciendis nulla deleniti, nam excepturi a optio eveniet odio.</div>
+		<h1>
+			Cascading Style Sheets
+			<small>Flexbox: Cajas flexibles</small>
+		</h1>
 
-		<div>Possimus ipsam molestiae sint, incidunt rem eius reprehenderit voluptatem est, non, veniam atque adipisci. Explicabo delectus laboriosam natus. Dignissimos laboriosam facilis rem, ea ullam itaque tenetur dolore asperiores, reiciendis iure!. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, numquam incidunt provident nesciunt non veritatis quis nisi velit sapiente, illum, praesentium. Reiciendis nulla deleniti, nam excepturi a optio eveniet odio.</div>
+		<hr>
 
-		<div>Accusamus, eos nobis, nemo fugit quos adipisci autem maiores dolor a necessitatibus beatae vitae iusto maxime corporis? Explicabo eveniet sed facilis, perferendis, modi unde labore, minima, consequatur dolor animi nisi!. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, numquam incidunt provident nesciunt non veritatis quis nisi velit sapiente, illum, praesentium. Reiciendis nulla deleniti, nam excepturi a optio eveniet odio.</div>
+		<p>El modulo de flexbox, comunmente llamado <span>Flexbox</span>, permite implementar interfaces de usuario y maquetación de páginas web en forma más sencilla en comparación con la forma en la que se venia haciendo del 2000 al 2014.</p>
+
+		<p>Flexbox fue diseñado como un modelo unidimensional de layout, y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación</p>
+
+		<p>Cuando se describe a flexbox como unidimensional se destaca el hecho que flexbox maneja el layout en una sola dimensión a la vez, ya sea como fila o como columna.</p>
+
+		<p>La mayoría de los navegadores ya implementan la funcionalidad de flexbox que tambien son conocidas como <span>"Cajas flexibles"</span>.</p>
+
+		<p>Su gran utilidad y aceptación ha permitido que frameworks como Bootstrap 4 también lo incorporan para su funcionamiento.</p>
+
+		<p>Flexbox facilita la maquetación del sitio web y todos sus componentes. También facilita la adaptación de la página a distintos tamaños de pantalla lo que se conoce como: <span>responsive desing</span></p>
+
+		<p>Un flexbox o caja flexible consiste en un elemento contenedor y en su interior una serie de items:</p>
+
+		<p>Para definir un elemento como contenedor de cajas flexibles debemos definir la propiedad display con el valor "flex", con esto ya tenemos un caja flexible.</p>
+
+		<pre>
+			div {
+				display : flex;
+			}
+		</pre>
+
+		<img>
+
+		<div class="container ejercicio">
+
+			<h2>Ejemplo:</h2>
+
+			<hr>
+
+			<div class="contenedor">
+		
+				<div>
+					<h3>Flexbox:</h3>
+
+					<p>La idea principal detrás del diseño flexible es darle al contenedor la capacidad de modificar el ancho/alto (y el orden) de sus elementos para llenar mejor el espacio disponible.</p>
+				</div>
+
+				<div>
+
+					<h3>container flex</h3>
+
+					<pre>
+						.contenedor{
+							display: flex;
+						}
+					</pre>
+				</div>
+
+				<div>
+					<h3>containers hijos</h3>
+					<pre>
+						.contenedor div{
+							margin: 10px;
+							padding: 10px;
+						}
+					</pre>
+				</div>
+			</div>
+			
+		</div>
+
+		<p>Luego los tres div contenidos se transforman en cajas flexibles que se redimensionan en ancho y alto automáticamente cuando cambiamos el tamaño del navegador.</p>
+
+		<p>Veremos que hay un conjunto de propiedades que nos permiten definir la ubicación, tamaño etc. de los items dentro del contenedor.</p>
 	</div>
-
-	<p>Debemos cargar en la propiedad "display" el valor "flex" para que el .container se transforme en un contenedor de cajas flexibles:</p>
-
-	<pre>
-	.container {
-	display: flex;
-  	background-color: gold;
-	}
-	</pre>
-
-	<p>Luego los tres div contenidos se transforman en cajas flexibles que se redimensionan en ancho y alto automáticamente cuando cambiamos el tamaño del navegador.</p>
-
-	<p>Veremos que hay un conjunto de propiedades que nos permiten definir la ubicación, tamaño etc. de los items dentro del contenedor.</p>
 </body>
 </html>

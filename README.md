@@ -68,3 +68,4 @@
 66. Pseudoelemento ::before & ::after, propiedad content.
 67. Media queries.
 68. Media queries.
+69. Flexbox, cajas flexibles.

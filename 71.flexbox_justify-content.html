@@ -56,40 +56,140 @@
 		<p>Los valores que podemos asignarle a la propiedad "justify-content" son:</p>
 	
 		<ul>
-			<li>flex-start</li>
-			<li>flext-end</li>
-			<li>center</li>
-			<li>space-between</li>
-			<li>space-around</li>
+			<li><span>flex-start:</span> Los items aparecen al inicio del contenedor</li>
+			<li><span>flex-end:</span> Los items aparecen pegados al final del contenedor</li>
+			<li><span>center:</span> Los items aparecen centrados en el contenedor</li>
+			<li><span>space-between:</span> Se distribuyen los items ocupando todo el espacio disponible, con espacios iguales entre ellos, pero sin dejar espacio al inicio y al final del contenedor</li>
+			<li><span>space-around:</span> Se distribuyen los items  ocupando todo el espacio disponible con espacios iguales entre ellos, pero dejando espacio al inicio y al final</li>
+			<li><span>space-evenly:</span> Los elementos son distribuidos de tal manera que el espacio entre 2 de ellos y el espacio hasta los bordes sea igual</li>
 		</ul>
-	
-		<p>Cuando la propiedad flex-direction almacena el valor "row" el eje principal es el horizontal y el eje transversal es el vertical:</p>
+
+		<p>Cuando la propiedad flex-direction almacena el valor <span>"row"</span> el eje principal es el horizontal y el eje transversal es el vertical:</p>
 		
 		<img class="jcontent2">
 		
-		<p>Cuando modificamos la propiedad "justify-content" los item se distribuyen con respecto al eje principal del contenedor.</p>
+		<p>Cuando el valor la propiedad "justify-content" es cambiado los item se distribuyen con respecto al eje principal del contenedor.</p>
 	
-		<p>Probemos ahora de seleccionar en la priedad "flex-direction" el valor "column" y pasemos a ver que sucede con cada valor que le podemos asignar a "justify-content". Los espacios ahora aparecen en forma vertical, esto debido a que ha cambiado el eje principal y el eje transversal:</p>
+		<p>Al asignar el valor <span>column</span> a la propiedad justify-content, los espacios ahora aparecen en forma vertical, esto debido a que ha cambiado el eje principal y el eje transversal:</p>
 	
-		<img src="images/flexbox_justify-content2.jpg" alt="imagen de flexbox justify content">
+		<img class="jcontent3">
 	
-		<p>La propedad "justify-content" tiene sentido cuando hay espacio no ocupado por los items y la distribución de dicho espacio es:</p>
+		<p>La propedad "justify-content" tiene sentido cuando hay espacio no ocupado por los items.</p>
 	
-		<ul>
-			<li><span>flex-start</span> Los items aparecen al inicio del contenedor</li>
-			<li><span>flex-end</span> Los items aparecen pegados al final del contenedor</li>
-			<li><span>center</span> Los items aparecen centrados en el contenedor</li>
-			<li><span>space-between</span> Se distribuyen los items ocupando todo el espacio disponible, con espacios iguales entre ellos, pero sin dejar espacio al inicio y al final del contenedor</li>
-			<li><span>space-around</span> Se distribuyen los items  ocupando todo el espacio disponible con espacios iguales entre ellos, pero dejando espacio al inicio y al final</li>
-		</ul>
-	
-		<div class="flex-container">
-			<div class="caja caja1">Caja 1</div>
-			<div class="caja caja2">Caja 2</div>
-			<div class="caja caja3">Caja 3</div>
-			<div class="caja caja4">Caja 4</div>
-			<div class="caja caja5">Caja 5</div>
-		</div>	
+		<div class="container ejercicio">
+
+			<h2>Ejemplo</h2>
+
+			<hr>
+
+			<div class="row">
+				<div class="col-md-7">
+
+					<h3>flex-direction:
+						<small>row</small>
+					</h3>
+
+					<hr>
+
+					<div class="flex-container flex-container-row">
+						<div class="caja">Caja 1</div>
+						<div class="caja">Caja 2</div>
+						<div class="caja">Caja 3</div>
+						<div class="caja">Caja 4</div>
+					</div>
+				</div>
+				<div class="col-md-5">
+
+					<h3>justify-content:
+						<small>space-evenly</small>
+					</h3>
+					<hr>
+					<pre>
+						.flex-container-row{
+							flex-direction: row;
+							justify-content: space-evenly;
+						}
+					</pre>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-7">
+					<h3>flex-direction:
+						<small>row-reverse</small>
+					</h3>
+					<div class="flex-container flex-container-row-reverse">
+						<div class="caja">Caja 1</div>
+						<div class="caja">Caja 2</div>
+						<div class="caja">Caja 3</div>
+						<div class="caja">Caja 4</div>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<h3>justify-content:
+						<small>center</small>
+					</h3>
+					<hr>
+					<pre>
+						.flex-container-row-reverse{
+							flex-direction: row-reverse;
+							justify-content: center;
+						}
+					</pre>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-7">
+					<h3>flex-direction:
+						<small>column</small>
+					</h3>
+					<hr>
+					<div class="flex-container-column flex-container-col">
+						<div class="caja">Caja 1</div>
+						<div class="caja">Caja 2</div>
+						<div class="caja">Caja 3</div>
+						<div class="caja">Caja 4</div>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<h3>justify-content:
+						<small>flex-end</small>
+					</h3>
+					<hr>
+					<pre>
+						.flex-container-col-reverse{
+							flex-direction: column;
+							justify-content: flex-end;
+						}
+					</pre>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-7">
+					<h3>flex-direction:
+						<small>column-reverse</small>
+					</h3>
+					<hr>
+					<div class="flex-container-column flex-container-col-reverse">
+						<div class="caja">Caja 1</div>
+						<div class="caja">Caja 2</div>
+						<div class="caja">Caja 3</div>
+						<div class="caja">Caja 4</div>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<h3>justify-content:
+						<small>flex-start</small>
+					</h3>
+					<hr>
+					<pre>
+						.flex-container-col-reverse{
+							flex-direction: column-reverse;
+							justify-content: flex-end;
+						}
+					</pre>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

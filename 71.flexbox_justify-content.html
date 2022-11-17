@@ -2,56 +2,94 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Flexbox: justify-content <br>Aplicada al contenedor</title>
+	<!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
 	<link rel="stylesheet" href="css/71.estilos.css" type="text/css">
+
+	<title>Flexbox: justify-content</title>
 </head>
 <body>
 
-	<h1>Flexbox: justify-content</h1>
-	
-	<p>La segunda propiedad que podemos cambiar a un contenedor de cajas flexibles se llama justify-content.</p>
-
-	<p>La propiedad justify-content controla como se distribuyen los items a lo largo del contenedor.</p>
-
-	<p>Por defecto la propiedad justify-content almacena el valor <span>"flex-start".</span></p>
-
-	<p>Los valores que podemos asignarle a la propiedad "justify-content" son:</p>
-
-	<ul>
-		<li>flex-start</li>
-		<li>flext-end</li>
-		<li>center</li>
-		<li>space-between</li>
-		<li>space-around</li>
-	</ul>
-
-	<p>Cuando la propiedad flex-direction almacena el valor "row" el eje principal es el horizontal y el eje transversal es el vertical:</p>
-	
-	<img src="images/flexbox_justify-content1.jpg" alt="imagen de flexbox justify content">
-	
-	<p>Cuando modificamos la propiedad "justify-content" los item se distribuyen con respecto al eje principal del contenedor.</p>
-
-	<p>Probemos ahora de seleccionar en la priedad "flex-direction" el valor "column" y pasemos a ver que sucede con cada valor que le podemos asignar a "justify-content". Los espacios ahora aparecen en forma vertical, esto debido a que ha cambiado el eje principal y el eje transversal:</p>
-
-	<img src="images/flexbox_justify-content2.jpg" alt="imagen de flexbox justify content">
-
-	<p>La propedad "justify-content" tiene sentido cuando hay espacio no ocupado por los items y la distribución de dicho espacio es:</p>
-
-	<ul>
-		<li><span>flex-start</span> Los items aparecen al inicio del contenedor</li>
-		<li><span>flex-end</span> Los items aparecen pegados al final del contenedor</li>
-		<li><span>center</span> Los items aparecen centrados en el contenedor</li>
-		<li><span>space-between</span> Se distribuyen los items ocupando todo el espacio disponible, con espacios iguales entre ellos, pero sin dejar espacio al inicio y al final del contenedor</li>
-		<li><span>space-around</span> Se distribuyen los items  ocupando todo el espacio disponible con espacios iguales entre ellos, pero dejando espacio al inicio y al final</li>
-	</ul>
-
 	<div class="container">
-		<div id="caja1">Caja 1</div>
-		<div id="caja2">Caja 2</div>
-		<div id="caja3">Caja 3</div>
-		<div id="caja4">Caja 4</div>
-		<div id="caja5">Caja 5</div>
-	</div>
+		<h1>
+			Cascading Style Sheets
+			<small>Flexbox: justify-content</small>
+		</h1>
+	
+		<hr>
+		
+		<p>La segunda propiedad que podemos cambiar a un contenedor de cajas flexibles se llama <span>justify-content</span>.</p>
 
+		<img class="jcontent">
+	
+		<p>La <span>propiedad justify-content</span> controla como se distribuyen los items a lo largo del contenedor, es decir, define la alineación a lo largo del eje principal.</p>
+
+		<p>La propiedad justify-content, ayuda a distribuir el espacio libre adicional sobrante cuando todos los elementos flexibles de una línea son inflexibles o son flexibles pero han alcanzado su tamaño máximo. También ejerce cierto control sobre la alineación de los elementos cuando desbordan la línea.</p>
+
+		<p>Su sintaxis:</p>
+
+		<pre>
+			.container {
+				justify-content : flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right | safe | unsafe;
+			}
+		</pre>
+	
+		<p>Por defecto la propiedad justify-content almacena el valor <span>"flex-start".</span></p>
+	
+		<p>Los valores que podemos asignarle a la propiedad "justify-content" son:</p>
+	
+		<ul>
+			<li>flex-start</li>
+			<li>flext-end</li>
+			<li>center</li>
+			<li>space-between</li>
+			<li>space-around</li>
+		</ul>
+	
+		<p>Cuando la propiedad flex-direction almacena el valor "row" el eje principal es el horizontal y el eje transversal es el vertical:</p>
+		
+		<img class="jcontent2">
+		
+		<p>Cuando modificamos la propiedad "justify-content" los item se distribuyen con respecto al eje principal del contenedor.</p>
+	
+		<p>Probemos ahora de seleccionar en la priedad "flex-direction" el valor "column" y pasemos a ver que sucede con cada valor que le podemos asignar a "justify-content". Los espacios ahora aparecen en forma vertical, esto debido a que ha cambiado el eje principal y el eje transversal:</p>
+	
+		<img src="images/flexbox_justify-content2.jpg" alt="imagen de flexbox justify content">
+	
+		<p>La propedad "justify-content" tiene sentido cuando hay espacio no ocupado por los items y la distribución de dicho espacio es:</p>
+	
+		<ul>
+			<li><span>flex-start</span> Los items aparecen al inicio del contenedor</li>
+			<li><span>flex-end</span> Los items aparecen pegados al final del contenedor</li>
+			<li><span>center</span> Los items aparecen centrados en el contenedor</li>
+			<li><span>space-between</span> Se distribuyen los items ocupando todo el espacio disponible, con espacios iguales entre ellos, pero sin dejar espacio al inicio y al final del contenedor</li>
+			<li><span>space-around</span> Se distribuyen los items  ocupando todo el espacio disponible con espacios iguales entre ellos, pero dejando espacio al inicio y al final</li>
+		</ul>
+	
+		<div class="flex-container">
+			<div class="caja caja1">Caja 1</div>
+			<div class="caja caja2">Caja 2</div>
+			<div class="caja caja3">Caja 3</div>
+			<div class="caja caja4">Caja 4</div>
+			<div class="caja caja5">Caja 5</div>
+		</div>	
+	</div>
 </body>
 </html>

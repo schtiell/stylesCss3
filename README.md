@@ -69,3 +69,4 @@
 67. Media queries.
 68. Media queries.
 69. Flexbox, cajas flexibles.
+70. Flexbox: flex-direction.

@@ -1,92 +1,51 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-
-h1{
-	font: bold 30px verdana;
-	text-align: center;
-	margin: 25px;
-}
-
-p{
-	text-align: justify;
-	margin: 25px;
-}
-
-span{
-	font: italic 18px tahoma;
-	font-weight: bold;
-}
-
-ul li{
-	margin:7px 40px;
-}
-
 .img1, .img2{
 	display: block;
-	margin: 25px auto;
+	margin: 15px auto;
 }
 
 .img3, .img4{
-	display: inline-block;
-	margin: 20px auto;
+	display: block;
+	margin: 15px auto;
 }
 
-.caja1 {
-	border: 2px solid #48C9B0 ;
-	font: bold 20px verdana;
-	color: white;
-  	background-color: #0078A6;
-  	padding: 20px;
-}
-.caja2 {
-	border: 2px solid #48C9B0 ;
-	font: bold 20px verdana;
-	color: white;
-  	background-color: #0084B6;
-  	padding: 20px;
-}
-.caja3 {
-	border: 2px solid #48C9B0 ;
-	font: bold 20px verdana;
-	color: white;
-  	background-color: #008CC1;
-  	padding: 20px;
+h3{
+	margin-top: 20px;
 }
 
+.caja{
+	display: block;
+	width: 100px;
+	height: 100px;
 
-.container{
+	margin: 0 auto;
+	padding: 35px 10px;
+
+	background-color: #E7A024;
+	border: 2px solid #000 ;
+
+	font: bold 24px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	color: white;
+}
+
+.contenedor{
 	display: flex;
 	flex-direction: row;
 	width: 60%;
+
 	margin: 30px auto;
 	padding: 15px;
+
+	background-color: #A615EA;
 }
 
-
-.container2{
-	display: flex;
+.contenedor2{
 	flex-direction: column;
-	width: 60%;
-	margin: 30px auto;
-	padding: 15px;
 }
 
-
-.container3{
-	display: flex;
+.contenedor3{
 	flex-direction: row-reverse;
-	width: 60%;
-	margin: 30px auto;
-	padding: 15px;
 }
 
-
-.container4{
-	display: flex;
+.contenedor4{
 	flex-direction: column-reverse;
-	width: 60%;
-	margin: 30px auto;
-	padding: 15px;
 }

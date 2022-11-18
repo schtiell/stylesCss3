@@ -1,0 +1,79 @@
+img{
+    background-image: url("https://camo.githubusercontent.com/fd3727f675a455a68ce92ed75cf57ff202447fd18f730f7978b80a3bb0e79638/68747470733a2f2f6373732d747269636b732e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031382f31302f666c65782d777261702e737667");
+    background-repeat: no-repeat;
+
+    width: 470px;
+    height: 250px;
+
+    float: right;
+    margin-left: 30px;
+}
+
+.row{
+    margin-top: 80px;
+}
+
+.flexcontainer{
+    display: flex;    
+    width: 100%;
+
+    margin: 20px auto;
+    padding: 10px 20px;
+
+    background-color: #B030EB;
+    border: 3px solid #000;
+    border-radius: 20px;
+}
+
+.caja{
+    width: 80px;
+    height: 80px;
+
+    margin: 1px;
+    padding: 10px 5px;
+
+    background-color: #F59D38;
+    border: 3px solid #000;
+    border-radius: 15px;
+
+    font: oblique bolder 20px monospace;
+    color: #fff;
+}
+
+.caja2{
+    width: 130px;
+    height: 80px;
+}
+
+.caja3{
+    width: 150px;
+    height: 80px;
+}
+
+.flexnowrap{
+    display: flex;                      /*Definición de contenedor flexible*/
+
+    flex-direction: row;                /*Alinear en fila*/
+    align-items: center;                /*Alinear al centro verticalmente eje transversal*/
+    justify-content: space-between;     /*Distribuir por todo el contenedor en el eje principal*/
+    flex-wrap: nowrap;                  /*Todos los elementos en el mismo eje, misma linea*/
+}
+
+.flexnowrap{
+    display: flex;                  
+
+    flex-direction: row;            
+    align-items: center;            
+    justify-content: space-around;  
+    flex-wrap: wrap;
+}
+
+.flexwrap-reverse{
+    display: flex;                  
+
+    flex-direction: row;    
+    align-items: flex-start;                    
+    flex-wrap:wrap-reverse;
+
+    width: 50%;
+}

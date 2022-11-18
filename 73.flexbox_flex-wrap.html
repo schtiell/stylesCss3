@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
+    <link rel="stylesheet" href="./css/73.estilos.css" type="text/css">
+
+    <title>Flexbox: flex-wrap</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1>
+            CSS: Cascading Style Sheets
+            <small>Flexbox: flex-wrap</small>
+        </h1>
+
+        <hr>
+
+        <img>
+
+        <p>La propiedad <span>flex-wrap</span> intenta que todos los elementos se ubiquen siempre en el eje principal, definido por la propiedad <span>flex-direction</span>, independientemente de la cantidad de item de los que se disponga</p>
+        
+        <p>De forma predeterminada como se mencionó los elementos intentaran encajar en una misma linea, esto puede ser cambiado y permitir que los elementos se ajusten segun sea necesario mediante la propiedad flex-wrap.</p>
+
+        <p>Su sintaxis es:</p>
+
+        <pre>
+            .flex-container{
+                flex-wrap: nowrap | wrap | wrap-reverse;
+            }
+        </pre>
+
+        <p>Donde la propiedad flex-wrap puede tomar valores siguientes:</p>
+
+        <ul>
+            <li><span>nowrap: </span>Es el valor <span>predeterminado</span> todos los elementos estarán alineados e en el eje principal y en la misma linea.</li>
+            <li><span>wrap: </span>Los elementos flexibles se ajustarán a varias lineas de arriba a abajo</li>
+            <li><span>wrap-reverse: </span>Los elementos flexibles se ajustarán a varias lineas de abajo hacia arriba</li>
+        </ul>
+        
+        <div class="container ejericicio">
+
+            <h2>Ejemplo</h2>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-sm-7">
+                    <h3>flex-direction
+                        <small>row</small>
+                    </h3>
+                    <hr>
+                    <div class="flexcontainer flexnowrap">
+                        <div class="caja">Caja: 1</div>
+                        <div class="caja caja2">Caja: 2</div>
+                        <div class="caja">Caja: 3</div>
+                        <div class="caja caja3">Caja: 4</div>
+                        <div class="caja">Caja: 5</div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <h3>flex-wrap:
+                        <small>nowrap</small>
+                    </h3>
+                    <hr>
+                    <pre>
+                        .flex-container{
+                            display: flex;              
+                        
+                            flex-direction: row;           
+                            align-items: center;            
+                            justify-content: space-between; 
+                            flex-wrap: nowrap;
+                        }
+                    </pre>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-7">
+                    <h3>flex-direction
+                        <small>row</small>
+                    </h3>
+                    <hr>
+                    <div class="flexcontainer flexnowrap">
+                        <div class="caja">Caja: 1</div>
+                        <div class="caja caja2">Caja: 2</div>
+                        <div class="caja">Caja: 3</div>
+                        <div class="caja caja3">Caja: 4</div>
+                        <div class="caja">Caja: 5</div>
+                        <div class="caja">Caja: 6</div>
+                        <div class="caja">Caja: 7</div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <h3>flex-wrap:
+                        <small>wrap</small>
+                    </h3>
+                    <hr>
+                    <pre>
+                        .flexnowrap{
+                            display: flex;                  
+                        
+                            flex-direction: row;            
+                            align-items: center;            
+                            justify-content: space-around;  
+                            flex-wrap: wrap;
+
+                        }
+                    </pre>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-7">
+                    <h3>flex-direction
+                        <small>row</small>
+                    </h3>
+                    <hr>
+                    <div class="flexcontainer flexwrap-reverse">
+                        <div class="caja">Caja: 1</div>
+                        <div class="caja caja2">Caja: 2</div>
+                        <div class="caja">Caja: 3</div>
+                        <div class="caja caja3">Caja: 4</div>
+                        <div class="caja">Caja: 5</div>
+                        <div class="caja">Caja: 6</div>
+                        <div class="caja">Caja: 7</div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <h3>flex-wrap:
+                        <small>wrap-reverse</small>
+                    </h3>
+                    <hr>
+                    <pre>
+                        .flexwrap-reverse{
+                            display: flex;                  
+                        
+                            flex-direction: row;    
+                            align-items: flex-start;                    
+                            flex-wrap:wrap-reverse;
+                        }
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

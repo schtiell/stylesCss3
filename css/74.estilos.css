@@ -18,6 +18,38 @@ img{
     flex-direction: row;
     flex-wrap: wrap;
 
+    width: 100%;
+    height: 300px;
+
+    background-color: #A340ED;
+    border: 1px solid #000;
+
+}
+
+.flex-container-col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 80%;
+
+    margin: 20px auto;
+
+    background-color: #A340ED;
+    border: 1px solid #000;
+
+}
+
+.flex-container-col2{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+
+    width: 80%;
+    height: 500px;
+
+    margin: 20px auto;
+
     background-color: #A340ED;
     border: 1px solid #000;
 
@@ -31,11 +63,31 @@ img{
     align-content: center;
 }
 
+.fstretch{
+    align-content: stretch;
+}
+
+.fspace-around{
+    align-content: space-around;
+}
+
 .caja{
     width: 100px;
     height: 100px;
 
     margin: 5px 2px;
+    padding: 35px 10px;
+
+    background-color: #EDA340;
+    border: 1px solid #fff;
+    border-radius: 20px;
+
+    font: oblique lighter 19px monospace;
+    color: #fff;
+}
+
+.caja-col{
+    margin: 10px 20px;
     padding: 35px 10px;
 
     background-color: #EDA340;

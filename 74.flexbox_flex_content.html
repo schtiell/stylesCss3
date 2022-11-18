@@ -77,7 +77,7 @@
                 <div class="col-sm-7">
                     <h3>
                         flex-direction:
-                        <small>row-reverse</small>
+                        <small>row</small>
                     </h3>
                     <hr>
                     <div class="flex-container fstart">
@@ -116,7 +116,7 @@
                 <div class="col-sm-7">
                     <h3>
                         flex-direction:
-                        <small>row-reverse</small>
+                        <small>row</small>
                     </h3>
                     <hr>
                     <div class="flex-container fcenter">
@@ -126,9 +126,10 @@
                         <div class="caja caja4">Caja: 4</div>
                         <div class="caja caja5">Caja: 5</div>
                         <div class="caja">Caja: 6</div>
-                        <div class="caja">Caja: 7</div>
+                        <div class="caja caja5">Caja: 7</div>
                         <div class="caja">Caja: 8</div>
                         <div class="caja">Caja: 9</div>
+                        <div class="caja caja4">Caja: 10</div>
                     </div>
                 </div>
                 <div class="col-sm-5">
@@ -151,8 +152,82 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col-sm-7">
+                    <h3>
+                        flex-direction:
+                        <small>column</small>
+                    </h3>
+                    <hr>
+                    <div class="flex-container-col fstretch">
+                        <div class="caja-col">Caja: 1</div>
+                        <div class="caja-col">Caja: 2</div>
+                        <div class="caja-col">Caja: 3</div>
+                        <div class="caja-col">Caja: 4</div>
+                        <div class="caja-col">Caja: 5</div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <h3>
+                        align-content:
+                        <small>stretch</small>
+                    </h3>
+                    <hr>
+                    <pre>
+                        .flex-container-col{
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                        }
+                        
+                        .flexcenter{
+                            align-content: stretch;
+                        }
+                        
+                </div>
+            </div>
 
-            
+            <div class="row">
+                <div class="col-sm-7">
+                    <h3>
+                        flex-direction:
+                        <small>column-reverse</small>
+                    </h3>
+                    <hr>
+                    <div class="flex-container-col2 fspace-around">
+                        <div class="caja-col">Caja: 1</div>
+                        <div class="caja-col">Caja: 2</div>
+                        <div class="caja-col">Caja: 3</div>
+                        <div class="caja-col">Caja: 4</div>
+                        <div class="caja-col">Caja: 5</div>
+                        <div class="caja-col">Caja: 6</div>
+                        <div class="caja-col">Caja: 7</div>
+                        <div class="caja-col">Caja: 8</div>
+                        <div class="caja-col">Caja: 9</div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <h3>
+                        align-content:
+                        <small>space-around</small>
+                    </h3>
+                    <hr>
+                    <pre>
+                        .flex-container-col2{
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                        
+                            width: 80%;
+                            height: 500px;
+                        }
+                        
+                        .fspace-around{
+                            align-content: space-around;
+                        }
+                    </pre>   
+                </div>
+            </div>
         </div>
     </div>
 </body>

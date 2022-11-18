@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
+    <link rel="stylesheet" href="./css/74.estilos.css" type="text/css">
+
+    <title>Flexbox: align-content</title>
+</head>
+<body>
+    <div class="container">
+        
+        <h1>
+            CSS: Cascading Style Sheets
+            <small>Flexbox: align-content</small>
+        </h1>
+
+        <hr>
+
+        <img>
+
+        <p>La propiedad <span>align-content</span> solo es aplicable cuando se dispone de un flexbox con varias lineas, es decir, que se ha cargado el valor <span>wrap en la propiedad flex-wrap</span>.</p>
+
+        <p>La propiedad align-content alinea las lineas de un contenedor flexible cuando hay espacio adicional en el eje transversal, de forma similar como justify-content, se alinean los elemento individuales dentro del eje principal.</p>
+
+        <p><span>Nota:</span>Como se comentó anteriormente está propiedad solo tiene efecto en contenedores flexibles de varias lineas, donde flex-wrap se establece en valor wrap o wrap-reverse. Un contenedor flexible de una sola linea es decir, donde flex-wrap  establece su valor no-wrap, no reflejará la propiedad align-content</p>
+
+        <p>Su sintaxis:</p>
+
+        <pre>
+            .flex-container{
+                align-content: flex-start | flex-end | center | stretch | space-between | space-around;
+            }
+        </pre>
+
+        <p>Los valores posibles de la propiedad <span>align-contenet</span> son:</p>
+
+        <ul>
+            <li><span>flex-start: </span>Los elementos aparecen agrupados al principio del eje transversal.</li>
+            <li><span>flex-end: </span>Los elementos aparecen agrupados al final del eje transversal.</li>
+            <li><span>center: </span>Los elementos son agrupados al centro.</li>
+            <li><span>stretch: </span>Los elementos aparecen estirados para ocupar el estado restante</li>
+            <li><span>space-between: </span>Los elementos aparecen distribuidos uniformemente. al principio, al centro  y al final del contenedor flex.</li>
+            <li><span>space-around: </span>Los elementos aparecen distribuidos uniformemente y con un espacio igual entre ellos.</li>
+        </ul>
+
+        <p>Por defecto la propiedad "align-content" almacena el valor "stretch".</p>
+
+        <div class="container ejericicio">
+
+            <h2>Ejemplo</h2>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-sm-7">
+                    <h3>
+                        flex-direction:
+                        <small>row-reverse</small>
+                    </h3>
+                    <hr>
+                    <div class="flex-container fstart">
+                        <div class="caja">Caja: 1</div>
+                        <div class="caja">Caja: 2</div>
+                        <div class="caja caja3">Caja: 3</div>
+                        <div class="caja caja4">Caja: 4</div>
+                        <div class="caja caja5">Caja: 5</div>
+                        <div class="caja">Caja: 6</div>
+                        <div class="caja">Caja: 7</div>
+                        <div class="caja">Caja: 8</div>
+                        <div class="caja">Caja: 9</div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <h3>
+                        align-content:
+                        <small>flex-start</small>
+                    </h3>
+                    <hr>
+                    <pre>
+                        .flex-container{
+                            display: flex;
+                            flex-direction: row-reverse;
+                            flex-wrap: wrap;
+                        }
+                        
+                        .flexstart{
+                            align-content: flex-start;
+                        }
+                    </pre>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-7">
+                    <h3>
+                        flex-direction:
+                        <small>row-reverse</small>
+                    </h3>
+                    <hr>
+                    <div class="flex-container fcenter">
+                        <div class="caja">Caja: 1</div>
+                        <div class="caja">Caja: 2</div>
+                        <div class="caja caja3">Caja: 3</div>
+                        <div class="caja caja4">Caja: 4</div>
+                        <div class="caja caja5">Caja: 5</div>
+                        <div class="caja">Caja: 6</div>
+                        <div class="caja">Caja: 7</div>
+                        <div class="caja">Caja: 8</div>
+                        <div class="caja">Caja: 9</div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <h3>
+                        align-content:
+                        <small>center</small>
+                    </h3>
+                    <hr>
+                    <pre>
+                        .flex-container{
+                            display: flex;
+                            flex-direction: row-reverse;
+                            flex-wrap: wrap;
+                        }
+                        
+                        .flexcenter{
+                            align-content: center;
+                        }
+                        
+                </div>
+            </div>
+
+
+            
+        </div>
+    </div>
+</body>
+</html>

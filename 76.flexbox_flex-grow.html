@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
+    <link rel="stylesheet" href="./css/76.estilos.css" type="text/css">
+
+    <title>Propiedad flex-grow</title>
+</head>
+<body>
+    <div class="container">
+        
+        <h1>CSS: Cascading Style Sheets
+            <small>Flexbox: flex-grow</small>
+        </h1>
+
+        <hr>
+
+        <img>
+
+        <p>La <span>propiedad flex-flow</span>, es la propiedad que se aplica a los elementos que estan dentro del contenedor, es decir a los items.</p>
+
+        <p>Esta propiedad almacena un valor entero y controla que tanto crecerá el item rellenando el espacio no utilizado por los otros items.</p>
+
+        <p>El valor por defecto de la propiedad flex-grow es <span>cero</span>. No tiene unidad de medida ya que indica un factor de crecimiento</p>
+
+        <p>Su sintaxis es:</p>
+
+        <pre>
+            .item{
+                flex-grow: value;
+            }
+        </pre>
+
+        <p>Por lo tanto la propiedad flex-grow define la capacidad de crecimiento de un elemento flexible si es necesario. Acepta valores sin unidades que sirve como proporción. Determina que cantidad de espacio disponible dentro del contenedor flexible debe ocupar el artículo.</p>
+
+        <p>Los valores para la propiedad flex-grow no pueden ser negativos.</p>
+
+        <div class="container ejercicio">
+
+            <h2>Ejemplo</h2>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-sm-7">
+                    <h3>
+                        flex-direction:
+                        <small>row</small>
+                    </h3>
+                    <hr>
+                    <div class="flex-container">
+                        <div class="caja caja1">Caja: 1</div>
+                        <div class="caja caja2">Caja: 2</div>
+                        <div class="caja caja3">Caja: 3</div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <h3>
+                        flex-grow
+                        <small>values</small>
+                    </h3>
+                    <hr>
+                    <pre>
+                        .caja2{
+                            flex-grow: 5;
+                        }
+                        
+                        .caja3{
+                            flex-grow: 2;
+                        }
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+img{
+    background-image: url("https://css-tricks.com/wp-content/uploads/2018/10/flex-grow.svg");
+    background-repeat: no-repeat;
+
+    height: 150px;
+    width: 330px;
+
+    float: right;
+    margin-left: 30px;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+
+    background-color: #B230EB;
+    border-radius: 15px;
+}
+
+.caja{
+    height: 100px;
+    width: 80px;
+
+    margin: 5px;
+    padding: 30px 4px;
+
+    background-color: #EB8830;
+    color: #fafafa;
+
+    border: 1px solid #fafafa;
+    border-radius: 15px;
+}
+
+.caja2{
+    flex-grow: 5;
+}
+
+.caja3{
+    flex-grow: 2;
+}

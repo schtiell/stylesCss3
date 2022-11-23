@@ -1,0 +1,24 @@
+.flex-container{
+    display: flex;
+
+    height: 300px;
+
+    background-color: #000;
+    color: #fafafa;
+    font-size: 2rem;
+
+}
+
+.caja1{
+    background-color: #0078A6;
+}
+
+.caja2{
+    flex-grow: 1;
+    background-color: #0084B6;
+}
+
+.caja3{
+    flex-shrink: 1;
+    background-color: #008CC1;
+}

@@ -76,3 +76,4 @@
 74. Flexbox: align-content.
 75. Flexbox: flex-flow.
 76. Flexbox: flex-grow.
+77. Flexbox: flex-shrink.

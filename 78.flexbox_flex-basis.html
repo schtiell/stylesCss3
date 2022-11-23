@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+	<link rel="stylesheet" href="css/14.template2.css" type="text/css">
+    <link rel="stylesheet" href="./css/78.estilos.css" type="text/css">
+    <title>Flexbox: flex-basis</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1>
+            CSS: Cascading Style Sheets
+            <small>Flexbox: flex-basis</small>
+        </h1>
+
+        <hr>
+
+        <p>Otra propiedad aplicada a los items de una caja flexible es la propiedad <span>flex-basis</span> define el tamaño predeterminado de un elemento antes de que se distribuyan en el espacio restante. La propiedad flex-basis define el ancho con respecto al eje principal si el flex-direction está definido como row, si el flow direction está definido como column el flex-basis representa el height.</p>
+
+        <p>El tamaño base que se define en la propiedad flex-basis puede no llegar a cumplirse dependiendo de las propiedades vistas que se aplican a los items. Esta propiedad es fundamental para definir el tamaño de los elementos, pueden emplearse diferentes tipos de medidas absolutas o relativas.</p>
+
+        <img class="img1">
+
+        <p>Su sintaxis:</p>
+
+        <pre>
+            .item{
+                flex-basis: auto /*valor por defecto*/
+            }
+        </pre>
+
+        <p>La propiedad flex-basis  almacena el valor por defecto <span>auto</span>, es decir calcula su medida de manera automática, lo que es lo mismo que el item se autodimensiona en función del contenido del elemento.</p>
+
+        <p>Si el valor se establece en 0, el espacio adicional alrededor del contenido no se tiene encuenta, si se establece en auto el espacio adicional se distribuye en función de su valor flex-grow.</p>
+        
+
+        <div class="container ejercicio">
+            
+            <h2>Ejemplo</h2>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-sm-7">
+                    <h3>
+                        flex-basis:
+                        <small>flex-direction: row</small>
+                    </h3>
+                    <hr>
+                    <div class="flex-container">
+                        <div class="caja caja1">1</div>
+                        <div class="caja caja2">
+                            <p> Caja: 2</p>
+                        </div>
+                        <div class="caja caja3">Caja: 3: ejemplo</div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <h3>
+                        flex-basis
+                        <small>Styles css</small>
+                    </h3>
+                    <hr>
+                    <pre>
+                        .caja1{
+                            flex-basis: auto;
+                        
+                        }
+                        
+                        .caja2{
+                            flex-basis:min-content;
+                        }
+                        
+                        .caja3{
+                            flex-grow: max-content;
+                        }
+                    </pre>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-7">
+                    <h3>
+                        flex-basis:
+                        <small>flex-direction: column</small>
+                    </h3>
+                    <hr>
+                    <div class="flex-container flex-container-col">
+                        <div class="caja caja1">1</div>
+                        <div class="caja caja2">
+                            <p> Caja: 2</p>
+                            <p>Mas lineas para reflejar el alto</p>
+                            <p>por eje transversal</p>
+                        </div>
+                        <div class="caja caja3">Caja: 3: ejemplo</div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <h3>
+                        flex-basis:
+                        <small>Styles css</small>
+                    </h3>
+                    <hr>
+                    <pre>
+                        .caja4{
+                            flex-basis: fit-content;
+                        
+                        }
+                        
+                        .caja5{
+                            flex-basis:auto;
+                        }
+                        
+                        .caja6{
+                            flex-grow: fill;
+                        }
+                    </pre>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>

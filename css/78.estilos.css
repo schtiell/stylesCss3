@@ -1,0 +1,68 @@
+.img1{
+    background-image: url("https://www.w3.org/TR/css-flexbox-1/images/rel-vs-abs-flex.svg");
+    background-repeat: no-repeat;
+
+    width: 470px;
+    height: 250px;
+
+    float: right;
+
+    margin-left: 25px;
+}
+
+.row{
+    margin-bottom: 30px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+
+    background-color: #B830EB;
+
+    border-radius: 20px;
+}
+
+.flex-container-col{
+    flex-direction: column;
+}
+
+.caja{
+    border: 1px solid #000;
+    border-radius: 15px;
+
+    margin: 10px 5px;
+    padding: 10px 20px;
+
+    background-color: #EB9330;
+
+    font: oblique lighter 20px monospace;
+    color: #fafafa;
+}
+
+.caja1{
+    flex-basis: auto;
+
+}
+
+.caja2{
+    flex-basis:min-content;
+}
+
+.caja3{
+    flex-grow: max-content;
+}
+
+.caja4{
+    flex-basis: fit-content;
+
+}
+
+.caja5{
+    flex-basis:auto;
+}
+
+.caja6{
+    flex-grow: fill;
+}
+

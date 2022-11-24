@@ -22,104 +22,86 @@
 	<!-- cdn favicon -->
 	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
 
+    <!-- Importando API google fonts -->
+    <link rel= "stylesheet" type= "text/css" herf= "http.//fonts.googleapis.com/css family=Montserrat>
+
 	<!-- Importando el css3 -->
     <link rel="stylesheet" href="./css/14.template2.css" type="text/css">
-    <link rel="stylesheet" href="./css/79.estilos.css" type="text/css">
-
-    <title>Flexbox: flex formato resumido</title>
+    <link rel="stylesheet" href="./css/80.estilos.css" type="text/css">
+    <title>Flexbox: order</title>
 </head>
 <body>
     <div class="container">
-        
         <h1>
             CSS: Cascading Style Sheets
-            <small>Flexbox: flex (grow, shrink & basis)</small>
+            <small>Flexbox: order</small>
         </h1>
 
         <hr>
 
-        <p>La <span>propiedad flex</span>, representa el formato resumido para indicar las propiedades <span>flex-grow, flex-shrink y flex-basis</span>. Estas propiedades debe recordarse que aplican unicamente a los elementos o items de una caja flexible</p>
+        <p>La <span>propiedad order</span> de los items de una caja flexible permiten indicar en que orden deben aparecer los items en el contenedor. Por defecto la propiedad order almacena <span>el valor 0</span>. Los items aparecen en el contenedor <span>en el mismo orden en que son escritos en el archivo html</span>.</p>
 
-        <p>Su sintaxis debe ser en el siguiente orden:</p>
-
-        <pre>
-            .item{
-                flex: flex-grow, flex-shrink, flex-basis;
-            }
-        </pre>
-
-        <p>La sintaxis anterior muestra como deben especificarse los 3 valores para un item, aunque se debe recordar que estos tienen valores por defecto, lo que significa que puede inicializarse la propiedad flex con menos de 3 valores. Por ejemplo:</p>
-
-        <p>La propiedad flex-basis queda con su valor por defecto <span>auto</span>:</p>
-
-        <pre>
-            .item{
-                flex: 1 2;
-            }
-        </pre>
-
-        <p>La propiedad flex-shrink queda con su valor por defecto <span>1</span>. La propiedad flex-grow recibe el valor 1 y flex-basis el valor de 20%</p>
-
-        <pre>
-            .item{
-                flex: 1 20%;
-            }
-        </pre>
-
-        <p>Los valores se almacenan como 0 0 auto:</p>
-
-        <pre>
-            .item{
-                flex: none;
-            }
-        </pre>
-
-        <p>La propiedad flex toma todos los valores por default de cada propiedad, es decir (0 1 auto)</p>
-
-        <pre>
-            .item{
-                flex: auto;
-            }
-        </pre>
+        <p>Ya que los elementos aparecen en el contenedor en el orden en que son especificados en el origen, se puede cambiar el flujo de los items dentro del contenedor al indicar en la propiedad order valores a partir del 0.</p>
 
         <div class="container ejercicio">
-            
+
             <h2>Ejemplo</h2>
 
             <hr>
 
             <div class="row">
                 <div class="col-sm-7">
-                    <h3>flex-container
-                        <small>flex</small>
+                    <h3>
+                        Flexbox:
+                        <small>flex container</small>
                     </h3>
                     <hr>
                     <div class="flex-container">
                         <div class="caja caja1">Caja: 1</div>
                         <div class="caja caja2">Caja: 2</div>
                         <div class="caja caja3">Caja: 3</div>
+                        <div class="caja caja4">Caja: 4</div>
+                        <div class="caja caja5">Caja: 5</div>
+                    </div>
+
+                    <div class="flex-container-col">
+                        <div class="caja caja1">Caja: 1</div>
+                        <div class="caja caja2">Caja: 2</div>
+                        <div class="caja caja3">Caja: 3</div>
+                        <div class="caja caja4">Caja: 4</div>
+                        <div class="caja caja5">Caja: 5</div>
                     </div>
                 </div>
                 <div class="col-sm-5">
-                    <h3>flex:
-                        <small>grow shrink basis</small>
+                    <h3>
+                        Propiedad:
+                        <small>order</small>
                     </h3>
                     <hr>
                     <pre>
                         .caja1{
-                            flex: 1 1 20%;
+                            order: 3;
                         }
                         
                         .caja2{
-                            flex: 0 0 60%;
+                            order: 5;
                         }
                         
                         .caja3{
-                            flex: 0 1 20%;
+                            order: 2;
+                        }
+                        
+                        .caja4{
+                            order: 1;
+                        }
+                        
+                        .caja5{
+                            order: 4;
                         }
                     </pre>
                 </div>
             </div>
+
         </div>
     </div>
 </body>

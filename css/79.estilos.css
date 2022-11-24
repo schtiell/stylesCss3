@@ -1,0 +1,36 @@
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+
+    height: 200px;
+
+    background-color: #8D30EB;
+    color: #fafafa;
+
+    border-radius: 20px;
+
+}
+
+.caja{
+
+    margin: 3px 2px;
+    padding: 65px 10px;
+
+    background-color: #EB8D30;
+
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
+.caja1{
+    flex: 1 1 20%;
+}
+
+.caja2{
+    flex: 0 0 60%;
+}
+
+.caja3{
+    flex: 0 1 20%;
+}

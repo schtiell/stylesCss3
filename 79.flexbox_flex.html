@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Importando el CDN "Content Delivery Network" de bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+	<!-- cdn jquery for bootstrap framework-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<!-- css3 for bootstrap  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- cdn bundle bootstrap include Popper  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<!-- cdn favicon -->
+	<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/css3.png" type="image/x-icon">
+
+	<!-- Importando el css3 -->
+    <link rel="stylesheet" href="./css/14.template2.css" type="text/css">
+    <link rel="stylesheet" href="./css/79.estilos.css" type="text/css">
+
+    <title>Flexbox: flex formato resumido</title>
+</head>
+<body>
+    <div class="container">
+        
+        <h1>
+            CSS: Cascading Style Sheets
+            <small>Flexbox: flex (grow, shrink & basis)</small>
+        </h1>
+
+        <hr>
+
+        <p>La <span>propiedad flex</span>, representa el formato resumido para indicar las propiedades <span>flex-grow, flex-shrink y flex-basis</span>. Estas propiedades debe recordarse que aplican unicamente a los elementos o items de una caja flexible</p>
+
+        <p>Su sintaxis debe ser en el siguiente orden:</p>
+
+        <pre>
+            .item{
+                flex: flex-grow, flex-shrink, flex-basis;
+            }
+        </pre>
+
+        <p>La sintaxis anterior muestra como deben especificarse los 3 valores para un item, aunque se debe recordar que estos tienen valores por defecto, lo que significa que puede inicializarse la propiedad flex con menos de 3 valores. Por ejemplo:</p>
+
+        <p>La propiedad flex-basis queda con su valor por defecto <span>auto</span>:</p>
+
+        <pre>
+            .item{
+                flex: 1 2;
+            }
+        </pre>
+
+        <p>La propiedad flex-shrink queda con su valor por defecto <span>1</span>. La propiedad flex-grow recibe el valor 1 y flex-basis el valor de 20%</p>
+
+        <pre>
+            .item{
+                flex: 1 20%;
+            }
+        </pre>
+
+        <p>Los valores se almacenan como 0 0 auto:</p>
+
+        <pre>
+            .item{
+                flex: none;
+            }
+        </pre>
+
+        <p>La propiedad flex toma todos los valores por default de cada propiedad, es decir (0 1 auto)</p>
+
+        <pre>
+            .item{
+                flex: auto;
+            }
+        </pre>
+
+        <div class="container ejercicio">
+            
+            <h2>Ejemplo</h2>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-sm-7">
+                    <h3>flex-container
+                        <small>flex</small>
+                    </h3>
+                    <hr>
+                    <div class="flex-container">
+                        <div class="caja caja1">Caja: 1</div>
+                        <div class="caja caja2">Caja: 2</div>
+                        <div class="caja caja3">Caja: 3</div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <h3>flex:
+                        <small>grow shrink basis</small>
+                    </h3>
+                    <hr>
+                    <pre>
+                        .caja1{
+                            flex: 1 1 20%;
+                        }
+                        
+                        .caja2{
+                            flex: 0 0 60%;
+                        }
+                        
+                        .caja3{
+                            flex: 0 1 20%;
+                        }
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
